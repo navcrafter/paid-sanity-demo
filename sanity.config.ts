@@ -4,6 +4,7 @@
  * Sanity Studio configuration. The Studio is served by Next.js at /studio
  * (see src/app/studio/[[...tool]]/page.tsx).
  */
+import {assist} from '@sanity/assist'
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
 import {presentationTool} from 'sanity/presentation'
@@ -87,8 +88,16 @@ export default defineConfig({
         : prev,
   },
 
+  // The Vision (GROQ query) tool is for developers; editors and guests don't see it.
+  tools: (prev, {currentUser}) => {
+    const isAdmin = currentUser?.roles.some((role) => role.name === 'administrator') ?? false
+    return isAdmin ? prev : prev.filter((tool) => tool.name !== 'vision')
+  },
+
   plugins: [
     structureTool({structure}),
+    // AI Assist: "Generate" / "Improve" on text fields, driven by per-field instructions set in the Studio.
+    assist(),
     presentationTool({
       title: 'Visual editing',
       resolve,

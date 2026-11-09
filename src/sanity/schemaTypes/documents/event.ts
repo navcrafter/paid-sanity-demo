@@ -1,12 +1,8 @@
 import {CalendarIcon} from '@sanity/icons/Calendar'
 import {defineArrayMember, defineField, defineType, type ConditionalPropertyCallbackContext} from 'sanity'
 
-import {
-  EVENT_ACCENTS,
-  EVENT_BACKGROUNDS,
-  EVENT_CATEGORIES,
-  EVENT_TEMPLATES,
-} from '../../constants'
+import {HeroColorInput} from '../../components/HeroColorInput'
+import {EVENT_BACKGROUNDS, EVENT_CATEGORIES, EVENT_TEMPLATES, HERO_COLORS} from '../../constants'
 
 // One collection for every event. Category sets the URL, Template sets the layout
 // (hero style and which fields apply), Theme sets the colours. The optional
@@ -56,7 +52,7 @@ export const event = defineType({
       name: 'template',
       type: 'string',
       group: 'setup',
-      description: 'Sets the hero layout and which fields apply.',
+      description: 'Sets the hero layout and which fields apply. Supper Club: video hero with date, location and time. Mid Tier: same layout, lighter card. Webinar: image hero with speakers.',
       options: {list: [...EVENT_TEMPLATES], layout: 'radio', direction: 'horizontal'},
       initialValue: 'supperClub',
       validation: (rule) => rule.required(),
@@ -78,8 +74,9 @@ export const event = defineType({
           name: 'accent',
           title: 'Hero colour',
           type: 'string',
-          description: 'Supper Club and Mid Tier heroes only.',
-          options: {list: [...EVENT_ACCENTS], layout: 'radio'},
+          description: 'Brand colour for the hero card and the band behind it. Default keeps the template\u2019s own look.',
+          options: {list: HERO_COLORS.map(({title, value}) => ({title, value}))},
+          components: {input: HeroColorInput},
           initialValue: 'default',
         }),
       ],

@@ -26,14 +26,15 @@
 }
 
 /* ---------- Hero ---------- */
+/* Hero colours: --hero-band-bg / --hero-card-bg / --hero-card-fg are set inline from the
+   event's "Hero colour" (see HERO_COLORS); the fallbacks are each template's default look. */
 .section_event-hero {
   position: relative;
   overflow: hidden;
-  background-color: #8383ff;
+  background-color: var(--hero-band-bg, #8383ff);
 }
-.section_event-hero.is-pink { background-color: #e8c0e9; }
-.section_event-hero.is-mid-tier { background-color: #d2e3e3; }
-.section_event-hero.is-webinar { background-color: #f5f4ed; }
+.section_event-hero.is-mid-tier { background-color: var(--hero-band-bg, #d2e3e3); }
+.section_event-hero.is-webinar { background-color: var(--hero-band-bg, #f5f4ed); }
 
 /* Extra top padding clears the fixed navbar */
 .event-hero_padding { padding-top: 9.5rem; padding-bottom: 6.5rem; }
@@ -55,19 +56,18 @@
   min-height: 32rem;
   padding: 5.5rem 7.25rem;
   border-radius: 2rem;
-  background-color: #4e4eff;
-  color: #fff;
+  background-color: var(--hero-card-bg, #4e4eff);
+  color: var(--hero-card-fg, #fff);
   box-shadow: -4px 4px 44px rgb(0 0 0 / 0.08);
 }
-.event-hero_card.is-pink { background-color: #f74b93; color: #fdfbf7; }
-.event-hero_card.is-mid-tier { background-color: #f5f4ed; color: #000; }
+.event-hero_card.is-mid-tier { background-color: var(--hero-card-bg, #f5f4ed); color: var(--hero-card-fg, #000); }
 .event-hero_card.is-webinar {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 2rem;
   max-width: none;
-  background-color: #8383ff;
+  background-color: var(--hero-card-bg, #8383ff);
 }
 
 .event-hero_logo-wrapper { margin-bottom: 1rem; }

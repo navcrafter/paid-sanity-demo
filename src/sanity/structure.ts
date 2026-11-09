@@ -5,7 +5,7 @@ import {FolderIcon} from '@sanity/icons/Folder'
 import type {StructureBuilder, StructureResolver} from 'sanity/structure'
 
 import {EVENT_CATEGORIES} from './constants'
-import {companyPage, creatorsPage, homePage} from './schemaTypes/singletons/pages'
+import {companyPage, creatorsPage, eventsPage, homePage} from './schemaTypes/singletons/pages'
 
 // Sidebar layout. Mirrors the Webflow page tree the team already knows:
 // Pages (Home, Creators, Company), Events split into category folders, Site settings.
@@ -32,6 +32,7 @@ export const structure: StructureResolver = (S) =>
               singleton(S, 'homePage', 'Home', homePage.icon),
               singleton(S, 'creatorsPage', 'Creators', creatorsPage.icon),
               singleton(S, 'companyPage', 'Company', companyPage.icon),
+              singleton(S, 'eventsPage', 'Events page', eventsPage.icon),
             ]),
         ),
       S.divider(),

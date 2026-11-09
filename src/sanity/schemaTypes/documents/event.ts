@@ -1,5 +1,5 @@
 import {CalendarIcon} from '@sanity/icons/Calendar'
-import {defineField, defineType} from 'sanity'
+import {defineArrayMember, defineField, defineType, type ConditionalPropertyCallbackContext} from 'sanity'
 
 import {
   EVENT_ACCENTS,
@@ -8,9 +8,11 @@ import {
   EVENT_TEMPLATES,
 } from '../../constants'
 
-// One collection for every event. Category sets the URL, Template sets the layout,
-// Theme sets the colours. Section content (story blocks, galleries, speakers, FAQ...)
-// is added in phase 4.
+// One collection for every event. Category sets the URL, Template sets the layout
+// (hero style and which fields apply), Theme sets the colours. The optional
+// sections can be reordered or removed; each template starts with its usual set.
+
+const isWebinar = ({document}: ConditionalPropertyCallbackContext) => document?.template === 'webinar'
 
 export const event = defineType({
   name: 'event',
@@ -19,11 +21,15 @@ export const event = defineType({
   icon: CalendarIcon,
   groups: [
     {name: 'setup', title: 'Setup', default: true},
-    {name: 'details', title: 'Details'},
+    {name: 'hero', title: 'Hero'},
+    {name: 'content', title: 'Content'},
+    {name: 'sections', title: 'Sections'},
     {name: 'registration', title: 'Registration'},
+    {name: 'info', title: 'More info'},
     {name: 'seo', title: 'SEO'},
   ],
   fields: [
+    // ---------------- Setup
     defineField({
       name: 'title',
       type: 'string',
@@ -42,7 +48,7 @@ export const event = defineType({
       name: 'category',
       type: 'string',
       group: 'setup',
-      description: 'Sets the URL: /events/{category}/{slug}.',
+      description: 'Sets the URL (/events/{category}/{slug}) and the filter on the Events page.',
       options: {list: [...EVENT_CATEGORIES], layout: 'dropdown'},
       validation: (rule) => rule.required(),
     }),
@@ -50,7 +56,7 @@ export const event = defineType({
       name: 'template',
       type: 'string',
       group: 'setup',
-      description: 'Sets the page layout and which sections are available.',
+      description: 'Sets the hero layout and which fields apply.',
       options: {list: [...EVENT_TEMPLATES], layout: 'radio', direction: 'horizontal'},
       initialValue: 'supperClub',
       validation: (rule) => rule.required(),
@@ -63,14 +69,16 @@ export const event = defineType({
       fields: [
         defineField({
           name: 'background',
+          title: 'Page background',
           type: 'string',
           options: {list: [...EVENT_BACKGROUNDS], layout: 'radio'},
           initialValue: 'black',
         }),
         defineField({
           name: 'accent',
+          title: 'Hero colour',
           type: 'string',
-          description: 'Hero accent colour.',
+          description: 'Supper Club and Mid Tier heroes only.',
           options: {list: [...EVENT_ACCENTS], layout: 'radio'},
           initialValue: 'default',
         }),
@@ -80,56 +88,243 @@ export const event = defineType({
       name: 'startDateTime',
       title: 'Starts',
       type: 'datetime',
-      group: 'details',
+      group: 'setup',
+      description: 'Used to sort events and split upcoming from past on the Events page.',
+      validation: (rule) => rule.required(),
     }),
     defineField({
-      name: 'location',
-      type: 'string',
-      group: 'details',
-      description: 'City or "Online", e.g. "Los Angeles, CA".',
+      name: 'cardImage',
+      title: 'Card image',
+      type: 'altImage',
+      group: 'setup',
+      description: 'Shown on the Events page. Falls back to the hero image or video poster.',
     }),
     defineField({
-      name: 'venue',
-      type: 'string',
-      group: 'details',
-      hidden: ({document}) => document?.template === 'webinar',
+      name: 'excerpt',
+      type: 'text',
+      rows: 2,
+      group: 'setup',
+      description: 'One or two sentences for the Events page card.',
     }),
+
+    // ---------------- Hero
+    defineField({
+      name: 'logo',
+      title: 'Event logo',
+      type: 'altImage',
+      group: 'hero',
+      description: 'Optional, shown above the title (e.g. a partner or series logo).',
+      hidden: isWebinar,
+    }),
+    defineField({
+      name: 'logoSize',
+      type: 'string',
+      group: 'hero',
+      options: {list: [{title: 'Regular', value: 'regular'}, {title: 'Large', value: 'large'}], layout: 'radio', direction: 'horizontal'},
+      initialValue: 'regular',
+      hidden: isWebinar,
+    }),
+    defineField({
+      name: 'dateLabel',
+      title: 'Date (as shown)',
+      type: 'string',
+      group: 'hero',
+      description: 'e.g. "December 3, 2026" or "Thursday, April 3".',
+    }),
+    defineField({name: 'timeLabel', title: 'Time (as shown)', type: 'string', group: 'hero', description: 'e.g. "6:00 PM - 8:30 PM".'}),
+    defineField({name: 'location', type: 'string', group: 'hero', hidden: isWebinar}),
+    defineField({name: 'locationUrl', title: 'Map link', type: 'url', group: 'hero', hidden: isWebinar}),
+    defineField({
+      name: 'heroVideo',
+      title: 'Hero video',
+      type: 'videoEmbed',
+      group: 'hero',
+      hidden: isWebinar,
+    }),
+    defineField({
+      name: 'heroImage',
+      title: 'Hero image',
+      type: 'altImage',
+      group: 'hero',
+      hidden: ({document}) => document?.template !== 'webinar',
+    }),
+
+    // ---------------- Content
+    defineField({name: 'intro', type: 'text', rows: 3, group: 'content', description: 'The bold opening paragraph.'}),
+    defineField({name: 'bodyHeading', title: 'Body heading', type: 'string', group: 'content', description: 'e.g. "What awaits you:" (optional).'}),
+    defineField({
+      name: 'body',
+      type: 'array',
+      group: 'content',
+      of: [
+        defineArrayMember({
+          type: 'block',
+          styles: [
+            {title: 'Paragraph', value: 'normal'},
+            {title: 'Heading', value: 'h2'},
+            {title: 'Subheading', value: 'h3'},
+          ],
+          lists: [{title: 'Bullets', value: 'bullet'}],
+          marks: {
+            decorators: [
+              {title: 'Bold', value: 'strong'},
+              {title: 'Italic', value: 'em'},
+            ],
+            annotations: [
+              defineArrayMember({
+                name: 'link',
+                type: 'object',
+                fields: [defineField({name: 'href', type: 'url', validation: (rule) => rule.uri({scheme: ['http', 'https', 'mailto']})})],
+              }),
+            ],
+          },
+        }),
+      ],
+    }),
+
+    // ---------------- Sections
+    defineField({
+      name: 'sections',
+      title: 'Sections',
+      description: 'Shown under the main text. Drag to reorder; remove what this event doesn’t need.',
+      type: 'array',
+      group: 'sections',
+      of: [
+        defineArrayMember({
+          name: 'eventLogoStrip',
+          title: 'Logo strip',
+          type: 'object',
+          fields: [
+            defineField({name: 'heading', type: 'string', initialValue: 'A glimpse of who we’ve hosted'}),
+            defineField({name: 'image', title: 'Logo strip image', type: 'altImage', description: 'A wide image of logos; it scrolls sideways.'}),
+          ],
+          preview: {select: {title: 'heading', media: 'image'}, prepare: ({title, media}) => ({title, subtitle: 'Logo strip', media})},
+        }),
+        defineArrayMember({
+          name: 'eventTestimonials',
+          title: 'Testimonials',
+          type: 'object',
+          fields: [
+            defineField({name: 'heading', type: 'string', initialValue: 'Who’s been at our table'}),
+            defineField({
+              name: 'quotes',
+              type: 'array',
+              of: [
+                defineArrayMember({
+                  name: 'eventQuote',
+                  type: 'object',
+                  fields: [
+                    defineField({name: 'quote', type: 'text', rows: 3}),
+                    defineField({name: 'name', type: 'string'}),
+                    defineField({name: 'logo', title: 'Company logo', type: 'altImage'}),
+                  ],
+                  preview: {select: {title: 'name', subtitle: 'quote', media: 'logo'}},
+                }),
+              ],
+            }),
+          ],
+          preview: {select: {title: 'heading', quotes: 'quotes'}, prepare: ({title, quotes}) => ({title, subtitle: `Testimonials · ${quotes?.length ?? 0}`})},
+        }),
+        defineArrayMember({
+          name: 'eventPeople',
+          title: 'People',
+          type: 'object',
+          description: 'Creators, speakers or hosts.',
+          fields: [
+            defineField({name: 'heading', type: 'string', initialValue: 'Past Creators'}),
+            defineField({
+              name: 'people',
+              type: 'array',
+              of: [
+                defineArrayMember({
+                  name: 'eventPerson',
+                  type: 'object',
+                  fields: [
+                    defineField({name: 'name', type: 'string'}),
+                    defineField({name: 'subtitle', type: 'string', description: 'Handle or company, e.g. "@mdmotivator".'}),
+                    defineField({name: 'photo', type: 'altImage'}),
+                    defineField({name: 'url', title: 'Link', type: 'url'}),
+                  ],
+                  preview: {select: {title: 'name', subtitle: 'subtitle', media: 'photo'}},
+                }),
+              ],
+            }),
+          ],
+          preview: {select: {title: 'heading', people: 'people'}, prepare: ({title, people}) => ({title, subtitle: `People · ${people?.length ?? 0}`})},
+        }),
+        defineArrayMember({
+          name: 'eventVenues',
+          title: 'Venues',
+          type: 'object',
+          fields: [
+            defineField({name: 'heading', type: 'string', initialValue: 'Past Restaurants'}),
+            defineField({
+              name: 'venues',
+              type: 'array',
+              of: [
+                defineArrayMember({
+                  name: 'eventVenue',
+                  type: 'object',
+                  fields: [defineField({name: 'name', type: 'string'}), defineField({name: 'logo', type: 'altImage'})],
+                  preview: {select: {title: 'name', media: 'logo'}},
+                }),
+              ],
+            }),
+          ],
+          preview: {select: {title: 'heading', venues: 'venues'}, prepare: ({title, venues}) => ({title, subtitle: `Venues · ${venues?.length ?? 0}`})},
+        }),
+      ],
+    }),
+
+    // ---------------- Registration
     defineField({
       name: 'registration',
       type: 'object',
       group: 'registration',
+      options: {collapsible: false},
       fields: [
-        defineField({
-          name: 'heading',
-          type: 'string',
-          description: 'e.g. "Ready to pull up a chair?"',
-        }),
+        defineField({name: 'heading', type: 'string', description: 'e.g. "Ready to pull up a chair?"'}),
         defineField({
           name: 'hubspotFormId',
           title: 'HubSpot form ID',
           type: 'string',
-          description: 'Found in HubSpot → Marketing → Forms → (your form) → Share → Embed code.',
+          description: 'HubSpot → Marketing → Forms → (your form) → Share → Embed code: the formId value.',
         }),
       ],
     }),
+
+    // ---------------- More info
+    defineField({name: 'moreInfoHeading', title: 'Heading', type: 'string', group: 'info', initialValue: 'More Information'}),
+    defineField({
+      name: 'moreInfo',
+      title: 'Questions',
+      type: 'array',
+      group: 'info',
+      of: [
+        defineArrayMember({
+          name: 'eventFaq',
+          type: 'object',
+          fields: [defineField({name: 'question', type: 'string'}), defineField({name: 'answer', type: 'text', rows: 3})],
+          preview: {select: {title: 'question', subtitle: 'answer'}},
+        }),
+      ],
+    }),
+
     defineField({name: 'seo', type: 'seo', group: 'seo'}),
   ],
   orderings: [
-    {
-      title: 'Event date, newest first',
-      name: 'startDateTimeDesc',
-      by: [{field: 'startDateTime', direction: 'desc'}],
-    },
+    {title: 'Event date, newest first', name: 'startDateTimeDesc', by: [{field: 'startDateTime', direction: 'desc'}]},
   ],
   preview: {
-    select: {title: 'title', category: 'category', template: 'template', date: 'startDateTime'},
-    prepare({title, category, template, date}) {
+    select: {title: 'title', category: 'category', template: 'template', date: 'startDateTime', media: 'cardImage', poster: 'heroVideo.poster', heroImage: 'heroImage'},
+    prepare({title, category, template, date, media, poster, heroImage}) {
       const categoryTitle = EVENT_CATEGORIES.find((c) => c.value === category)?.title
       const templateTitle = EVENT_TEMPLATES.find((t) => t.value === template)?.title
       const day = date ? new Date(date).toLocaleDateString('en-US', {dateStyle: 'medium'}) : null
       return {
         title: title || 'Untitled event',
         subtitle: [categoryTitle, templateTitle, day].filter(Boolean).join(' · '),
+        media: media ?? heroImage ?? poster,
       }
     },
   },

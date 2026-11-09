@@ -1,3 +1,4 @@
+import {CalendarIcon} from '@sanity/icons/Calendar'
 import {DocumentIcon} from '@sanity/icons/Document'
 import {HomeIcon} from '@sanity/icons/Home'
 import {UsersIcon} from '@sanity/icons/Users'
@@ -46,3 +47,4 @@ function definePage(name: string, title: string, icon: typeof DocumentIcon) {
 export const homePage = definePage('homePage', 'Home', HomeIcon)
 export const creatorsPage = definePage('creatorsPage', 'Creators', UsersIcon)
 export const companyPage = definePage('companyPage', 'Company', DocumentIcon)
+export const eventsPage = definePage('eventsPage', 'Events page', CalendarIcon)

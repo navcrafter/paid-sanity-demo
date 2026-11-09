@@ -62,9 +62,43 @@ export const EVENT_QUERY = defineQuery(`
     template,
     theme,
     startDateTime,
+    excerpt,
+    logo,
+    logoSize,
+    dateLabel,
+    timeLabel,
     location,
-    venue,
+    locationUrl,
+    heroVideo,
+    heroImage,
+    cardImage,
+    intro,
+    bodyHeading,
+    body,
+    sections,
     registration,
+    moreInfoHeading,
+    moreInfo,
     seo
   }
 `)
+
+export const EVENT_CARDS_QUERY = defineQuery(`
+  *[_type == "event" && defined(slug.current) && defined(category)] | order(startDateTime desc){
+    _id,
+    title,
+    "slug": slug.current,
+    category,
+    startDateTime,
+    dateLabel,
+    location,
+    template,
+    excerpt,
+    intro,
+    cardImage,
+    heroImage,
+    "poster": heroVideo.poster
+  }
+`)
+
+export const HUBSPOT_PORTAL_QUERY = defineQuery(`*[_id == "siteSettings"][0].hubspotPortalId`)

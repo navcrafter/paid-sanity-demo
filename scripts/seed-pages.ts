@@ -17,7 +17,13 @@ const client = getCliClient({apiVersion: '2026-11-01'})
 
 const CONTENT_DIR = join(process.cwd(), 'scripts', 'content')
 const CACHE_FILE = join(process.cwd(), 'scripts', '.asset-cache.json')
-const PAGES: Record<string, string> = {home: 'homePage', creators: 'creatorsPage', company: 'companyPage'}
+const PAGES: Record<string, string> = {
+  home: 'homePage',
+  creators: 'creatorsPage',
+  company: 'companyPage',
+  'events-page': 'eventsPage',
+}
+const TITLES: Record<string, string> = {homePage: 'Home', creatorsPage: 'Creators', companyPage: 'Company', eventsPage: 'Events page'}
 
 const cache: Record<string, string> = existsSync(CACHE_FILE) ? JSON.parse(readFileSync(CACHE_FILE, 'utf8')) : {}
 const saveCache = () => writeFileSync(CACHE_FILE, JSON.stringify(cache, null, 2))
@@ -77,17 +83,34 @@ async function seed(page: string) {
   const sections = await resolve(content.sections)
   await client
     .transaction()
-    .createIfNotExists({_id: id, _type: id, title: page[0].toUpperCase() + page.slice(1)})
+    .createIfNotExists({_id: id, _type: id, title: TITLES[id] ?? page})
+    .patch(id, (patch) => patch.set({title: TITLES[id] ?? page}))
     .patch(id, (patch) => patch.set({sections}))
     .commit()
   console.log(` ✓ ${(sections as unknown[]).length} sections saved`)
 }
 
+/** scripts/content/events.json: full event documents (replaced on each run). */
+async function seedEvents() {
+  const file = join(CONTENT_DIR, 'events.json')
+  if (!existsSync(file)) return
+  const {events} = JSON.parse(readFileSync(file, 'utf8')) as {events: {_id: string; _type: string}[]}
+  for (const event of events) {
+    process.stdout.write(`${event._id}: uploading media `)
+    const doc = (await resolve(event)) as {_id: string; _type: string}
+    await client.createOrReplace(doc)
+    console.log(' ✓')
+  }
+}
+
 async function run() {
-  const requested = process.argv.slice(2).filter((arg) => PAGES[arg])
-  for (const page of requested.length ? requested : Object.keys(PAGES)) {
+  const args = process.argv.slice(2)
+  const requested = args.filter((arg) => PAGES[arg])
+  const all = args.length === 0
+  for (const page of all ? Object.keys(PAGES) : requested) {
     if (existsSync(join(CONTENT_DIR, `${page}.json`))) await seed(page)
   }
+  if (all || args.includes('events')) await seedEvents()
 }
 
 run().catch((error) => {

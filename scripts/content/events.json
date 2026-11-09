@@ -1,0 +1,1178 @@
+{
+  "events": [
+    {
+      "_id": "event-an-evening-at-local-eclectic",
+      "_type": "event",
+      "title": "An Evening at Local Eclectic",
+      "slug": {
+        "_type": "slug",
+        "current": "an-evening-at-local-eclectic"
+      },
+      "category": "supperclub",
+      "template": "supperClub",
+      "theme": {
+        "background": "dark",
+        "accent": "pink"
+      },
+      "startDateTime": "2026-12-03T18:00:00-06:00",
+      "excerpt": "Join #paid for an intimate shopping experience with senior marketers and creators at Local Eclectic in Chicago. December 3, 2026, 6-8:30 PM.",
+      "dateLabel": "December 3, 2026",
+      "timeLabel": "6:00 PM - 8:30 PM",
+      "intro": "An Evening at Local Eclectic",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "14579a19aa6c",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Join #paid for an intimate shopping experience bringing together senior marketers and creators for an evening of unique finds, personal style, and great company.",
+              "marks": [],
+              "_key": "01237763a0fc"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "716f413eeddc",
+          "style": "normal",
+          "markDefs": [
+            {
+              "_type": "link",
+              "_key": "b4dc9195b449",
+              "href": "https://www.localeclectic.com/"
+            }
+          ],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Hosted at ",
+              "marks": [],
+              "_key": "613a23bd2ad1"
+            },
+            {
+              "_type": "span",
+              "text": "Local Eclectic",
+              "marks": [
+                "b4dc9195b449"
+              ],
+              "_key": "2f43b44d7772"
+            },
+            {
+              "_type": "span",
+              "text": ", guests will enjoy a private shopping experience featuring a curated collection of demi-fine and fashion jewelry from independent designers around the world. Discover unexpected designs, explore pieces that reflect your personal style, and enjoy a relaxed evening of shopping and connecting with industry peers.",
+              "marks": [],
+              "_key": "7ab620b89870"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "a7f26e1bca85",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "‍",
+              "marks": [],
+              "_key": "e0e494f94fca"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "7fd5ae0d5d5a",
+          "style": "h2",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "The Experience",
+              "marks": [],
+              "_key": "af2b1eb3396a"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "91d3a37ad8e9",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "‍",
+              "marks": [],
+              "_key": "c770155b84b4"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "3de6ff972452",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Private Shopping Experience\n",
+              "marks": [
+                "strong"
+              ],
+              "_key": "2f8235a0d05c"
+            },
+            {
+              "_type": "span",
+              "text": "Enjoy an exclusive opportunity to browse Local Eclectic's collection of demi-fine and fashion jewelry in a relaxed, intimate setting.",
+              "marks": [],
+              "_key": "b508624091e2"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "f6dc61b91459",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "‍",
+              "marks": [],
+              "_key": "990465bdf9a3"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "c4cad4a76b9b",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Discover Independent Designers\n",
+              "marks": [
+                "strong"
+              ],
+              "_key": "66d2ec6089a9"
+            },
+            {
+              "_type": "span",
+              "text": "Explore unique pieces from emerging designers around the world, featuring creative designs, unexpected details, and styles that go beyond the everyday.",
+              "marks": [],
+              "_key": "0796866ee578"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "bfd285d2c65e",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "‍",
+              "marks": [],
+              "_key": "492f9fc5f8ea"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "2088b52c8684",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Find Your Signature Piece\n",
+              "marks": [
+                "strong"
+              ],
+              "_key": "d5ede849acff"
+            },
+            {
+              "_type": "span",
+              "text": "From understated essentials to bold statement pieces, discover jewelry that reflects your personal style and take home something uniquely yours.",
+              "marks": [],
+              "_key": "7e0ef260c66a"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "0b9a0e715149",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "‍",
+              "marks": [],
+              "_key": "fd9ad639f5f0"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "049e4445df73",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Curated Connections\n",
+              "marks": [
+                "strong"
+              ],
+              "_key": "b2970be24f2c"
+            },
+            {
+              "_type": "span",
+              "text": "A small group of senior marketers and creators brought together for an evening of discovery, shopping, and conversation in a setting that feels more personal than professional.",
+              "marks": [],
+              "_key": "3dcf0f8afdbd"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "_type": "eventLogoStrip",
+          "_key": "dba671f7f7ce",
+          "heading": "A glimpse of who we've hosted",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/67a3c90eb88e9fb9e83d43ac_events-logos-white-15.png",
+                "type": "image"
+              }
+            },
+            "alt": "hashtag paid partner logos"
+          }
+        },
+        {
+          "_type": "eventTestimonials",
+          "_key": "cdfc3a7ee541",
+          "heading": "Who’s been at our table",
+          "quotes": [
+            {
+              "_type": "eventQuote",
+              "_key": "8f36512d789a",
+              "quote": "“I had such a wonderful time, thank you for including me. It was great to meet new people, have fantastic convos and enjoy a delicious meal. Thank you to the entire #paid team for being such wonderful hosts and so engaging. Great conversations and ideas!”",
+              "name": "Maddie Phillips",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6887dc943df2e30fad50e68e_Rogers_logo.svg",
+                    "type": "image"
+                  }
+                },
+                "alt": "Rogers logo in white"
+              }
+            },
+            {
+              "_type": "eventQuote",
+              "_key": "5ac3948021a5",
+              "quote": "“The dinner was amazing! It was great connecting with various people in the industry and hearing different viewpoints. Excited to hopefully be considered for another one in the future. The possibilities at these dinners are endless!”",
+              "name": "Matthew Kaddor",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6883c331d3435e7cae4bb4b9_Gymshark-Logo-1.png",
+                    "type": "image"
+                  }
+                },
+                "alt": "Gymshark logo in white"
+              }
+            },
+            {
+              "_type": "eventQuote",
+              "_key": "59456e7d33db",
+              "quote": "\"I loved the evening and conversations. It’s rare to bring brands and creators to talk through topics that are more candid and without an agenda. No dealings, no negotiations. Just marketers and creators sharing stories. Love the concept!\"",
+              "name": "Daniel Rabinovich",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6893970aa800914140489a22_barrys.svg",
+                    "type": "image"
+                  }
+                },
+                "alt": "Barry's logo in white"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "eventPeople",
+          "_key": "1e5e6b17c6d9",
+          "heading": "Past Creators",
+          "people": [
+            {
+              "_type": "eventPerson",
+              "_key": "6cc4463b0f87",
+              "name": "Zachery Dereniowski",
+              "subtitle": "@mdmotivator",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bc0829338699238377a92_MD%20Motivator.webp",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/mdmotivator/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "ac121aa82496",
+              "name": "Hunter Prosper",
+              "subtitle": "@hunterprosper",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bc0408c01be7d1c177598_Hunter%20Prosper.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/hunter_prosper/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "282ad54c48dc",
+              "name": "Spencer Barbosa",
+              "subtitle": "@spencer.barbosa",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bc00e0ae52f012a5566e3_Spencer%20Barbosa.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/spencer.barbosa/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "0292c53324b1",
+              "name": "Alex Youmazzo",
+              "subtitle": "@alexyoumazzo",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbfe2469a09bba4012da4_Alex%20Youmazzo.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/alexyoumazzo/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "120024a02d6c",
+              "name": "Jordan Howlett",
+              "subtitle": "@jordan_the_stallion8",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbfb082541f8b04b5a712_Jordan%20Howlett.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/jordan_the_stallion8/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "9cd260eba1c2",
+              "name": "Tejas Hullur",
+              "subtitle": "@tejashullur",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbf77884b5368913efc76_Tejas%20Hullur.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/tejashullur/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "67e8ab17483f",
+              "name": "Kiana Leroux",
+              "subtitle": "@kileroux",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbf30a6a0884ff7aa188d_Kiana%20Leroux.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/kileroux/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "f2a9d9f65838",
+              "name": "Niki Victoria",
+              "subtitle": "@nikiivictoria",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/683a04b8bca3ef5722c7859d_NikiVictoria1%20(1).avif",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/nikiivictoria/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "be70d54eae4c",
+              "name": "Alex Wassabi",
+              "subtitle": "@alexwassabi",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/683a03a8dc3f5639d6a06865_Alex%20Wassabi.png",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/alexwassabi/"
+            }
+          ]
+        },
+        {
+          "_type": "eventVenues",
+          "_key": "fcf7374e647a",
+          "heading": "Past Restaurants",
+          "venues": [
+            {
+              "_type": "eventVenue",
+              "_key": "44d9bf404ad4",
+              "name": "The Crow's Nest",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2eb8bdbe899998979874_crows-nest-logo.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Crow's Nest Montauk logo in black and white"
+              }
+            },
+            {
+              "_type": "eventVenue",
+              "_key": "b2f84e2ec96d",
+              "name": "Kasa Moto",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2f2fdc4e074cb2eb66bf_kasa-moto-logo.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Kasa Moto logo in gold with a red background"
+              }
+            },
+            {
+              "_type": "eventVenue",
+              "_key": "d730333f1e02",
+              "name": "Le Colonial",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2f3363ea6b49615f604c_le-colonial-logo.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Le Colonial logo in black with a light beige background"
+              }
+            },
+            {
+              "_type": "eventVenue",
+              "_key": "74f717e498df",
+              "name": "Mamo",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2f66e1e0eb1736ad1b06_mamo-logo.png",
+                    "type": "image"
+                  }
+                },
+                "alt": "Mamo logo in light beige with a brown background"
+              }
+            },
+            {
+              "_type": "eventVenue",
+              "_key": "8997932c3467",
+              "name": "Lena Brava",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2f697bdcbba0556552fd_lena-brava-logo.png",
+                    "type": "image"
+                  }
+                },
+                "alt": "Lena Brava logo in pale yellow with an orange background"
+              }
+            },
+            {
+              "_type": "eventVenue",
+              "_key": "4d0dbe520253",
+              "name": "Pasjoli",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2f6d5f2d1d919ac7b660_pasjoli-logo.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Pasjoli logo in white with a blue background"
+              }
+            }
+          ]
+        }
+      ],
+      "registration": {
+        "heading": "RSVP to join us!",
+        "hubspotFormId": "6b55cecf-07e1-4185-83c6-fb4d910f93de"
+      },
+      "moreInfoHeading": "More Information",
+      "moreInfo": [
+        {
+          "_type": "eventFaq",
+          "_key": "4bd44fcfbdf8",
+          "question": "What should I do if I need to cancel my registration?",
+          "answer": "Please notify us at least 48 hours in advance by replying to your confirmation email. This allows us to open your spot to another guest."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "adbc243c1a63",
+          "question": "Is there a dress code?",
+          "answer": "We recommend business casual attire for the event."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "d423d5c3edc5",
+          "question": "Can I bring a guest?",
+          "answer": "Due to the exclusive nature of this event, attendance is by invitation only and non-transferable."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "5cbe4a1a37f3",
+          "question": "What if I have dietary restrictions?",
+          "answer": "We’ve got you covered! Please let us know your dietary needs during registration, and we’ll ensure accommodations are made."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "9800e8b65adc",
+          "question": "Will there be parking or transportation provided?",
+          "answer": "Details regarding parking or transportation will be included in your confirmation email."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "1170f549385b",
+          "question": "Who can I contact for additional questions?",
+          "answer": "For any additional inquiries, reply to your confirmation email or reach out to our events team at events@hashtagpaid.com"
+        }
+      ],
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "An Evening at Local Eclectic | #paid Event Chicago",
+        "metaDescription": "Join #paid for an intimate shopping experience with senior marketers and creators at Local Eclectic in Chicago. December 3, 2026, 6-8:30 PM."
+      },
+      "location": "212 E Ontario St, Chicago",
+      "locationUrl": "https://maps.app.goo.gl/vJNgHdnsoMYwS1b48",
+      "logo": {
+        "_type": "altImage",
+        "asset": {
+          "_upload": {
+            "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6aaac284ef421c30b0088e2d_Shopping%20Experience_White.png",
+            "type": "image"
+          }
+        },
+        "alt": ""
+      },
+      "logoSize": "regular",
+      "heroVideo": {
+        "_type": "videoEmbed",
+        "source": "vidzflow",
+        "vidzflowId": "xxibah2PyF",
+        "poster": {
+          "_vidzflowPoster": "xxibah2PyF"
+        }
+      }
+    },
+    {
+      "_id": "event-nyc-aug-12-2025",
+      "_type": "event",
+      "title": "#paid x YouTube Sneaker Workshop",
+      "slug": {
+        "_type": "slug",
+        "current": "nyc-aug-12-2025"
+      },
+      "category": "med",
+      "template": "midTier",
+      "theme": {
+        "background": "black",
+        "accent": "default"
+      },
+      "startDateTime": "2025-08-21T12:30:00-04:00",
+      "excerpt": "Join #paid's and Youtube Sneaker workshop on August 21, 2025, at St. John's Terminal, Google Office, NYC for intimate networking, gourmet cuisine, and insights with top marketers and creators.",
+      "dateLabel": "August 21, 2025",
+      "timeLabel": "12:30pm - 3:30pm",
+      "intro": "Immerse yourself in an interactive experience where personal expression meets streetwear culture. #paid is bringing our highly requested, signature Sneaker Workshop to YouTube! This exclusive event will bring together 30 reps from YouTube, alongside select creators, for a collaborative, hands-on event packed with creativity.",
+      "bodyHeading": "What Awaits You:",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "971cb337a5e9",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Custom sneaker design: Let your imagination run wild as you customize your own pair of kicks with paint markers, gems, laces and more.",
+              "marks": [],
+              "_key": "92cea480d2a4"
+            }
+          ],
+          "listItem": "bullet",
+          "level": 1
+        },
+        {
+          "_type": "block",
+          "_key": "c6d0363cf5b0",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Creative Collaboration: Exchange ideas with industry peers and creators in a relaxed, upbeat setting.",
+              "marks": [],
+              "_key": "00900ea73dec"
+            }
+          ],
+          "listItem": "bullet",
+          "level": 1
+        },
+        {
+          "_type": "block",
+          "_key": "3ae863e5114d",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Industry Insights: Participate in a short, impactful educational session, exploring the future of creator marketing.",
+              "marks": [],
+              "_key": "89c6466b9139"
+            }
+          ],
+          "listItem": "bullet",
+          "level": 1
+        },
+        {
+          "_type": "block",
+          "_key": "7bf12b02c949",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "Reminder: Once you’ve received your confirmation email, be sure to click the link below to add the event to your calendar and save the date!",
+              "marks": [],
+              "_key": "a361dfbd7dec"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "_type": "eventLogoStrip",
+          "_key": "72724652db68",
+          "heading": "A glimpse of who we've hosted",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/67a3c90eb88e9fb9e83d43ac_events-logos-white-15.png",
+                "type": "image"
+              }
+            },
+            "alt": "hashtag paid partner logos"
+          }
+        },
+        {
+          "_type": "eventTestimonials",
+          "_key": "8f4f8680aced",
+          "heading": "Who’s been at our table",
+          "quotes": [
+            {
+              "_type": "eventQuote",
+              "_key": "d0a7d2460d73",
+              "quote": "“It was great to connect and have thoughtful conversations with other marketers and creators in a relaxed and intimate environment, while also learning about #paid's tools. Fantastic evening and great hosts facilitating conversation.\"",
+              "name": "Brittney Newstead",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/67d30a649f62373cdf041d28_Four%20Seasons%201.png",
+                    "type": "image"
+                  }
+                },
+                "alt": "Four seasons logo"
+              }
+            },
+            {
+              "_type": "eventQuote",
+              "_key": "d3c6f2754691",
+              "quote": "\"The event was amazing! I found the venue to be very inviting; there was good food and drinks, and there was time for networking. I loved the cocktail hour and transition into learning more about #paid.\"",
+              "name": "Ashlin Pemberton",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/65a9e711c9515d144b64b9f2_tiktok-logo.svg",
+                    "type": "image"
+                  }
+                },
+                "alt": "Tiktok logo"
+              }
+            },
+            {
+              "_type": "eventQuote",
+              "_key": "838c47033d59",
+              "quote": "\"I'm honestly just trying to ride the line between raving about everything I experienced and learned while not making my entire team jealous.\"",
+              "name": "Emily Horlbogen",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/689399b1598f3360e4e71daa_boston-beer-company-logo-white.svg",
+                    "type": "image"
+                  }
+                },
+                "alt": "Boston Beer co. logo in white. "
+              }
+            },
+            {
+              "_type": "eventQuote",
+              "_key": "1a29564b2efe",
+              "quote": "\"Awesome event! I loved meeting the creators and appreciated the workshop #paid put on. The sneakers workshop was such a cool idea! Your team really knocked it out of the park!\"",
+              "name": "Heather Barrett",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/65a9e711c9515d144b64b9f2_tiktok-logo.svg",
+                    "type": "image"
+                  }
+                },
+                "alt": "Tiktok logo"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "eventPeople",
+          "_key": "46c178686026",
+          "heading": "Past Creators",
+          "people": [
+            {
+              "_type": "eventPerson",
+              "_key": "f2ef3f0ce85b",
+              "name": "Zachery Dereniowski",
+              "subtitle": "@mdmotivator",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bc0829338699238377a92_MD%20Motivator.webp",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/mdmotivator/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "9a17f11b2c12",
+              "name": "Hunter Prosper",
+              "subtitle": "@hunterprosper",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bc0408c01be7d1c177598_Hunter%20Prosper.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/hunter_prosper/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "661832c776a4",
+              "name": "Spencer Barbosa",
+              "subtitle": "@spencer.barbosa",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bc00e0ae52f012a5566e3_Spencer%20Barbosa.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/spencer.barbosa/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "faa4272ab8a7",
+              "name": "Alex Youmazzo",
+              "subtitle": "@alexyoumazzo",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbfe2469a09bba4012da4_Alex%20Youmazzo.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/alexyoumazzo/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "d150428230aa",
+              "name": "Jordan Howlett",
+              "subtitle": "@jordan_the_stallion8",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbfb082541f8b04b5a712_Jordan%20Howlett.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/jordan_the_stallion8/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "d8b48cad31b3",
+              "name": "Tejas Hullur",
+              "subtitle": "@tejashullur",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbf77884b5368913efc76_Tejas%20Hullur.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/tejashullur/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "a9ddfdfca47e",
+              "name": "Kiana Leroux",
+              "subtitle": "@kileroux",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbf30a6a0884ff7aa188d_Kiana%20Leroux.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/kileroux/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "a5b4a2702587",
+              "name": "Niki Victoria",
+              "subtitle": "@nikiivictoria",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/683a04b8bca3ef5722c7859d_NikiVictoria1%20(1).avif",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/nikiivictoria/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "7adecd9d368a",
+              "name": "Alex Wassabi",
+              "subtitle": "@alexwassabi",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/683a03a8dc3f5639d6a06865_Alex%20Wassabi.png",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/alexwassabi/"
+            }
+          ]
+        }
+      ],
+      "registration": {
+        "heading": "Ready to pull up a chair?",
+        "hubspotFormId": "957f70d2-9614-4dc3-a6eb-4a26a9edf9cf"
+      },
+      "moreInfoHeading": "More Information",
+      "moreInfo": [
+        {
+          "_type": "eventFaq",
+          "_key": "fc7b146d32a9",
+          "question": "What should I do if I need to cancel my registration?",
+          "answer": "Please notify us at least 48 hours in advance by replying to your confirmation email. This allows us to open your spot to another guest."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "fc8c67277742",
+          "question": "Is there a dress code?",
+          "answer": "We recommend business casual attire for the event."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "33cf0ae8356e",
+          "question": "Can I bring a guest?",
+          "answer": "Due to the exclusive nature of this event, attendance is by invitation only and non-transferable."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "a941f032855c",
+          "question": "What if I have dietary restrictions?",
+          "answer": "We’ve got you covered! Please let us know your dietary needs during registration, and we’ll ensure accommodations are made."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "101981a8611e",
+          "question": "Will there be parking or transportation provided?",
+          "answer": "Details regarding parking or transportation will be included in your confirmation email."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "24b59bd76007",
+          "question": "Who can I contact for additional questions?",
+          "answer": "For any additional inquiries, reply to your confirmation email or reach out to our events team at events@hashtagpaid.com"
+        }
+      ],
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "#paid x YouTube Sneaker Workshop | #paid",
+        "metaDescription": "Join #paid's and Youtube Sneaker workshop on August 21, 2025, at St. John's Terminal, Google Office, NYC for intimate networking, gourmet cuisine, and insights with top marketers and creators."
+      },
+      "location": "St. John's Terminal, Google Office, NYC",
+      "locationUrl": "https://blog.google/inside-google/life-at-google/google-nyc-st-johns-terminal-office/",
+      "heroVideo": {
+        "_type": "videoEmbed",
+        "source": "vidzflow",
+        "vidzflowId": "HTOhiWOJnD",
+        "poster": {
+          "_vidzflowPoster": "HTOhiWOJnD"
+        }
+      }
+    },
+    {
+      "_id": "event-ai-and-influence-april-3-2025",
+      "_type": "event",
+      "title": "AI and Influence: The future of creator authenticity",
+      "slug": {
+        "_type": "slug",
+        "current": "ai-and-influence-april-3-2025"
+      },
+      "category": "webinar",
+      "template": "webinar",
+      "theme": {
+        "background": "light",
+        "accent": "default"
+      },
+      "startDateTime": "2025-04-03T13:00:00-04:00",
+      "excerpt": "Join our webinar on March 26th, 2025, at 1 PM to explore AI's impact on creator authenticity and learn strategies to maintain genuine influence in the digital age.",
+      "dateLabel": "Thursday, April 3",
+      "timeLabel": "1:00 pm EST",
+      "intro": "AI is transforming content creation, offering brands and creators new ways to streamline workflows, enhance creativity, and scale content production. But with rapid change comes new challenges—how do you integrate AI into your marketing strategy while maintaining authenticity, protecting creator relationships, and ensuring responsible use? In this webinar, we’ll introduce #paid’s AI Principles—a framework designed to help marketers and creators use AI ethically, transparently, and effectively. You’ll gain actionable insights on how to work with creators in an AI-powered world, maintain trust with audiences, and ensure AI enhances creativity without replacing human connection.Join us as we explore how to harness AI’s potential while keeping authenticity, responsibility, and collaboration at the heart of your marketing strategy.",
+      "bodyHeading": "This webinar will help you:",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "469139a4ca6f",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "- Stay Ahead of the AI Curve: Learn how AI is reshaping content creation and brand partnerships—so you can navigate this evolving landscape with confidence.\n‍",
+              "marks": [],
+              "_key": "4fd1bab78158"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "8a9b959bb77f",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "- Get Actionable Strategies for Ethical AI Integration: Walk away with clear, practical steps to implement AI responsibly in your marketing campaigns—enhancing creativity while protecting brand integrity.\n‍",
+              "marks": [],
+              "_key": "b75013be046d"
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "43b66b076761",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "text": "- Navigate AI & Creator Collaboration with Confidence: Understand how to integrate AI into your marketing strategy while maintaining strong, authentic partnerships with creators—ensuring AI enhances creativity without replacing human connection.",
+              "marks": [],
+              "_key": "020037eb2f0b"
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "_type": "eventPeople",
+          "_key": "52e912e50dbd",
+          "heading": "Meet your speakers",
+          "people": [
+            {
+              "_type": "eventPerson",
+              "_key": "db32da5e8131",
+              "name": "Olivia Harris",
+              "subtitle": "#paid",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6884007c26264458419580a4_%23Paid%20Headshots%20Olivia%20Harris.webp",
+                    "type": "image"
+                  }
+                },
+                "alt": "A headshot of Olivia Harris"
+              },
+              "url": null
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "05b3d39b496f",
+              "name": "Omar Karim",
+              "subtitle": "Joy Machine",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6884007c71118bb96b5102a0_Omar%20Karim%20Headshot%20(1).webp",
+                    "type": "image"
+                  }
+                },
+                "alt": "A black and white portrait of Omar Karim"
+              },
+              "url": null
+            }
+          ]
+        },
+        {
+          "_type": "eventLogoStrip",
+          "_key": "5c58000635cd",
+          "heading": "A glimpse of who we've hosted",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/67a4781fa0556fffe12e99bf_events-logos-black-2x.png",
+                "type": "image"
+              }
+            },
+            "alt": "Hashtag Paid event partner logos"
+          }
+        }
+      ],
+      "registration": {
+        "heading": "Save your spot!",
+        "hubspotFormId": "44cd8f55-25a1-4591-a858-b42a152f988d"
+      },
+      "moreInfo": [],
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "AI and Influence: The future of creator authenticity | #paid",
+        "metaDescription": "Join our webinar on March 26th, 2025, at 1 PM to explore AI's impact on creator authenticity and learn strategies to maintain genuine influence in the digital age."
+      },
+      "heroImage": {
+        "_type": "altImage",
+        "asset": {
+          "_upload": {
+            "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6883cd4a628c3b84f445e671_AI%20Principles_Webinar%20Header.webp",
+            "type": "image"
+          }
+        },
+        "alt": "AI and Influence, The future of creator authenticity"
+      }
+    }
+  ]
+}

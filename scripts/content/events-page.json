@@ -1,0 +1,31 @@
+{
+  "sections": [
+    {
+      "_type": "heroSection",
+      "_key": "c08bdedb5dc7",
+      "theme": "cream",
+      "headingSize": "display",
+      "announcement": {
+        "tag": "Events"
+      },
+      "heading": "Where creators and brands\nmeet IRL",
+      "text": "Supper clubs, creator workshops, private shopping nights, industry dinners and webinars — hosted by #paid for the marketers and creators shaping what’s next.",
+      "cta": {
+        "_type": "link",
+        "label": "See upcoming events",
+        "href": "#events",
+        "openInNewTab": false
+      },
+      "galleryStyle": "none",
+      "gallery": []
+    },
+    {
+      "_type": "eventsListSection",
+      "_key": "aba132f6122d",
+      "upcomingHeading": "Upcoming events",
+      "pastHeading": "Past events",
+      "emptyText": "New events are on the way. Check back soon.",
+      "showFilters": true
+    }
+  ]
+}

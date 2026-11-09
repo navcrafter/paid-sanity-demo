@@ -302,6 +302,32 @@ export const teamMarqueeSection = defineSection({
   ],
 })
 
+// ---------------------------------------------------------------- Events list (Events page)
+
+export const eventsListSection = defineSection({
+  name: 'eventsListSection',
+  title: 'Events list',
+  description: 'Cards for every event in the Events collection, with category filters. Upcoming and past are split automatically.',
+  icon: CaseIcon,
+  groups,
+  fields: [
+    defineField({name: 'upcomingHeading', type: 'string', group: 'content', initialValue: 'Upcoming events'}),
+    defineField({name: 'pastHeading', type: 'string', group: 'content', initialValue: 'Past events'}),
+    defineField({
+      name: 'emptyText',
+      title: 'No upcoming events text',
+      type: 'string',
+      group: 'content',
+      initialValue: 'New events are on the way. Check back soon.',
+    }),
+    defineField({name: 'showFilters', title: 'Show category filters', type: 'boolean', group: 'style', initialValue: true}),
+  ],
+  preview: {
+    select: {title: 'upcomingHeading', hidden: 'hidden'},
+    prepare: ({title, hidden}) => ({title: title ?? 'Events list', subtitle: `Events list${hidden ? ' · hidden' : ''}`, media: CaseIcon}),
+  },
+})
+
 // ---------------------------------------------------------------- Investors (Company)
 
 export const investorsSection = defineSection({

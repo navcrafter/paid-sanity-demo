@@ -27,6 +27,17 @@ Next.js 16 with Sanity Studio embedded at `/studio`.
 | `npm run seed:settings` | Fills Site settings (navigation, footer, badges) with the live site's content. |
 | `npm run seed:pages [-- home creators company]` | Loads page sections from `scripts/content/*.json` (captured from the live site), uploading images and Vidzflow posters to Sanity. **Overwrites** the pages' sections. |
 
+## Events
+
+- One **Events** collection (Studio → Events, with folders per category). URL: `/events/{category}/{slug}`.
+- **Template** (Supper Club / Mid Tier / Webinar) sets the hero layout; **Theme** sets the page background
+  (black / dark / light) and hero colour. New events start from a template with its usual sections.
+- Optional sections per event: logo strip, testimonials, people (creators/speakers), venues.
+- Registration: a HubSpot form ID per event (the portal ID lives in Site settings).
+- `/events` is a page-builder page with an **Events list** section: category filters, upcoming and past
+  (split automatically by date; refreshed hourly).
+- `npm run seed:pages -- events events-page` reloads the 3 demo events and the Events page.
+
 ## Page builder
 
 Home, Creators and Company are lists of **sections** (Studio → Pages → a page → Page sections).

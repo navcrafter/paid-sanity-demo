@@ -2,6 +2,7 @@ import {stegaClean} from 'next-sanity'
 import type {ComponentType} from 'react'
 
 import type {EditAttr} from '@/sanity/lib/edit'
+import type {FetchOptions} from '@/sanity/lib/live'
 
 import {SECTION_COMPONENTS} from './registry'
 
@@ -16,7 +17,15 @@ export interface SectionData {
  * Renders a page's sections in order. Hidden sections are skipped; unknown types
  * render nothing (so a new section added in the Studio can't break the page).
  */
-export function SectionRenderer({sections, edit}: {sections?: SectionData[] | null; edit: EditAttr}) {
+export function SectionRenderer({
+  sections,
+  edit,
+  options,
+}: {
+  sections?: SectionData[] | null
+  edit: EditAttr
+  options: FetchOptions
+}) {
   if (!sections?.length) return null
   const visible = sections.filter((section) => !stegaClean(section.hidden))
 
@@ -27,11 +36,12 @@ export function SectionRenderer({sections, edit}: {sections?: SectionData[] | nu
           data: SectionData
           edit: EditAttr
           isFirst: boolean
+          options: FetchOptions
         }>
         if (!Component) return null
         const base = `sections[_key=="${section._key}"]`
         const scopedEdit: EditAttr = (path) => edit(path ? `${base}.${path}` : base)
-        return <Component key={section._key} data={section} edit={scopedEdit} isFirst={index === 0} />
+        return <Component key={section._key} data={section} edit={scopedEdit} isFirst={index === 0} options={options} />
       })}
     </>
   )

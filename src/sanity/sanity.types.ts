@@ -44,6 +44,15 @@ export type JobBoard = {
   }>;
 };
 
+export type EventsListSection = {
+  _type: "eventsListSection";
+  upcomingHeading?: string;
+  pastHeading?: string;
+  emptyText?: string;
+  showFilters?: boolean;
+  hidden?: boolean;
+};
+
 export type InvestorsSection = {
   _type: "investorsSection";
   heading?: string;
@@ -358,13 +367,92 @@ export type Event = {
     background?: "black" | "dark" | "light";
     accent?: "default" | "pink";
   };
-  startDateTime?: string;
+  startDateTime: string;
+  cardImage?: AltImage;
+  excerpt?: string;
+  logo?: AltImage;
+  logoSize?: "regular" | "large";
+  dateLabel?: string;
+  timeLabel?: string;
   location?: string;
-  venue?: string;
+  locationUrl?: string;
+  heroVideo?: VideoEmbed;
+  heroImage?: AltImage;
+  intro?: string;
+  bodyHeading?: string;
+  body?: Array<{
+    children?: Array<{
+      marks?: Array<string>;
+      text?: string;
+      _type: "span";
+      _key: string;
+    }>;
+    style?: "normal" | "h2" | "h3";
+    listItem?: "bullet";
+    markDefs?: Array<{
+      href?: string;
+      _type: "link";
+      _key: string;
+    }>;
+    level?: number;
+    _type: "block";
+    _key: string;
+  }>;
+  sections?: Array<
+    | {
+        heading?: string;
+        image?: AltImage;
+        _type: "eventLogoStrip";
+        _key: string;
+      }
+    | {
+        heading?: string;
+        quotes?: Array<{
+          quote?: string;
+          name?: string;
+          logo?: AltImage;
+          _type: "eventQuote";
+          _key: string;
+        }>;
+        _type: "eventTestimonials";
+        _key: string;
+      }
+    | {
+        heading?: string;
+        people?: Array<{
+          name?: string;
+          subtitle?: string;
+          photo?: AltImage;
+          url?: string;
+          _type: "eventPerson";
+          _key: string;
+        }>;
+        _type: "eventPeople";
+        _key: string;
+      }
+    | {
+        heading?: string;
+        venues?: Array<{
+          name?: string;
+          logo?: AltImage;
+          _type: "eventVenue";
+          _key: string;
+        }>;
+        _type: "eventVenues";
+        _key: string;
+      }
+  >;
   registration?: {
     heading?: string;
     hubspotFormId?: string;
   };
+  moreInfoHeading?: string;
+  moreInfo?: Array<{
+    question?: string;
+    answer?: string;
+    _type: "eventFaq";
+    _key: string;
+  }>;
   seo?: Seo;
 };
 
@@ -372,6 +460,67 @@ export type Slug = {
   _type: "slug";
   current: string;
   source?: string;
+};
+
+export type EventsPage = {
+  _id: string;
+  _type: "eventsPage";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  title?: string;
+  sections?: Array<
+    | ({
+        _key: string;
+      } & HeroSection)
+    | ({
+        _key: string;
+      } & StatementSection)
+    | ({
+        _key: string;
+      } & ShowcaseSection)
+    | ({
+        _key: string;
+      } & FeatureTabsSection)
+    | ({
+        _key: string;
+      } & TestimonialCarouselSection)
+    | ({
+        _key: string;
+      } & ComparisonSection)
+    | ({
+        _key: string;
+      } & CaseStudiesSection)
+    | ({
+        _key: string;
+      } & StackCardsSection)
+    | ({
+        _key: string;
+      } & BenefitsSection)
+    | ({
+        _key: string;
+      } & CreatorTestimonialsSection)
+    | ({
+        _key: string;
+      } & VideoBannerSection)
+    | ({
+        _key: string;
+      } & FaqSection)
+    | ({
+        _key: string;
+      } & MissionSection)
+    | ({
+        _key: string;
+      } & TeamMarqueeSection)
+    | ({
+        _key: string;
+      } & InvestorsSection)
+    | ({
+        _key: string;
+      } & EventsListSection)
+  >;
+  footerCta?: FooterCta;
+  seo?: Seo;
 };
 
 export type CompanyPage = {
@@ -427,6 +576,9 @@ export type CompanyPage = {
     | ({
         _key: string;
       } & InvestorsSection)
+    | ({
+        _key: string;
+      } & EventsListSection)
   >;
   footerCta?: FooterCta;
   seo?: Seo;
@@ -485,6 +637,9 @@ export type CreatorsPage = {
     | ({
         _key: string;
       } & InvestorsSection)
+    | ({
+        _key: string;
+      } & EventsListSection)
   >;
   footerCta?: FooterCta;
   seo?: Seo;
@@ -543,6 +698,9 @@ export type HomePage = {
     | ({
         _key: string;
       } & InvestorsSection)
+    | ({
+        _key: string;
+      } & EventsListSection)
   >;
   footerCta?: FooterCta;
   seo?: Seo;
@@ -722,6 +880,7 @@ export type AllSanitySchemaTypes =
   | Without
   | With
   | JobBoard
+  | EventsListSection
   | InvestorsSection
   | TeamMarqueeSection
   | MissionSection
@@ -747,6 +906,7 @@ export type AllSanitySchemaTypes =
   | Link
   | Event
   | Slug
+  | EventsPage
   | CompanyPage
   | CreatorsPage
   | HomePage
@@ -847,6 +1007,9 @@ export type PAGE_QUERY_RESULT =
           } & CreatorTestimonialsSection)
         | ({
             _key: string;
+          } & EventsListSection)
+        | ({
+            _key: string;
           } & FaqSection)
         | ({
             _key: string;
@@ -908,6 +1071,9 @@ export type PAGE_QUERY_RESULT =
           } & CreatorTestimonialsSection)
         | ({
             _key: string;
+          } & EventsListSection)
+        | ({
+            _key: string;
           } & FaqSection)
         | ({
             _key: string;
@@ -954,8 +1120,115 @@ export type PAGE_QUERY_RESULT =
       _id: string;
       _type: "event";
       title: string;
-      sections: null;
+      sections: Array<
+        | {
+            heading?: string;
+            image?: AltImage;
+            _type: "eventLogoStrip";
+            _key: string;
+          }
+        | {
+            heading?: string;
+            people?: Array<{
+              name?: string;
+              subtitle?: string;
+              photo?: AltImage;
+              url?: string;
+              _type: "eventPerson";
+              _key: string;
+            }>;
+            _type: "eventPeople";
+            _key: string;
+          }
+        | {
+            heading?: string;
+            quotes?: Array<{
+              quote?: string;
+              name?: string;
+              logo?: AltImage;
+              _type: "eventQuote";
+              _key: string;
+            }>;
+            _type: "eventTestimonials";
+            _key: string;
+          }
+        | {
+            heading?: string;
+            venues?: Array<{
+              name?: string;
+              logo?: AltImage;
+              _type: "eventVenue";
+              _key: string;
+            }>;
+            _type: "eventVenues";
+            _key: string;
+          }
+      > | null;
       footerCta: null;
+      seo: Seo | null;
+    }
+  | {
+      _id: string;
+      _type: "eventsPage";
+      title: string | null;
+      sections: Array<
+        | ({
+            _key: string;
+          } & BenefitsSection)
+        | ({
+            _key: string;
+          } & CaseStudiesSection)
+        | ({
+            _key: string;
+          } & ComparisonSection)
+        | ({
+            _key: string;
+          } & CreatorTestimonialsSection)
+        | ({
+            _key: string;
+          } & EventsListSection)
+        | ({
+            _key: string;
+          } & FaqSection)
+        | ({
+            _key: string;
+          } & FeatureTabsSection)
+        | ({
+            _key: string;
+          } & HeroSection)
+        | ({
+            _key: string;
+          } & InvestorsSection)
+        | ({
+            _key: string;
+          } & MissionSection)
+        | ({
+            _key: string;
+          } & ShowcaseSection)
+        | ({
+            _key: string;
+          } & StackCardsSection)
+        | ({
+            _key: string;
+          } & StatementSection)
+        | ({
+            _key: string;
+          } & TeamMarqueeSection)
+        | ({
+            _key: string;
+          } & TestimonialCarouselSection)
+        | ({
+            _key: string;
+          } & VideoBannerSection)
+      > | null;
+      footerCta: {
+        heading: string | null;
+        button: {
+          label: string;
+          href: string;
+          openInNewTab: boolean | null;
+        } | null;
+      } | null;
       seo: Seo | null;
     }
   | {
@@ -975,6 +1248,9 @@ export type PAGE_QUERY_RESULT =
         | ({
             _key: string;
           } & CreatorTestimonialsSection)
+        | ({
+            _key: string;
+          } & EventsListSection)
         | ({
             _key: string;
           } & FaqSection)
@@ -1055,7 +1331,7 @@ export type EVENT_PATHS_QUERY_RESULT = Array<{
 
 // Source: src/sanity/lib/queries.ts
 // Variable: EVENT_QUERY
-// Query: *[_type == "event" && category == $category && slug.current == $slug][0]{    _id,    _type,    title,    category,    template,    theme,    startDateTime,    location,    venue,    registration,    seo  }
+// Query: *[_type == "event" && category == $category && slug.current == $slug][0]{    _id,    _type,    title,    category,    template,    theme,    startDateTime,    excerpt,    logo,    logoSize,    dateLabel,    timeLabel,    location,    locationUrl,    heroVideo,    heroImage,    cardImage,    intro,    bodyHeading,    body,    sections,    registration,    moreInfoHeading,    moreInfo,    seo  }
 export type EVENT_QUERY_RESULT = {
   _id: string;
   _type: "event";
@@ -1066,15 +1342,124 @@ export type EVENT_QUERY_RESULT = {
     background?: "black" | "dark" | "light";
     accent?: "default" | "pink";
   } | null;
-  startDateTime: string | null;
+  startDateTime: string;
+  excerpt: string | null;
+  logo: AltImage | null;
+  logoSize: "large" | "regular" | null;
+  dateLabel: string | null;
+  timeLabel: string | null;
   location: string | null;
-  venue: string | null;
+  locationUrl: string | null;
+  heroVideo: VideoEmbed | null;
+  heroImage: AltImage | null;
+  cardImage: AltImage | null;
+  intro: string | null;
+  bodyHeading: string | null;
+  body: Array<{
+    children?: Array<{
+      marks?: Array<string>;
+      text?: string;
+      _type: "span";
+      _key: string;
+    }>;
+    style?: "h2" | "h3" | "normal";
+    listItem?: "bullet";
+    markDefs?: Array<{
+      href?: string;
+      _type: "link";
+      _key: string;
+    }>;
+    level?: number;
+    _type: "block";
+    _key: string;
+  }> | null;
+  sections: Array<
+    | {
+        heading?: string;
+        image?: AltImage;
+        _type: "eventLogoStrip";
+        _key: string;
+      }
+    | {
+        heading?: string;
+        people?: Array<{
+          name?: string;
+          subtitle?: string;
+          photo?: AltImage;
+          url?: string;
+          _type: "eventPerson";
+          _key: string;
+        }>;
+        _type: "eventPeople";
+        _key: string;
+      }
+    | {
+        heading?: string;
+        quotes?: Array<{
+          quote?: string;
+          name?: string;
+          logo?: AltImage;
+          _type: "eventQuote";
+          _key: string;
+        }>;
+        _type: "eventTestimonials";
+        _key: string;
+      }
+    | {
+        heading?: string;
+        venues?: Array<{
+          name?: string;
+          logo?: AltImage;
+          _type: "eventVenue";
+          _key: string;
+        }>;
+        _type: "eventVenues";
+        _key: string;
+      }
+  > | null;
   registration: {
     heading?: string;
     hubspotFormId?: string;
   } | null;
+  moreInfoHeading: string | null;
+  moreInfo: Array<{
+    question?: string;
+    answer?: string;
+    _type: "eventFaq";
+    _key: string;
+  }> | null;
   seo: Seo | null;
 } | null;
+
+// Source: src/sanity/lib/queries.ts
+// Variable: EVENT_CARDS_QUERY
+// Query: *[_type == "event" && defined(slug.current) && defined(category)] | order(startDateTime desc){    _id,    title,    "slug": slug.current,    category,    startDateTime,    dateLabel,    location,    template,    excerpt,    intro,    cardImage,    heroImage,    "poster": heroVideo.poster  }
+export type EVENT_CARDS_QUERY_RESULT = Array<{
+  _id: string;
+  title: string;
+  slug: string;
+  category: "industry" | "med" | "shopping" | "supperclub" | "webinar";
+  startDateTime: string;
+  dateLabel: string | null;
+  location: string | null;
+  template: "midTier" | "supperClub" | "webinar";
+  excerpt: string | null;
+  intro: string | null;
+  cardImage: AltImage | null;
+  heroImage: AltImage | null;
+  poster: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  } | null;
+}>;
+
+// Source: src/sanity/lib/queries.ts
+// Variable: HUBSPOT_PORTAL_QUERY
+// Query: *[_id == "siteSettings"][0].hubspotPortalId
+export type HUBSPOT_PORTAL_QUERY_RESULT = null | string;
 
 // Query TypeMap
 declare global {
@@ -1083,7 +1468,9 @@ declare global {
     '\n  *[_type == "siteSettings" && _id == "siteSettings"][0].footer{\n    cta{heading, button{label, href, openInNewTab}},\n    columns[]{_key, title, links[]{_key, ...{label, href, openInNewTab}}},\n    socialLinks[]{_key, platform, url},\n    badges[]{_key, size, ...{\n  alt,\n  "url": asset->url,\n  "width": asset->metadata.dimensions.width,\n  "height": asset->metadata.dimensions.height,\n  "lqip": asset->metadata.lqip\n}},\n    companyName,\n    locations\n  }\n': FOOTER_QUERY_RESULT;
     "\n  *[_id == $id][0]{\n    _id,\n    _type,\n    title,\n    sections,\n    footerCta{heading, button{label, href, openInNewTab}},\n    seo\n  }\n": PAGE_QUERY_RESULT;
     '*[_type == "event" && defined(slug.current) && defined(category)]{"category": category, "slug": slug.current}': EVENT_PATHS_QUERY_RESULT;
-    '\n  *[_type == "event" && category == $category && slug.current == $slug][0]{\n    _id,\n    _type,\n    title,\n    category,\n    template,\n    theme,\n    startDateTime,\n    location,\n    venue,\n    registration,\n    seo\n  }\n': EVENT_QUERY_RESULT;
+    '\n  *[_type == "event" && category == $category && slug.current == $slug][0]{\n    _id,\n    _type,\n    title,\n    category,\n    template,\n    theme,\n    startDateTime,\n    excerpt,\n    logo,\n    logoSize,\n    dateLabel,\n    timeLabel,\n    location,\n    locationUrl,\n    heroVideo,\n    heroImage,\n    cardImage,\n    intro,\n    bodyHeading,\n    body,\n    sections,\n    registration,\n    moreInfoHeading,\n    moreInfo,\n    seo\n  }\n': EVENT_QUERY_RESULT;
+    '\n  *[_type == "event" && defined(slug.current) && defined(category)] | order(startDateTime desc){\n    _id,\n    title,\n    "slug": slug.current,\n    category,\n    startDateTime,\n    dateLabel,\n    location,\n    template,\n    excerpt,\n    intro,\n    cardImage,\n    heroImage,\n    "poster": heroVideo.poster\n  }\n': EVENT_CARDS_QUERY_RESULT;
+    '*[_id == "siteSettings"][0].hubspotPortalId': HUBSPOT_PORTAL_QUERY_RESULT;
   }
 }
 // Lets @sanity/client releases that predate the global registry read it too

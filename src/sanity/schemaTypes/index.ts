@@ -6,7 +6,7 @@ import {link} from './objects/link'
 import {altImage, mediaItem, videoEmbed} from './objects/media'
 import {seo} from './objects/seo'
 import {sectionTypes} from './sections'
-import {companyPage, creatorsPage, homePage} from './singletons/pages'
+import {companyPage, creatorsPage, eventsPage, homePage} from './singletons/pages'
 import {siteSettings} from './singletons/siteSettings'
 
 export const schemaTypes: SchemaTypeDefinition[] = [
@@ -15,6 +15,7 @@ export const schemaTypes: SchemaTypeDefinition[] = [
   homePage,
   creatorsPage,
   companyPage,
+  eventsPage,
   // Collections
   event,
   // Objects

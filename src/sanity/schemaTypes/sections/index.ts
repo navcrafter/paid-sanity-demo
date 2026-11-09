@@ -1,6 +1,7 @@
 import {
   benefitsSection,
   creatorTestimonialsSection,
+  eventsListSection,
   faqSection,
   investorsSection,
   missionSection,
@@ -35,4 +36,5 @@ export const sectionTypes = [
   missionSection,
   teamMarqueeSection,
   investorsSection,
+  eventsListSection,
 ]

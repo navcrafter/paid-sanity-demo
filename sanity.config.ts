@@ -11,6 +11,7 @@ import {structureTool} from 'sanity/structure'
 
 import {SINGLETON_TYPES, type EventTemplate} from './src/sanity/constants'
 import {apiVersion, dataset, projectId, studioUrl} from './src/sanity/env'
+import {eventStarter} from './src/sanity/eventStarters'
 import {resolve} from './src/sanity/presentation/resolve'
 import {schemaTypes} from './src/sanity/schemaTypes'
 import {structure} from './src/sanity/structure'
@@ -45,19 +46,19 @@ export default defineConfig({
         id: 'event-supper-club',
         title: 'Supper Club event',
         schemaType: 'event',
-        value: {category: 'supperclub', template: 'supperClub', theme: {background: 'black', accent: 'default'}},
+        value: () => eventStarter('supperClub'),
       },
       {
         id: 'event-mid-tier',
         title: 'Mid Tier event',
         schemaType: 'event',
-        value: {template: 'midTier', theme: {background: 'black', accent: 'default'}},
+        value: () => eventStarter('midTier'),
       },
       {
         id: 'event-webinar',
         title: 'Webinar',
         schemaType: 'event',
-        value: {category: 'webinar', template: 'webinar', theme: {background: 'light', accent: 'default'}},
+        value: () => eventStarter('webinar'),
       },
       // Used by the category folders in the sidebar to pre-fill the category.
       {
@@ -65,11 +66,8 @@ export default defineConfig({
         title: 'Event in category',
         schemaType: 'event',
         parameters: [{name: 'category', type: 'string'}],
-        value: ({category}: {category: string}) => ({
-          category,
-          template: DEFAULT_TEMPLATE_BY_CATEGORY[category] ?? 'supperClub',
-          theme: {background: category === 'webinar' ? 'light' : 'black', accent: 'default'},
-        }),
+        value: ({category}: {category: string}) =>
+          eventStarter(DEFAULT_TEMPLATE_BY_CATEGORY[category] ?? 'supperClub', category),
       },
     ],
   },

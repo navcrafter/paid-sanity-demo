@@ -17,7 +17,7 @@ const WEBFLOW_CDN = 'https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac
 const key = () => randomUUID().replace(/-/g, '').slice(0, 12)
 
 /** Pages that exist in this demo stay relative; everything else points at the live site. */
-const DEMO_PAGES = new Set(['/', '/creators', '/company'])
+const DEMO_PAGES = new Set(['/', '/creators', '/company', '/events'])
 function link(label: string, href: string, openInNewTab = false) {
   const path = href.split('#')[0]
   const resolved = href.startsWith('/') && !DEMO_PAGES.has(path) ? `${LIVE}${href}` : href
@@ -74,7 +74,7 @@ async function run() {
   }
 
   const navigation = {
-    links: [link('Creators', '/creators'), link('Company', '/company')],
+    links: [link('Creators', '/creators'), link('Company', '/company'), link('Events', '/events')],
     loginLabel: 'Log in',
     loginLinks: [
       link('Creator', 'https://app.hashtagpaid.app/sign-in'),

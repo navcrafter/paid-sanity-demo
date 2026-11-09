@@ -1,4 +1,5 @@
 import type {EditAttr} from '@/sanity/lib/edit'
+import type {FetchOptions} from '@/sanity/lib/live'
 
 /** Every section component receives its data plus a click-to-edit helper scoped to it. */
 export interface SectionProps<T> {
@@ -7,4 +8,6 @@ export interface SectionProps<T> {
   edit: EditAttr
   /** True for the first section on the page (load its media eagerly). */
   isFirst: boolean
+  /** Draft/published fetch options, for sections that load their own data (e.g. Events list). */
+  options: FetchOptions
 }

@@ -4,6 +4,7 @@ import {BenefitsSection} from './BenefitsSection'
 import {CaseStudiesSection} from './CaseStudiesSection'
 import {ComparisonSection} from './ComparisonSection'
 import {CreatorTestimonialsSection} from './CreatorTestimonialsSection'
+import {EventsListSection} from './EventsListSection'
 import {FaqSection} from './FaqSection'
 import {FeatureTabsSection} from './FeatureTabsSection'
 import {HeroSection} from './HeroSection'
@@ -34,4 +35,5 @@ export const SECTION_COMPONENTS: Record<string, ComponentType<any>> = {
   missionSection: MissionSection,
   teamMarqueeSection: TeamMarqueeSection,
   investorsSection: InvestorsSection,
+  eventsListSection: EventsListSection,
 }

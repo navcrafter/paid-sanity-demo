@@ -2,11 +2,12 @@ import {Footer} from '@/components/footer/Footer'
 import {PagePlaceholder} from '@/components/PagePlaceholder'
 import {SectionRenderer, type SectionData} from '@/components/sections/SectionRenderer'
 import {editAttrFor} from '@/sanity/lib/edit'
+import type {PageId} from '@/sanity/constants'
 import {cachedSanity, type FetchOptions} from '@/sanity/lib/live'
 import {PAGE_QUERY} from '@/sanity/lib/queries'
 import {WithFetchOptions} from '@/sanity/lib/WithFetchOptions'
 
-type SingletonId = 'homePage' | 'creatorsPage' | 'companyPage'
+type SingletonId = PageId
 
 /** Loads a page document and renders its sections, followed by the site footer. */
 export function SingletonPage({id, heading}: {id: SingletonId; heading: string}) {
@@ -22,7 +23,7 @@ async function Content({id, heading, options}: {id: SingletonId; heading: string
     <>
       <main className="main-wrapper">
         {sections.length > 0 ? (
-          <SectionRenderer sections={sections} edit={edit} />
+          <SectionRenderer sections={sections} edit={edit} options={options} />
         ) : (
           <PagePlaceholder heading={heading} sanityTitle={page?.title} />
         )}

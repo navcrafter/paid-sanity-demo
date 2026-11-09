@@ -32,10 +32,13 @@ export const EVENT_ACCENTS = [
 ] as const
 
 /** Documents that exist exactly once. Their document ID equals their type name. */
-export const SINGLETON_TYPES = ['siteSettings', 'homePage', 'creatorsPage', 'companyPage'] as const
+export const SINGLETON_TYPES = ['siteSettings', 'homePage', 'creatorsPage', 'companyPage', 'eventsPage'] as const
 
-export const PAGE_ROUTES: Record<'homePage' | 'creatorsPage' | 'companyPage', {title: string; href: string}> = {
+export type PageId = 'homePage' | 'creatorsPage' | 'companyPage' | 'eventsPage'
+
+export const PAGE_ROUTES: Record<PageId, {title: string; href: string}> = {
   homePage: {title: 'Home', href: '/'},
   creatorsPage: {title: 'Creators', href: '/creators'},
   companyPage: {title: 'Company', href: '/company'},
+  eventsPage: {title: 'Events', href: '/events'},
 }

@@ -10,6 +10,7 @@ export const resolve: PresentationPluginOptions['resolve'] = {
     {route: '/', filter: '_type == "homePage" && _id == "homePage"'},
     {route: '/creators', filter: '_type == "creatorsPage" && _id == "creatorsPage"'},
     {route: '/company', filter: '_type == "companyPage" && _id == "companyPage"'},
+    {route: '/events', filter: '_type == "eventsPage" && _id == "eventsPage"'},
     {
       route: '/events/:category/:slug',
       filter: '_type == "event" && category == $category && slug.current == $slug',
@@ -19,11 +20,17 @@ export const resolve: PresentationPluginOptions['resolve'] = {
     homePage: defineLocations({locations: [PAGE_ROUTES.homePage]}),
     creatorsPage: defineLocations({locations: [PAGE_ROUTES.creatorsPage]}),
     companyPage: defineLocations({locations: [PAGE_ROUTES.companyPage]}),
+    eventsPage: defineLocations({locations: [PAGE_ROUTES.eventsPage]}),
     event: defineLocations({
       select: {title: 'title', slug: 'slug.current', category: 'category'},
       resolve: (doc) =>
         doc?.slug && doc?.category
-          ? {locations: [{title: doc.title || 'Untitled event', href: `/events/${doc.category}/${doc.slug}`}]}
+          ? {
+              locations: [
+                {title: doc.title || 'Untitled event', href: `/events/${doc.category}/${doc.slug}`},
+                PAGE_ROUTES.eventsPage,
+              ],
+            }
           : null,
     }),
   },

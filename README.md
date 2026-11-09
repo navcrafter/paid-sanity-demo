@@ -83,6 +83,10 @@ scripts/                      One-off content scripts (`npx sanity exec <file> -
   keys as `.env.example`. `SANITY_API_READ_TOKEN` and `SANITY_REVALIDATE_SECRET` are stored as secrets.
 - Sanity: the Netlify URL is an allowed CORS origin (with credentials), and the webhook
   "Netlify: refresh cached pages" posts to `/api/revalidate` on publish, unpublish and delete.
+- Every push to `main` deploys through GitHub Actions (`.github/workflows/deploy.yml`), which
+  needs the repository secrets `NETLIFY_AUTH_TOKEN` and `SANITY_API_READ_TOKEN`. Netlify's own Git
+  integration needs a paid plan for private organization repos. Re-run a deploy from the
+  Actions tab → "Deploy to Netlify" → Run workflow.
 - Manual deploy from this machine: `npx netlify-cli deploy --build --prod`. On Windows, stop
   `npm run dev` first, or the Next.js plugin can't move the `.next` folder.
 

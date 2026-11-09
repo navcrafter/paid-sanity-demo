@@ -1,6 +1,9 @@
 import type {Metadata} from 'next'
 
-import './globals.css'
+import {fontVariables} from '@/fonts'
+
+// Site styles are imported by app/(site)/layout.tsx, not here, so they never
+// load into the embedded Studio at /studio.
 
 export const metadata: Metadata = {
   title: {default: '#paid', template: '%s | #paid'},
@@ -10,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
-    <html lang="en">
+    <html lang="en" className={fontVariables}>
       <body>{children}</body>
     </html>
   )

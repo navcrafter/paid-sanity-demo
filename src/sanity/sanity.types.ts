@@ -35,6 +35,19 @@ export type Seo = {
   };
 };
 
+export type FooterCta = {
+  _type: "footerCta";
+  heading?: string;
+  button?: Link;
+};
+
+export type Link = {
+  _type: "link";
+  label: string;
+  href: string;
+  openInNewTab?: boolean;
+};
+
 export type Event = {
   _id: string;
   _type: "event";
@@ -72,6 +85,7 @@ export type CompanyPage = {
   _updatedAt: string;
   _rev: string;
   title?: string;
+  footerCta?: FooterCta;
   seo?: Seo;
 };
 
@@ -82,6 +96,7 @@ export type CreatorsPage = {
   _updatedAt: string;
   _rev: string;
   title?: string;
+  footerCta?: FooterCta;
   seo?: Seo;
 };
 
@@ -92,6 +107,7 @@ export type HomePage = {
   _updatedAt: string;
   _rev: string;
   title?: string;
+  footerCta?: FooterCta;
   seo?: Seo;
 };
 
@@ -101,6 +117,51 @@ export type SiteSettings = {
   _createdAt: string;
   _updatedAt: string;
   _rev: string;
+  navigation?: {
+    links?: Array<
+      {
+        _key: string;
+      } & Link
+    >;
+    loginLabel?: string;
+    loginLinks?: Array<
+      {
+        _key: string;
+      } & Link
+    >;
+    cta?: Link;
+  };
+  footer?: {
+    cta?: FooterCta;
+    columns?: Array<{
+      title: string;
+      links?: Array<
+        {
+          _key: string;
+        } & Link
+      >;
+      _type: "linkColumn";
+      _key: string;
+    }>;
+    socialLinks?: Array<{
+      platform: "instagram" | "youtube" | "tiktok" | "linkedin" | "x";
+      url: string;
+      _type: "socialLink";
+      _key: string;
+    }>;
+    badges?: Array<{
+      asset?: SanityImageAssetReference;
+      media?: unknown;
+      hotspot?: SanityImageHotspot;
+      crop?: SanityImageCrop;
+      alt?: string;
+      size?: "regular" | "small" | "smallWide";
+      _type: "badge";
+      _key: string;
+    }>;
+    companyName?: string;
+    locations?: Array<string>;
+  };
   title: string;
   hubspotPortalId?: string;
   seo?: Seo;
@@ -222,6 +283,8 @@ export type Geopoint = {
 export type AllSanitySchemaTypes =
   | SanityImageAssetReference
   | Seo
+  | FooterCta
+  | Link
   | Event
   | Slug
   | CompanyPage
@@ -240,63 +303,139 @@ export type AllSanitySchemaTypes =
   | Geopoint;
 
 // Source: src/sanity/lib/queries.ts
-// Variable: SITE_SETTINGS_QUERY
-// Query: *[_type == "siteSettings" && _id == "siteSettings"][0]
-export type SITE_SETTINGS_QUERY_RESULT = {
-  _id: "siteSettings";
-  _type: "siteSettings";
-  _createdAt: string;
-  _updatedAt: string;
-  _rev: string;
-  title: string;
-  hubspotPortalId?: string;
-  seo?: Seo;
+// Variable: NAVIGATION_QUERY
+// Query: *[_type == "siteSettings" && _id == "siteSettings"][0].navigation{    links[]{label, href, openInNewTab},    loginLabel,    loginLinks[]{label, href, openInNewTab},    cta{label, href, openInNewTab}  }
+export type NAVIGATION_QUERY_RESULT = {
+  links: Array<{
+    label: string;
+    href: string;
+    openInNewTab: boolean | null;
+  }> | null;
+  loginLabel: string | null;
+  loginLinks: Array<{
+    label: string;
+    href: string;
+    openInNewTab: boolean | null;
+  }> | null;
+  cta: {
+    label: string;
+    href: string;
+    openInNewTab: boolean | null;
+  } | null;
+} | null;
+
+// Source: src/sanity/lib/queries.ts
+// Variable: FOOTER_QUERY
+// Query: *[_type == "siteSettings" && _id == "siteSettings"][0].footer{    cta{heading, button{label, href, openInNewTab}},    columns[]{_key, title, links[]{_key, ...{label, href, openInNewTab}}},    socialLinks[]{_key, platform, url},    badges[]{_key, size, ...{  alt,  "url": asset->url,  "width": asset->metadata.dimensions.width,  "height": asset->metadata.dimensions.height,  "lqip": asset->metadata.lqip}},    companyName,    locations  }
+export type FOOTER_QUERY_RESULT = {
+  cta: {
+    heading: string | null;
+    button: {
+      label: string;
+      href: string;
+      openInNewTab: boolean | null;
+    } | null;
+  } | null;
+  columns: Array<{
+    _key: string;
+    title: string;
+    links: Array<{
+      _key: string;
+      label: string;
+      href: string;
+      openInNewTab: boolean | null;
+    }> | null;
+  }> | null;
+  socialLinks: Array<{
+    _key: string;
+    platform: "instagram" | "linkedin" | "tiktok" | "x" | "youtube";
+    url: string;
+  }> | null;
+  badges: Array<{
+    _key: string;
+    size: "regular" | "small" | "smallWide" | null;
+    alt: string | null;
+    url: string | null;
+    width: number | null;
+    height: number | null;
+    lqip: string | null;
+  }> | null;
+  companyName: string | null;
+  locations: Array<string> | null;
 } | null;
 
 // Source: src/sanity/lib/queries.ts
 // Variable: PAGE_QUERY
-// Query: *[_id == $id][0]{_id, _type, title, seo}
+// Query: *[_id == $id][0]{    _id,    _type,    title,    footerCta{heading, button{label, href, openInNewTab}},    seo  }
 export type PAGE_QUERY_RESULT =
   | {
       _id: string;
       _type: "companyPage";
       title: string | null;
+      footerCta: {
+        heading: string | null;
+        button: {
+          label: string;
+          href: string;
+          openInNewTab: boolean | null;
+        } | null;
+      } | null;
       seo: Seo | null;
     }
   | {
       _id: string;
       _type: "creatorsPage";
       title: string | null;
+      footerCta: {
+        heading: string | null;
+        button: {
+          label: string;
+          href: string;
+          openInNewTab: boolean | null;
+        } | null;
+      } | null;
       seo: Seo | null;
     }
   | {
       _id: string;
       _type: "event";
       title: string;
+      footerCta: null;
       seo: Seo | null;
     }
   | {
       _id: string;
       _type: "homePage";
       title: string | null;
+      footerCta: {
+        heading: string | null;
+        button: {
+          label: string;
+          href: string;
+          openInNewTab: boolean | null;
+        } | null;
+      } | null;
       seo: Seo | null;
     }
   | {
       _id: string;
       _type: "sanity.fileAsset";
       title: string | null;
+      footerCta: null;
       seo: null;
     }
   | {
       _id: string;
       _type: "sanity.imageAsset";
       title: string | null;
+      footerCta: null;
       seo: null;
     }
   | {
       _id: string;
       _type: "siteSettings";
       title: string;
+      footerCta: null;
       seo: Seo | null;
     }
   | null;
@@ -335,8 +474,9 @@ export type EVENT_QUERY_RESULT = {
 // Query TypeMap
 declare global {
   interface SanityQueries {
-    '*[_type == "siteSettings" && _id == "siteSettings"][0]': SITE_SETTINGS_QUERY_RESULT;
-    "*[_id == $id][0]{_id, _type, title, seo}": PAGE_QUERY_RESULT;
+    '\n  *[_type == "siteSettings" && _id == "siteSettings"][0].navigation{\n    links[]{label, href, openInNewTab},\n    loginLabel,\n    loginLinks[]{label, href, openInNewTab},\n    cta{label, href, openInNewTab}\n  }\n': NAVIGATION_QUERY_RESULT;
+    '\n  *[_type == "siteSettings" && _id == "siteSettings"][0].footer{\n    cta{heading, button{label, href, openInNewTab}},\n    columns[]{_key, title, links[]{_key, ...{label, href, openInNewTab}}},\n    socialLinks[]{_key, platform, url},\n    badges[]{_key, size, ...{\n  alt,\n  "url": asset->url,\n  "width": asset->metadata.dimensions.width,\n  "height": asset->metadata.dimensions.height,\n  "lqip": asset->metadata.lqip\n}},\n    companyName,\n    locations\n  }\n': FOOTER_QUERY_RESULT;
+    "\n  *[_id == $id][0]{\n    _id,\n    _type,\n    title,\n    footerCta{heading, button{label, href, openInNewTab}},\n    seo\n  }\n": PAGE_QUERY_RESULT;
     '*[_type == "event" && defined(slug.current) && defined(category)]{"category": category, "slug": slug.current}': EVENT_PATHS_QUERY_RESULT;
     '\n  *[_type == "event" && category == $category && slug.current == $slug][0]{\n    _id,\n    _type,\n    title,\n    category,\n    template,\n    theme,\n    startDateTime,\n    location,\n    venue,\n    registration,\n    seo\n  }\n': EVENT_QUERY_RESULT;
   }

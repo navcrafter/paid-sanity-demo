@@ -1,0 +1,319 @@
+/* ==========================================================================
+   Navbar (floating pill)
+   - Light frosted glass by default; dark glass with cream text while it floats
+     over a dark section (.is-on-dark, set by Navbar.tsx).
+   - ≤991px: the links live in a full-screen cream sheet opened by the menu button.
+     The sheet is a sibling of the pill (not a child) because the pill's
+     backdrop-filter would otherwise trap a fixed-position sheet inside the pill.
+   ========================================================================== */
+
+.navbar_component {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1.875rem;
+}
+
+.navbar_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 63.25rem;
+  min-height: 4.5rem;
+  padding-left: 2.2rem;
+  padding-right: 0.5rem;
+  border-radius: var(--radius--round);
+  background-color: var(--base-color-overlay--black-5);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.navbar_left {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navbar_logo-link {
+  display: inline-flex;
+  color: inherit;
+}
+
+.navbar_logo {
+  display: inline-flex;
+  width: 3.35563rem;
+  color: var(--text-color--primary);
+}
+.navbar_logo svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.navbar_menu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar_link {
+  color: var(--text-color--primary);
+  font-weight: 600;
+  letter-spacing: -0.02rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.navbar_link:hover { color: var(--text-color--secondary); }
+
+.navbar_button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ---------- Log in dropdown ---------- */
+
+.login-dropdown {
+  position: relative;
+  z-index: 900;
+}
+
+.login-dropdown_toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-family--events);
+  cursor: pointer;
+  user-select: none;
+}
+
+.login-dropdown_list {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  min-width: 8.5rem;
+  overflow: hidden;
+  border-radius: var(--radius--small);
+  background-color: var(--base-color-neutral--cream);
+  box-shadow: 2px 5px 9px 4px rgb(0 0 0 / 0.1);
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-0.5rem);
+  transition:
+    opacity 0.2s ease,
+    transform 0.3s ease,
+    visibility 0s linear 0.3s,
+    background-color 0.3s ease;
+}
+.login-dropdown.is-open .login-dropdown_list {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.2s ease,
+    transform 0.3s ease,
+    visibility 0s,
+    background-color 0.3s ease;
+}
+
+.login-dropdown_link {
+  display: block;
+  padding: 0.7rem;
+  color: #222;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+.login-dropdown_link + .login-dropdown_link {
+  border-top: 1px solid var(--border-color--primary);
+}
+.login-dropdown_link:hover { background-color: rgb(0 0 0 / 0.04); }
+
+/* ---------- Menu button (≤991px) ---------- */
+
+.navbar_menu-button {
+  display: none;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 15rem;
+  background-color: var(--base-color-neutral--cream);
+  color: var(--text-color--primary);
+}
+
+.menu-icon_line-top,
+.menu-icon_line-middle,
+.menu-icon_line-bottom {
+  width: 0.875rem;
+  height: 0.09375rem;
+  background-color: #000;
+  transition:
+    transform 0.4s var(--ease--in-out-quint),
+    opacity 0.4s var(--ease--in-out-quint);
+}
+.menu-icon_line-middle { margin-top: 4.5px; margin-bottom: 4.5px; }
+
+/* Hamburger → X (matches the live site's "Navbar menu [Open]" interaction) */
+.navbar_component.is-menu-open .menu-icon_line-top { transform: translateY(6px) rotate(45deg); }
+.navbar_component.is-menu-open .menu-icon_line-middle { opacity: 0; }
+.navbar_component.is-menu-open .menu-icon_line-bottom { transform: translateY(-6px) rotate(-45deg); }
+
+/* ---------- Mobile sheet (hidden on desktop) ---------- */
+
+.navbar_sheet { display: none; }
+
+/* ---------- Dark glass over dark sections ---------- */
+
+.navbar_container,
+.navbar_container .navbar_link,
+.navbar_container .navbar_logo,
+.navbar_container .button {
+  transition:
+    background-color 0.4s var(--ease--out),
+    color 0.4s var(--ease--out),
+    transform 0.5s var(--ease--spring);
+}
+
+.navbar_container.is-on-dark {
+  background-color: var(--base-color-overlay--glass-dark);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+  backdrop-filter: blur(40px) saturate(180%);
+}
+.navbar_container.is-on-dark .navbar_link,
+.navbar_container.is-on-dark .navbar_logo { color: var(--base-color-neutral--cream); }
+.navbar_container.is-on-dark .navbar_link:hover { color: rgb(251 249 245 / 0.6); }
+
+.navbar_container.is-on-dark .button.is-secondary {
+  background-color: rgb(255 255 255 / 0.12);
+  color: var(--base-color-neutral--cream);
+}
+.navbar_container.is-on-dark .button.is-secondary:hover { background-color: rgb(255 255 255 / 0.2); }
+.navbar_container.is-on-dark .button:not(.is-secondary) {
+  background-color: var(--base-color-neutral--cream);
+  color: var(--text-color--primary);
+}
+
+.navbar_container.is-on-dark .login-dropdown_list {
+  background-color: rgb(38 38 42 / 0.96);
+  box-shadow: 0 12px 32px rgb(0 0 0 / 0.35);
+}
+.navbar_container.is-on-dark .login-dropdown_link {
+  color: var(--base-color-neutral--cream);
+  border-color: rgb(251 249 245 / 0.12);
+}
+.navbar_container.is-on-dark .login-dropdown_link:hover { background-color: rgb(251 249 245 / 0.08); }
+
+/* ---------- Tablet and below ---------- */
+
+@media screen and (max-width: 991px) {
+  .navbar_component {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .navbar_menu { display: none; }
+  .navbar_menu-button { display: block; }
+
+  .navbar_sheet {
+    position: fixed;
+    inset: 0;
+    z-index: -1; /* behind the pill, inside the navbar's stacking context */
+    display: block;
+    height: 100vh;
+    height: 100dvh;
+    padding: 6.5rem 1.25rem 1.5rem;
+    overflow-y: auto;
+    background-color: var(--base-color-neutral--cream);
+    text-align: center;
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease, visibility 0s linear 0.4s;
+  }
+  .navbar_component.is-menu-open .navbar_sheet {
+    visibility: visible;
+    transform: none;
+    transition: transform 0.4s ease, visibility 0s;
+  }
+
+  .navbar_sheet-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .navbar_sheet-links .navbar_link {
+    width: 100%;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border-color--primary);
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .navbar_sheet .login-dropdown { width: 100%; }
+  .navbar_sheet .login-dropdown_toggle {
+    width: 100%;
+    border: 1px solid #000;
+  }
+
+  /* While the sheet is open the pill sits on cream, so it stays light */
+  .navbar_component.is-menu-open .navbar_container.is-on-dark {
+    background-color: var(--base-color-overlay--black-5);
+  }
+  .navbar_component.is-menu-open .navbar_container.is-on-dark .navbar_logo { color: var(--text-color--primary); }
+  .navbar_component.is-menu-open .navbar_container.is-on-dark .button:not(.is-secondary) {
+    background-color: var(--base-color-neutral--black);
+    color: var(--base-color-neutral--cream);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar_component { margin-top: 1.25rem; }
+
+  .navbar_container {
+    min-height: 4rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .navbar_sheet-links { padding: 1.25rem; }
+}
+
+/* Page underneath doesn't scroll while the menu is open */
+html:has(.navbar_component.is-menu-open) { overflow: hidden; }
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar_sheet,
+  .menu-icon_line-top,
+  .menu-icon_line-middle,
+  .menu-icon_line-bottom,
+  .login-dropdown_list { transition: none !important; }
+}

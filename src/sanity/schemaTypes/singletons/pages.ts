@@ -20,6 +20,12 @@ function definePage(name: string, title: string, icon: typeof DocumentIcon) {
         initialValue: title,
         readOnly: true,
       }),
+      defineField({
+        name: 'footerCta',
+        title: 'Footer call to action',
+        description: 'Optional. Leave empty to use the default from Site settings.',
+        type: 'footerCta',
+      }),
       defineField({name: 'seo', title: 'SEO', type: 'seo'}),
     ],
     preview: {prepare: () => ({title})},

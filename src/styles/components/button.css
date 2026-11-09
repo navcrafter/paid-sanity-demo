@@ -1,0 +1,60 @@
+/* Button (Client-First component). Variants are is- combo classes. */
+
+.button {
+  display: inline-block;
+  padding: 1.25rem 2.025rem;
+  border: 0;
+  border-radius: var(--radius--round);
+  background-color: var(--base-color-neutral--black);
+  color: var(--base-color-neutral--cream);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02rem;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button.is-secondary {
+  background-color: var(--base-color-neutral--cream);
+  color: var(--text-color--primary);
+  transition-property: none;
+}
+
+.button.is-pink {
+  background-color: var(--base-color-brand--pink);
+  color: var(--base-color-brand--burgundy);
+}
+
+.button.is-video {
+  background-color: rgb(38 38 42 / 0.5);
+}
+
+/* Text link with a trailing arrow ("Join the waitlist →") */
+.button.is-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  background-color: transparent;
+  font-weight: 500;
+  transition: color 0.2s var(--ease--out);
+}
+.button.is-icon .button_icon {
+  display: inline-flex;
+  color: inherit;
+  transition: transform 0.24s var(--ease--out);
+}
+.button.is-icon:hover .button_icon { transform: translateX(2px); }
+.button.is-icon.text-color-secondary:hover { color: var(--text-color--primary); }
+.button.is-icon.text-color-secondary-on-dark:hover { color: var(--text-color--secondary); }
+
+@media screen and (max-width: 991px) {
+  .button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}

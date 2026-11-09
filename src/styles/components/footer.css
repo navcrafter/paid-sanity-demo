@@ -1,0 +1,198 @@
+/* ==========================================================================
+   Footer
+   Black card with rounded bottom corners, followed by the "footer bottom":
+   a sticky band with the large #paid wordmark over an animated gradient that
+   is revealed as the footer scrolls away.
+   ========================================================================== */
+
+/* Contains footer + footer-bottom; limits how far the sticky band can travel. */
+.footer_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_component {
+  position: relative;
+  z-index: 1;
+  border-bottom-left-radius: var(--radius--large);
+  border-bottom-right-radius: var(--radius--large);
+  background-color: var(--base-color-neutral--black);
+  font-family: var(--font-family--body);
+}
+
+.footer_top-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  column-gap: 4vw;
+}
+
+.footer_menu-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  gap: 1rem 2rem;
+}
+
+.footer_link-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer_link-list-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02rem;
+  color: var(--text-color--secondary);
+}
+
+.footer_link {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: var(--base-color-neutral--cream);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.footer_link:hover { color: var(--text-color--secondary-on-dark); }
+
+.footer_social-list {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.footer_social-link {
+  display: flex;
+  align-items: center;
+  color: var(--base-color-neutral--white);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.footer_social-link:hover {
+  color: var(--text-color--secondary-on-dark);
+  transform: translateY(-0.25rem);
+}
+.footer_social-link svg { display: block; height: 1rem; width: auto; }
+
+.footer_badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer_badge {
+  width: auto;
+  height: 2.5rem;
+  max-height: 2.5rem;
+}
+.footer_badge.is-small { height: 2rem; max-height: 2rem; }
+.footer_badge.is-wide { max-width: 7rem; }
+
+.footer_credit-text {
+  color: var(--text-color--secondary-on-dark);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.3em;
+}
+
+/* ---------- Footer bottom ---------- */
+
+.section_footer-bottom {
+  position: sticky;
+  bottom: 0;
+  overflow: hidden;
+  padding-top: 4rem;
+}
+
+.footer-bottom_logo {
+  position: relative;
+  z-index: 1;
+}
+.footer-bottom_logo svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-bottom_graphic {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+}
+
+/* Same shapes, colours and blur as the original SVG, built as CSS layers so the
+   browser can animate them smoothly. */
+.footer-bottom_gradient {
+  --amp: 2; /* how far the colours move */
+  --speed: 1.4; /* how fast they move */
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: clip;
+  isolation: isolate;
+  pointer-events: none;
+  background: linear-gradient(#f4dcc9, #f2cfc8);
+}
+.footer-bottom_gradient > i {
+  position: absolute;
+  border-radius: 50%;
+  will-change: transform;
+  animation: gradient-drift calc(var(--t) / var(--speed)) ease-in-out calc(var(--d) / var(--speed)) infinite alternate;
+}
+/*                                      left     top      width    height   colour                blur        drift: x, y, scale, turn, time, delay */
+.footer-bottom_gradient > i:nth-child(1) { left: -19.9%; top: -212.2%; width: 147.5%; height: 327.4%; background: #f2e4b4; filter: blur(5.3vw); --x: 3%; --y: 4%; --s: 1.04; --r: 4deg; --t: 26s; --d: -4s; }
+.footer-bottom_gradient > i:nth-child(2) { left: -15.8%; top: 79.8%; width: 113.4%; height: 79.6%; background: rgb(243 210 198 / 0.9); filter: blur(4.5vw); --x: 6%; --y: -6%; --s: 1.08; --r: -6deg; --t: 22s; --d: -9s; }
+.footer-bottom_gradient > i:nth-child(3) { left: 3.1%; top: -172.4%; width: 121%; height: 278.7%; background: #d99cf2; filter: blur(10.4vw); --x: -5%; --y: 3%; --s: 1.06; --r: -5deg; --t: 30s; --d: -2s; }
+.footer-bottom_gradient > i:nth-child(4) { left: 8.4%; top: -172.4%; width: 107.4%; height: 247.7%; background: #f35d7a; filter: blur(11.1vw); --x: 4%; --y: 5%; --s: 0.95; --r: 6deg; --t: 24s; --d: -12s; }
+.footer-bottom_gradient > i:nth-child(5) { left: 22.2%; top: -163.2%; width: 98.3%; height: 212.3%; background: #f43a1f; filter: blur(8.7vw); --x: -6%; --y: 4%; --s: 1.07; --r: -4deg; --t: 20s; --d: -6s; }
+.footer-bottom_gradient > i:nth-child(6) { left: 33.2%; top: -112.7%; width: 70.3%; height: 112.7%; background: rgb(173 28 0 / 0.7); filter: blur(10.5vw); --x: 5%; --y: -5%; --s: 1.1; --r: 8deg; --t: 18s; --d: -10s; }
+
+@keyframes gradient-drift {
+  to {
+    transform:
+      translate(calc(var(--x) * var(--amp)), calc(var(--y) * var(--amp)))
+      rotate(calc(var(--r) * var(--amp)))
+      scale(calc(1 + (var(--s) - 1) * var(--amp)));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-bottom_gradient > i { animation: none; }
+}
+
+/* ---------- Responsive ---------- */
+
+@media screen and (max-width: 991px) {
+  .footer_top-wrapper {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+  }
+  .footer_badge { max-width: 8rem; max-height: 5rem; }
+  .section_footer-bottom { max-height: 25rem; }
+  .footer-bottom_logo { max-height: 20rem; }
+}
+
+@media screen and (max-width: 767px) {
+  .footer_top-wrapper {
+    row-gap: 3rem;
+    margin-bottom: 2.5rem;
+  }
+  .footer_menu-wrapper {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+  }
+  .footer_badge-list { gap: 1rem; }
+  .footer_badge { min-width: 0; max-width: 7.5rem; max-height: 4.5rem; }
+  .footer_badge.is-wide { max-width: 6rem; }
+}
+
+@media screen and (max-width: 479px) {
+  .footer_menu-wrapper { row-gap: 2.5rem; }
+  .footer_badge-list { gap: 1rem 0.5rem; }
+  .footer_badge { max-height: 4rem; }
+}

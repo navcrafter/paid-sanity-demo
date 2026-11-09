@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Design tokens (Client-First variable naming)
+   Base values come from the live site's "new color set". Components and
+   utilities reference the semantic tokens, never raw hex values.
+   ========================================================================== */
+
+:root {
+  /* ---- Base colours ---- */
+  --base-color-neutral--black: #060606;
+  --base-color-neutral--white: #ffffff;
+  --base-color-neutral--cream: #fbf9f5;
+  --base-color-neutral--cream-2: #f0eeea;
+  --base-color-neutral--cream-3: #f4f3f1;
+  --base-color-neutral--border: #deddd9;
+  --base-color-neutral--grey: #5f5e5a;
+  --base-color-neutral--grey-on-dark: #8b8b8c;
+
+  --base-color-brand--pink: #f74b93;
+  --base-color-brand--light-pink: #fae1e7;
+  --base-color-brand--burgundy: #370300;
+  --base-color-brand--grey: #3e332f;
+  --base-color-brand--light-blue: #b9d4da;
+  --base-color-brand--blue: #2f91b6;
+  --base-color-brand--purple: #cea8bf;
+  --base-color-brand--dark-green: #2d3a23;
+  --base-color-brand--light-green: #e4edbc;
+  --base-color-brand--red: #f84335;
+
+  --base-color-overlay--black-5: rgb(0 0 0 / 0.05);
+  --base-color-overlay--white-50: rgb(255 255 255 / 0.5);
+  --base-color-overlay--glass-dark: rgb(38 38 42 / 0.5);
+
+  /* ---- Semantic colours ---- */
+  --text-color--primary: var(--base-color-neutral--black);
+  --text-color--secondary: var(--base-color-neutral--grey);
+  --text-color--secondary-on-dark: var(--base-color-neutral--grey-on-dark);
+  --text-color--alternate: var(--base-color-neutral--cream);
+
+  --background-color--primary: var(--base-color-neutral--cream);
+  --background-color--secondary: var(--base-color-neutral--white);
+  --background-color--alternate: var(--base-color-neutral--black);
+
+  --border-color--primary: var(--base-color-neutral--border);
+  --focus-color: #4d65ff;
+
+  /* ---- Typography ---- */
+  --font-family--heading: var(--font-bdo-grotesk), Arial, sans-serif;
+  --font-family--body: var(--font-inter), sans-serif;
+  --font-family--events: var(--font-mona-sans), Arial, sans-serif;
+  --font-family--events-wide: var(--font-mona-sans-wide), Arial, sans-serif;
+
+  /* ---- Shape & motion ---- */
+  --radius--small: 0.5rem;
+  --radius--large: 2rem;
+  --radius--round: 10rem;
+
+  --ease--out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease--in-out-quint: cubic-bezier(0.83, 0, 0.17, 1);
+  --ease--spring: cubic-bezier(0.34, 1.9, 0.5, 1);
+}

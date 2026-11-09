@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "typegen": "node --env-file=.env.local node_modules/sanity/bin/sanity schemas extract --path=src/sanity/extract.json --enforce-required-fields --force && node --env-file=.env.local node_modules/sanity/bin/sanity typegen generate"
+    "typegen": "node --env-file=.env.local node_modules/sanity/bin/sanity schemas extract --path=src/sanity/extract.json --enforce-required-fields --force && node --env-file=.env.local node_modules/sanity/bin/sanity typegen generate",
+    "seed:singletons": "node --env-file=.env.local node_modules/sanity/bin/sanity exec scripts/create-singletons.ts --with-user-token",
+    "seed:settings": "node --env-file=.env.local node_modules/sanity/bin/sanity exec scripts/seed-site-settings.ts --with-user-token"
   },
   "dependencies": {
     "@sanity/client": "^8.15.0",

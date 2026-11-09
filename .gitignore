@@ -48,3 +48,6 @@ next-env.d.ts
 
 # seed upload cache
 /scripts/.asset-cache.json
+
+# Local Netlify folder
+.netlify

@@ -75,6 +75,17 @@ src/sanity/lib/               Client, Sanity Live, queries, image URLs
 scripts/                      One-off content scripts (`npx sanity exec <file> --with-user-token`)
 ```
 
+## Deployment (Netlify)
+
+- Site: https://paid-sanity-demo.netlify.app (Studio at `/studio`). Netlify adds its Next.js
+  adapter automatically; `netlify.toml` only pins Node 24 and the build command.
+- Environment variables are set in Netlify (Project configuration → Environment variables), the same
+  keys as `.env.example`. `SANITY_API_READ_TOKEN` and `SANITY_REVALIDATE_SECRET` are stored as secrets.
+- Sanity: the Netlify URL is an allowed CORS origin (with credentials), and the webhook
+  "Netlify: refresh cached pages" posts to `/api/revalidate` on publish, unpublish and delete.
+- Manual deploy from this machine: `npx netlify-cli deploy --build --prod`. On Windows, stop
+  `npm run dev` first, or the Next.js plugin can't move the `.next` folder.
+
 ## Content updates and caching
 
 Published pages are cached. They refresh when content changes in two ways:

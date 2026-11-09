@@ -1,7 +1,8 @@
 'use client'
 
-import {usePathname} from 'next/navigation'
-import {useEffect} from 'react'
+import {useEffect, useState} from 'react'
+
+import {PathnameWatcher} from '../PathnameWatcher'
 
 /**
  * Page-wide scroll effects, ported from the live site's custom code. Works through
@@ -16,9 +17,10 @@ import {useEffect} from 'react'
  * Re-scans on navigation and when the page content changes (live preview).
  */
 export function ScrollEffects() {
-  const pathname = usePathname()
+  const [pathname, setPathname] = useState<string | null>(null)
 
   useEffect(() => {
+    if (pathname === null) return // set by <PathnameWatcher> right after mount
     const html = document.documentElement
     const cleanups: Array<() => void> = []
 
@@ -123,5 +125,5 @@ export function ScrollEffects() {
     return () => cleanups.forEach((cleanup) => cleanup())
   }, [pathname])
 
-  return null
+  return <PathnameWatcher onChange={setPathname} />
 }

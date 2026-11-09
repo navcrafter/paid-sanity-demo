@@ -1,10 +1,10 @@
 'use client'
 
 import Link from 'next/link'
-import {usePathname} from 'next/navigation'
 import {useEffect, useRef, useState} from 'react'
 
 import {PaidLogo} from '../icons'
+import {PathnameWatcher} from '../PathnameWatcher'
 import {SmartLink, type LinkData} from '../SmartLink'
 import {LoginDropdown} from './LoginDropdown'
 import {useOnDarkSection} from './useOnDarkSection'
@@ -21,7 +21,7 @@ export interface NavigationData {
 const TABLET_QUERY = '(max-width: 991px)'
 
 export function NavbarClient({data}: {data: NavigationData | null}) {
-  const pathname = usePathname()
+  const [pathname, setPathname] = useState('')
   const containerRef = useRef<HTMLDivElement>(null)
   const isOnDark = useOnDarkSection(containerRef, pathname)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -47,6 +47,7 @@ export function NavbarClient({data}: {data: NavigationData | null}) {
 
   return (
     <div className={`navbar_component${menuOpen ? ' is-menu-open' : ''}`}>
+      <PathnameWatcher onChange={setPathname} />
       <div ref={containerRef} className={`navbar_container${isOnDark ? ' is-on-dark' : ''}`}>
         <div className="navbar_left">
           <Link href="/" className="navbar_logo-link" aria-label="#paid home" onClick={closeMenu}>

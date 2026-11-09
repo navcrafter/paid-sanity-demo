@@ -90,6 +90,13 @@ export const event = defineType({
       validation: (rule) => rule.required(),
     }),
     defineField({
+      name: 'owner',
+      title: 'Event owner',
+      type: 'string',
+      group: 'setup',
+      description: 'Internal. Who runs this event on the team (the "Event Owner" column in the events sheet). Not shown on the site.',
+    }),
+    defineField({
       name: 'cardImage',
       title: 'Card image',
       type: 'altImage',
@@ -313,14 +320,14 @@ export const event = defineType({
     {title: 'Event date, newest first', name: 'startDateTimeDesc', by: [{field: 'startDateTime', direction: 'desc'}]},
   ],
   preview: {
-    select: {title: 'title', category: 'category', template: 'template', date: 'startDateTime', media: 'cardImage', poster: 'heroVideo.poster', heroImage: 'heroImage'},
-    prepare({title, category, template, date, media, poster, heroImage}) {
+    select: {title: 'title', category: 'category', template: 'template', date: 'startDateTime', owner: 'owner', media: 'cardImage', poster: 'heroVideo.poster', heroImage: 'heroImage'},
+    prepare({title, category, template, date, owner, media, poster, heroImage}) {
       const categoryTitle = EVENT_CATEGORIES.find((c) => c.value === category)?.title
       const templateTitle = EVENT_TEMPLATES.find((t) => t.value === template)?.title
       const day = date ? new Date(date).toLocaleDateString('en-US', {dateStyle: 'medium'}) : null
       return {
         title: title || 'Untitled event',
-        subtitle: [categoryTitle, templateTitle, day].filter(Boolean).join(' · '),
+        subtitle: [categoryTitle, templateTitle, day, owner].filter(Boolean).join(' · '),
         media: media ?? heroImage ?? poster,
       }
     },

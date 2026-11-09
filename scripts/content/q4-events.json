@@ -1,0 +1,1222 @@
+{
+  "events": [
+    {
+      "_id": "drafts.event-an-evening-at-tashca",
+      "_type": "event",
+      "title": "An Evening at Tashca",
+      "slug": {
+        "_type": "slug",
+        "current": "an-evening-at-tashca"
+      },
+      "category": "supperclub",
+      "template": "supperClub",
+      "theme": {
+        "background": "dark",
+        "accent": "pink"
+      },
+      "startDateTime": "2026-11-04T18:00:00-05:00",
+      "owner": "Shayna",
+      "excerpt": "An intimate Supper Club dinner for senior marketers and creators at TASHCA in New York. November 4, 2026, 6-9 PM.",
+      "logo": {
+        "_type": "altImage",
+        "asset": {
+          "_upload": {
+            "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6aa03cc0d524070516bffccb_Supper%20Club_Black.png",
+            "type": "image"
+          }
+        },
+        "alt": "Supper Club by #paid"
+      },
+      "logoSize": "regular",
+      "dateLabel": "November 4, 2026",
+      "timeLabel": "6:00 PM - 9:00 PM",
+      "location": "151 Elizabeth St, New York, NY",
+      "locationUrl": "https://maps.app.goo.gl/q47CVNcUPmWH4ot6A",
+      "heroVideo": {
+        "_type": "videoEmbed",
+        "source": "vidzflow",
+        "vidzflowId": "rGoaLO6cJm",
+        "poster": {
+          "_vidzflowPoster": "rGoaLO6cJm"
+        }
+      },
+      "intro": "Join #paid for an intimate dinner bringing together senior marketers and creators for an evening of great food, wine, and conversation.",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "e7cde93e5392",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "ad1dbd0ffd1e",
+              "text": "For one night, TASHCA is ours. Set around one table in a private dining space, guests will enjoy a signature tasting menu, thoughtfully paired with drinks and plenty of time to settle in, connect, and enjoy the evening.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "d06296f83614",
+          "style": "h2",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "3a13a897f910",
+              "text": "The Experience",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "68804a94a6fb",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "ada35c7498a0",
+              "text": "A Private Table  ",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "af1e057f53e3",
+              "text": "Enjoy exclusive access to TASHCA for an intimate evening designed for just 20 guests.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "01c3823c7b9f",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "e14115a42d0d",
+              "text": "Signature Tasting Menu  ",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "dd2c040edfff",
+              "text": "Sit down to a multi-course tasting menu curated by TASHCA’s Chef and Sommelier, with wine and drinks served throughout the evening.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "ea7029ac740f",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "90bd7dbe5f1b",
+              "text": "Dinner Party Details  ",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "4bf15a7bfd82",
+              "text": "From the table settings to the menu, the space will be thoughtfully styled for the evening, creating a dinner party that feels personal from the moment you arrive.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "6fd1631ac272",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "02425b03de46",
+              "text": "Curated Connections  ",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "081e235c0e9e",
+              "text": "A small group of senior marketers and creators gathered around one table, with plenty of time for conversation that feels more personal than professional.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "_type": "eventLogoStrip",
+          "_key": "1a93efce74b8",
+          "heading": "A glimpse of who we've hosted",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/67a3c90eb88e9fb9e83d43ac_events-logos-white-15.png",
+                "type": "image"
+              }
+            },
+            "alt": "hashtag paid partner logos"
+          }
+        },
+        {
+          "_type": "eventTestimonials",
+          "_key": "d95fa2f30215",
+          "heading": "Who’s been at our table",
+          "quotes": [
+            {
+              "_type": "eventQuote",
+              "_key": "9924f433ea0c",
+              "quote": "“I had such a wonderful time, thank you for including me. It was great to meet new people, have fantastic convos and enjoy a delicious meal. Thank you to the entire #paid team for being such wonderful hosts and so engaging. Great conversations and ideas!”",
+              "name": "Maddie Phillips",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6887dc943df2e30fad50e68e_Rogers_logo.svg",
+                    "type": "image"
+                  }
+                },
+                "alt": "Rogers logo in white"
+              }
+            },
+            {
+              "_type": "eventQuote",
+              "_key": "d3507019f698",
+              "quote": "“The dinner was amazing! It was great connecting with various people in the industry and hearing different viewpoints. Excited to hopefully be considered for another one in the future. The possibilities at these dinners are endless!”",
+              "name": "Matthew Kaddor",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6883c331d3435e7cae4bb4b9_Gymshark-Logo-1.png",
+                    "type": "image"
+                  }
+                },
+                "alt": "Gymshark logo in white"
+              }
+            },
+            {
+              "_type": "eventQuote",
+              "_key": "cd90ae3e9f9e",
+              "quote": "\"I loved the evening and conversations. It’s rare to bring brands and creators to talk through topics that are more candid and without an agenda. No dealings, no negotiations. Just marketers and creators sharing stories. Love the concept!\"",
+              "name": "Daniel Rabinovich",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6893970aa800914140489a22_barrys.svg",
+                    "type": "image"
+                  }
+                },
+                "alt": "Barry's logo in white"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "eventPeople",
+          "_key": "01074a786223",
+          "heading": "Past Creators",
+          "people": [
+            {
+              "_type": "eventPerson",
+              "_key": "3e659bd2fedd",
+              "name": "Zachery Dereniowski",
+              "subtitle": "@mdmotivator",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bc0829338699238377a92_MD%20Motivator.webp",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/mdmotivator/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "387750ab4c25",
+              "name": "Hunter Prosper",
+              "subtitle": "@hunterprosper",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bc0408c01be7d1c177598_Hunter%20Prosper.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/hunter_prosper/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "c27ecce62348",
+              "name": "Spencer Barbosa",
+              "subtitle": "@spencer.barbosa",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bc00e0ae52f012a5566e3_Spencer%20Barbosa.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/spencer.barbosa/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "2d9112353ba8",
+              "name": "Alex Youmazzo",
+              "subtitle": "@alexyoumazzo",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbfe2469a09bba4012da4_Alex%20Youmazzo.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/alexyoumazzo/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "31b0ab138d44",
+              "name": "Jordan Howlett",
+              "subtitle": "@jordan_the_stallion8",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbfb082541f8b04b5a712_Jordan%20Howlett.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/jordan_the_stallion8/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "2add465640b2",
+              "name": "Tejas Hullur",
+              "subtitle": "@tejashullur",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbf77884b5368913efc76_Tejas%20Hullur.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/tejashullur/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "5d89285578a3",
+              "name": "Kiana Leroux",
+              "subtitle": "@kileroux",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbf30a6a0884ff7aa188d_Kiana%20Leroux.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/kileroux/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "14bf34cee85b",
+              "name": "Niki Victoria",
+              "subtitle": "@nikiivictoria",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/683a04b8bca3ef5722c7859d_NikiVictoria1%20(1).avif",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/nikiivictoria/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "02a24e9fd011",
+              "name": "Alex Wassabi",
+              "subtitle": "@alexwassabi",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/683a03a8dc3f5639d6a06865_Alex%20Wassabi.png",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/alexwassabi/"
+            }
+          ]
+        },
+        {
+          "_type": "eventVenues",
+          "_key": "9410d64d1810",
+          "heading": "Past Restaurants",
+          "venues": [
+            {
+              "_type": "eventVenue",
+              "_key": "ab25e55034b1",
+              "name": "The Crow's Nest",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2eb8bdbe899998979874_crows-nest-logo.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Crow's Nest Montauk logo in black and white"
+              }
+            },
+            {
+              "_type": "eventVenue",
+              "_key": "3b23eed1adf8",
+              "name": "Kasa Moto",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2f2fdc4e074cb2eb66bf_kasa-moto-logo.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Kasa Moto logo in gold with a red background"
+              }
+            },
+            {
+              "_type": "eventVenue",
+              "_key": "5300f596aa54",
+              "name": "Le Colonial",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2f3363ea6b49615f604c_le-colonial-logo.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Le Colonial logo in black with a light beige background"
+              }
+            },
+            {
+              "_type": "eventVenue",
+              "_key": "965fd0abf52b",
+              "name": "Mamo",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2f66e1e0eb1736ad1b06_mamo-logo.png",
+                    "type": "image"
+                  }
+                },
+                "alt": "Mamo logo in light beige with a brown background"
+              }
+            },
+            {
+              "_type": "eventVenue",
+              "_key": "dbece21dcc86",
+              "name": "Lena Brava",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2f697bdcbba0556552fd_lena-brava-logo.png",
+                    "type": "image"
+                  }
+                },
+                "alt": "Lena Brava logo in pale yellow with an orange background"
+              }
+            },
+            {
+              "_type": "eventVenue",
+              "_key": "23e3e2623561",
+              "name": "Pasjoli",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2f6d5f2d1d919ac7b660_pasjoli-logo.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Pasjoli logo in white with a blue background"
+              }
+            }
+          ]
+        }
+      ],
+      "registration": {
+        "heading": "Ready to pull up a chair?",
+        "hubspotFormId": "8c74e4e8-7294-466c-a557-9a198dd53da1"
+      },
+      "moreInfoHeading": "More Information",
+      "moreInfo": [
+        {
+          "_type": "eventFaq",
+          "_key": "fcc72fd282ab",
+          "question": "What should I do if I need to cancel my registration?",
+          "answer": "Please notify us at least 48 hours in advance by replying to your confirmation email. This allows us to open your spot to another guest."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "d994c8c8e255",
+          "question": "Is there a dress code?",
+          "answer": "We recommend business casual attire for the event."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "9e47fc0f1ee5",
+          "question": "Can I bring a guest?",
+          "answer": "Due to the exclusive nature of this event, attendance is by invitation only and non-transferable."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "9d644e13e9ab",
+          "question": "What if I have dietary restrictions?",
+          "answer": "We’ve got you covered! Please let us know your dietary needs during registration, and we’ll ensure accommodations are made."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "8ccc0387af60",
+          "question": "Will there be parking or transportation provided?",
+          "answer": "Details regarding parking or transportation will be included in your confirmation email."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "030fc597d6fd",
+          "question": "Who can I contact for additional questions?",
+          "answer": "For any additional inquiries, reply to your confirmation email or reach out to our events team at events@hashtagpaid.com"
+        }
+      ],
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "An Evening at Tashca | #paid Supper Club NYC Nov 4, 2026",
+        "metaDescription": "Join #paid for an intimate Supper Club dinner with senior marketers and creators at TASHCA in New York. November 4, 2026, 6-9 PM."
+      }
+    },
+    {
+      "_id": "drafts.event-an-evening-at-mickey-lynn",
+      "_type": "event",
+      "title": "An Evening at Mickey Lynn",
+      "slug": {
+        "_type": "slug",
+        "current": "an-evening-at-mickey-lynn"
+      },
+      "category": "shopping",
+      "template": "supperClub",
+      "theme": {
+        "background": "dark",
+        "accent": "default"
+      },
+      "startDateTime": "2026-10-22T18:00:00-04:00",
+      "owner": "Shayna",
+      "excerpt": "An intimate shopping experience for senior marketers and creators at Mickey Lynn in Atlanta. October 22, 2026, 6-8:30 PM.",
+      "logo": {
+        "_type": "altImage",
+        "asset": {
+          "_upload": {
+            "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6aaac284ef421c30b0088e2d_Shopping%20Experience_White.png",
+            "type": "image"
+          }
+        },
+        "alt": "Shopping Experience by #paid"
+      },
+      "logoSize": "regular",
+      "dateLabel": "October 22, 2026",
+      "timeLabel": "6:00 PM - 8:30 PM",
+      "location": "996 Virginia Ave NE, Atlanta",
+      "locationUrl": "https://maps.app.goo.gl/uctbV7UmPVDccSnW7",
+      "heroVideo": {
+        "_type": "videoEmbed",
+        "source": "vidzflow",
+        "vidzflowId": "xxibah2PyF",
+        "poster": {
+          "_vidzflowPoster": "xxibah2PyF"
+        }
+      },
+      "intro": "Join #paid for an intimate shopping experience bringing together senior marketers and creators for an evening of jewelry, personal style, and great company.",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "094f9901a523",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "b636400bc4a6",
+              "text": "Hosted at Mickey Lynn, guests will enjoy drinks and charcuterie while exploring the brand’s handcrafted jewelry, with the opportunity to shop and customize a piece that feels uniquely their own.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "b11186d902ea",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "73c7219e60be",
+              "text": "Sip, shop, and leave with something made for you.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "8c3d25bef85d",
+          "style": "h2",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "129e2463edfc",
+              "text": "The Experience",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "31413b85b861",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "3907179b3e2d",
+              "text": "Drinks & Charcuterie  ",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "72d26a3ee1c6",
+              "text": "Ease into the evening with drinks and bites while getting to know the group.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "97073af3572e",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "cd2e145def87",
+              "text": "Discover Mickey Lynn  ",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "6354564076d8",
+              "text": "Explore handcrafted jewelry designed with intention, using natural and thoughtfully sourced materials.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "03e0554c1ec7",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "9fbbcaaf6ba8",
+              "text": "Shop & Customize  ",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "53c2a9636bcb",
+              "text": "Browse the collection and personalize a piece to make it your own, with guidance from the Mickey Lynn team.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "c09c5f5ec320",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "ff8483f7ee8e",
+              "text": "Curated Connections  ",
+              "marks": [
+                "strong"
+              ]
+            },
+            {
+              "_type": "span",
+              "_key": "fc26f3263b91",
+              "text": "An intimate group of senior marketers and creators gathered for an evening that makes meeting new people feel easy and natural.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "_type": "eventLogoStrip",
+          "_key": "49159716ad49",
+          "heading": "A glimpse of who we've hosted",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/67a3c90eb88e9fb9e83d43ac_events-logos-white-15.png",
+                "type": "image"
+              }
+            },
+            "alt": "hashtag paid partner logos"
+          }
+        },
+        {
+          "_type": "eventTestimonials",
+          "_key": "3870253e1dbd",
+          "heading": "Who’s been at our table",
+          "quotes": [
+            {
+              "_type": "eventQuote",
+              "_key": "8dee4ff89dd0",
+              "quote": "“I had such a wonderful time, thank you for including me. It was great to meet new people, have fantastic convos and enjoy a delicious meal. Thank you to the entire #paid team for being such wonderful hosts and so engaging. Great conversations and ideas!”",
+              "name": "Maddie Phillips",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6887dc943df2e30fad50e68e_Rogers_logo.svg",
+                    "type": "image"
+                  }
+                },
+                "alt": "Rogers logo in white"
+              }
+            },
+            {
+              "_type": "eventQuote",
+              "_key": "26bcf514df09",
+              "quote": "“The dinner was amazing! It was great connecting with various people in the industry and hearing different viewpoints. Excited to hopefully be considered for another one in the future. The possibilities at these dinners are endless!”",
+              "name": "Matthew Kaddor",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6883c331d3435e7cae4bb4b9_Gymshark-Logo-1.png",
+                    "type": "image"
+                  }
+                },
+                "alt": "Gymshark logo in white"
+              }
+            },
+            {
+              "_type": "eventQuote",
+              "_key": "90c81d85ac0c",
+              "quote": "\"I loved the evening and conversations. It’s rare to bring brands and creators to talk through topics that are more candid and without an agenda. No dealings, no negotiations. Just marketers and creators sharing stories. Love the concept!\"",
+              "name": "Daniel Rabinovich",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6893970aa800914140489a22_barrys.svg",
+                    "type": "image"
+                  }
+                },
+                "alt": "Barry's logo in white"
+              }
+            }
+          ]
+        },
+        {
+          "_type": "eventPeople",
+          "_key": "ff947fe91d19",
+          "heading": "Past Creators",
+          "people": [
+            {
+              "_type": "eventPerson",
+              "_key": "41155a8863a3",
+              "name": "Zachery Dereniowski",
+              "subtitle": "@mdmotivator",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bc0829338699238377a92_MD%20Motivator.webp",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/mdmotivator/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "80db02fb5b17",
+              "name": "Hunter Prosper",
+              "subtitle": "@hunterprosper",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bc0408c01be7d1c177598_Hunter%20Prosper.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/hunter_prosper/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "cf4207fe4b3e",
+              "name": "Spencer Barbosa",
+              "subtitle": "@spencer.barbosa",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bc00e0ae52f012a5566e3_Spencer%20Barbosa.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/spencer.barbosa/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "1a216c650e45",
+              "name": "Alex Youmazzo",
+              "subtitle": "@alexyoumazzo",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbfe2469a09bba4012da4_Alex%20Youmazzo.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/alexyoumazzo/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "83125fc0d389",
+              "name": "Jordan Howlett",
+              "subtitle": "@jordan_the_stallion8",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbfb082541f8b04b5a712_Jordan%20Howlett.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/jordan_the_stallion8/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "d2a4cbb76b46",
+              "name": "Tejas Hullur",
+              "subtitle": "@tejashullur",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbf77884b5368913efc76_Tejas%20Hullur.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/tejashullur/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "3521617540ba",
+              "name": "Kiana Leroux",
+              "subtitle": "@kileroux",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/688bbf30a6a0884ff7aa188d_Kiana%20Leroux.jpg",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/kileroux/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "3c1b5f267da2",
+              "name": "Niki Victoria",
+              "subtitle": "@nikiivictoria",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/683a04b8bca3ef5722c7859d_NikiVictoria1%20(1).avif",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/nikiivictoria/"
+            },
+            {
+              "_type": "eventPerson",
+              "_key": "cb0403c6061b",
+              "name": "Alex Wassabi",
+              "subtitle": "@alexwassabi",
+              "photo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5dfd2203d08cf403964198c2/683a03a8dc3f5639d6a06865_Alex%20Wassabi.png",
+                    "type": "image"
+                  }
+                },
+                "alt": ""
+              },
+              "url": "https://www.instagram.com/alexwassabi/"
+            }
+          ]
+        },
+        {
+          "_type": "eventVenues",
+          "_key": "b6f6641ab641",
+          "heading": "Past Restaurants",
+          "venues": [
+            {
+              "_type": "eventVenue",
+              "_key": "75bacbca58bc",
+              "name": "The Crow's Nest",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2eb8bdbe899998979874_crows-nest-logo.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Crow's Nest Montauk logo in black and white"
+              }
+            },
+            {
+              "_type": "eventVenue",
+              "_key": "9608d00046c3",
+              "name": "Kasa Moto",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2f2fdc4e074cb2eb66bf_kasa-moto-logo.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Kasa Moto logo in gold with a red background"
+              }
+            },
+            {
+              "_type": "eventVenue",
+              "_key": "fd08813dc090",
+              "name": "Le Colonial",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2f3363ea6b49615f604c_le-colonial-logo.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Le Colonial logo in black with a light beige background"
+              }
+            },
+            {
+              "_type": "eventVenue",
+              "_key": "2b8a03481301",
+              "name": "Mamo",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2f66e1e0eb1736ad1b06_mamo-logo.png",
+                    "type": "image"
+                  }
+                },
+                "alt": "Mamo logo in light beige with a brown background"
+              }
+            },
+            {
+              "_type": "eventVenue",
+              "_key": "b684d29bb103",
+              "name": "Lena Brava",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2f697bdcbba0556552fd_lena-brava-logo.png",
+                    "type": "image"
+                  }
+                },
+                "alt": "Lena Brava logo in pale yellow with an orange background"
+              }
+            },
+            {
+              "_type": "eventVenue",
+              "_key": "5b3ca9dee50b",
+              "name": "Pasjoli",
+              "logo": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/679d2f6d5f2d1d919ac7b660_pasjoli-logo.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Pasjoli logo in white with a blue background"
+              }
+            }
+          ]
+        }
+      ],
+      "registration": {
+        "heading": "RSVP to join us!",
+        "hubspotFormId": "ade834ef-b2df-457f-a8a5-8320ab492067"
+      },
+      "moreInfoHeading": "More Information",
+      "moreInfo": [
+        {
+          "_type": "eventFaq",
+          "_key": "1172db70a0e3",
+          "question": "What should I do if I need to cancel my registration?",
+          "answer": "Please notify us at least 48 hours in advance by replying to your confirmation email. This allows us to open your spot to another guest."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "df24c2aa1908",
+          "question": "Is there a dress code?",
+          "answer": "We recommend business casual attire for the event."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "f3d7b1fdc3af",
+          "question": "Can I bring a guest?",
+          "answer": "Due to the exclusive nature of this event, attendance is by invitation only and non-transferable."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "4b0d72c19712",
+          "question": "What if I have dietary restrictions?",
+          "answer": "We’ve got you covered! Please let us know your dietary needs during registration, and we’ll ensure accommodations are made."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "0454cb55bb0e",
+          "question": "Will there be parking or transportation provided?",
+          "answer": "Details regarding parking or transportation will be included in your confirmation email."
+        },
+        {
+          "_type": "eventFaq",
+          "_key": "254e9cd4ccec",
+          "question": "Who can I contact for additional questions?",
+          "answer": "For any additional inquiries, reply to your confirmation email or reach out to our events team at events@hashtagpaid.com"
+        }
+      ],
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "An Evening at Mickey Lynn | #paid Event Oct 22, 2026",
+        "metaDescription": "Join #paid for an intimate shopping experience with senior marketers and creators at Mickey Lynn in Atlanta. October 22, 2026, 6-8:30 PM."
+      }
+    },
+    {
+      "_id": "drafts.event-the-creator-soiree",
+      "_type": "event",
+      "title": "The Creator Soirée, presented by #paid & YouTube",
+      "slug": {
+        "_type": "slug",
+        "current": "the-creator-soiree-presented-by-paid-youtube"
+      },
+      "category": "industry",
+      "template": "midTier",
+      "theme": {
+        "background": "black",
+        "accent": "red"
+      },
+      "startDateTime": "2026-10-28T19:00:00-04:00",
+      "owner": "Sophia",
+      "excerpt": "An Old Hollywood evening in New York bringing together creators, brand leaders and tastemakers. October 28, 2026, Soho Grand Hotel.",
+      "cardImage": {
+        "_type": "altImage",
+        "asset": {
+          "_upload": {
+            "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6a9702b69946d52ad8a20bda_creatorsoireee-hero.avif",
+            "type": "image"
+          }
+        },
+        "alt": "The Creator Soirée"
+      },
+      "logo": {
+        "_type": "altImage",
+        "asset": {
+          "_upload": {
+            "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6a9974834a473339737188de_CS-logo-light.svg",
+            "type": "image"
+          }
+        },
+        "alt": "The Creator Soirée"
+      },
+      "logoSize": "large",
+      "dateLabel": "Wednesday, October 28, 2026",
+      "timeLabel": "7:00 PM - 11:00 PM",
+      "location": "Soho Grand Hotel, 310 West Broadway, New York",
+      "locationUrl": "https://maps.app.goo.gl/?q=Soho+Grand+Hotel+310+West+Broadway+New+York",
+      "intro": "You are cordially invited.",
+      "body": [
+        {
+          "_type": "block",
+          "_key": "571fa23780c5",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "525c3a93d1a6",
+              "text": "There was something magical about Old Hollywood. The glamour, the unexpected conversations, the nights that quietly shaped culture. The Creator Soirée is our love letter to that feeling.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "179765a87763",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "bd81591d2c98",
+              "text": "An intimate evening in New York City bringing together creators, brand leaders, and tastemakers for cocktails, conversation, and a little old-fashioned glamour. No agenda. No expectations. Only 60 people are invited. You’re one of them.",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "295b8b867c2c",
+          "style": "h2",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "5f01a414e339",
+              "text": "Dress for the occasion",
+              "marks": []
+            }
+          ]
+        },
+        {
+          "_type": "block",
+          "_key": "19858e4635d9",
+          "style": "normal",
+          "markDefs": [],
+          "children": [
+            {
+              "_type": "span",
+              "_key": "ed7fc7e6bb60",
+              "text": "Old Hollywood glamour. Timeless. Elegant. A little dramatic.",
+              "marks": []
+            }
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "_type": "eventLogoStrip",
+          "_key": "aadeadc7735f",
+          "heading": "Presented by",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6a8df9b269e3c37106aa4e99_youtube-logo.png",
+                "type": "image"
+              }
+            },
+            "alt": "YouTube"
+          }
+        }
+      ],
+      "registration": {
+        "heading": "Reserve your spot",
+        "hubspotFormId": "2a77d684-460e-4289-9fec-239426a2dee4"
+      },
+      "moreInfoHeading": "More Information",
+      "moreInfo": [],
+      "seo": {
+        "_type": "seo",
+        "metaTitle": "The Creator Soirée, presented by #paid & YouTube",
+        "metaDescription": "An intimate Old Hollywood evening in New York City for creators, brand leaders and tastemakers. October 28, 2026, Soho Grand Hotel."
+      }
+    }
+  ]
+}

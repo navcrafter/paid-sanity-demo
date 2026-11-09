@@ -379,6 +379,7 @@ export type Event = {
       | "cream";
   };
   startDateTime: string;
+  owner?: string;
   cardImage?: AltImage;
   excerpt?: string;
   logo?: AltImage;

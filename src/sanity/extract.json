@@ -2397,6 +2397,13 @@
         },
         "optional": false
       },
+      "owner": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
       "cardImage": {
         "type": "objectAttribute",
         "value": {

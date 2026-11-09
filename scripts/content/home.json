@@ -1,0 +1,1313 @@
+{
+  "sections": [
+    {
+      "_type": "heroSection",
+      "theme": "cream",
+      "headingSize": "display",
+      "heading": "Infrastructure for\nthe creator economy",
+      "text": null,
+      "cta": {
+        "_type": "link",
+        "label": "Get started",
+        "href": "https://hashtagpaid.com/book-a-demo",
+        "openInNewTab": false
+      },
+      "galleryStyle": "orbit",
+      "gallery": [
+        {
+          "_type": "mediaItem",
+          "_key": "d115dcfd52ba",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adb901ad79aeacc325b141d_frame-2147220794.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Woman sitting in bed wrapped in white towels and a bathrobe, drinking from a white mug and reading a magazine."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "3670e85d1283",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adb901a810f31ffc511578c_frame-2147220793.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Crowd at an outdoor event raising hands and holding phones in front of a stage with green Heineken and F1 banners, a DJ performing, and a flag waving on the right side."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "e5655f5c18a9",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adb901a182915399b6b1f28_frame-2147220797.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Woman with shoulder-length dark hair wearing long dangling earrings and a cream-colored ribbed sweater with a twist detail at the front, with hands positioned near the waist."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "50c0487b67a5",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7e689b19545a689a39_screenshot-2026-10-23-at-85939-am-3.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Man with tattoos wearing a backwards black cap, sunglasses, white shorts, and white sneakers stretches his right leg backward while holding a red railing on a curved red outdoor running track with a blue sky and distant beach in the background."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "c4e5a8139bd9",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7b35bd8968aae270bb_img5015-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Young woman with long dark hair and glasses sitting on an orange plush armchair, wearing multiple bracelets and a silver handbag over her shoulder, dressed in a sheer dark top and gray pants."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "5fc4fb584d62",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7d4c10ed2ef85aa555_slide2-nealjollynealjollyxroots-fall2025-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Man with a beard wearing headphones and a gray shirt seated on a gym bench lifting two dumbbells with exercise equipment and treadmills in the background."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "526ad57e2604",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7fe0b043498cf49685_img7283-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Person with dark hair in a low bun, wearing a red sleeveless top, white pants, black sandals, gold jewelry, and carrying a white handbag, standing in an elevator and holding the door handle."
+          }
+        }
+      ],
+      "announcement": {
+        "tag": "New",
+        "link": {
+          "_type": "link",
+          "label": "Join the waitlist for Creator Marketing Summit 2027",
+          "href": "https://hashtagpaid.com/creator-marketing-summit",
+          "openInNewTab": false
+        }
+      },
+      "logosHeading": "Trusted by the brands you love",
+      "logoRows": [
+        {
+          "_type": "logoRow",
+          "_key": "68a9e04e5ff2",
+          "logos": [
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d71c1758185701c6c6e_brand-sephora.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Sephora brand name in bold black uppercase letters.",
+              "_key": "7126997f00d7"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d709450aaf312e84ff4_brand-coca-cola.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Coca-Cola logo in black script font.",
+              "_key": "2d23e6097942"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d70db97b496b60b797e_brand-disney.png",
+                  "type": "image"
+                }
+              },
+              "alt": "The Disney logo in stylized black script font.",
+              "_key": "ac9c0e8081ba"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d719450aaf312e8500a_brand-netflix.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Netflix brand name text in bold black letters with a slight arch.",
+              "_key": "f45f4e3e0945"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d716ef712b615de3834_brand-mcdonalds.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Black stylized letter M with two arches resembling McDonald's logo.",
+              "_key": "93399651135f"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d7bb678ddb0a0450373_brand-walmart.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Walmart",
+              "_key": "918bced0d3da"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ae26ff0b52928a5d3c10824_Nike_black_sm.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Nike Swoosh logo in black.",
+              "_key": "bd17a8e5480d"
+            }
+          ]
+        },
+        {
+          "_type": "logoRow",
+          "_key": "fb5f2cc82eac",
+          "logos": [
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d6ff977df6334f1b32f_brand-airbnb.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Airbnb logo with a stylized heart combined with an A symbol followed by the word 'airbnb' in lowercase letters.",
+              "_key": "0ce4b8e6822c"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d71d3ca5c11fa470d80_brand-ikea.png",
+                  "type": "image"
+                }
+              },
+              "alt": "IKEA logo with bold black letters inside a white oval.",
+              "_key": "e5bb39c04f55"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d7196693394a3d32a90_brand-toyota.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Toyota logo consisting of three intersecting ovals forming a stylized T above the word TOYOTA in uppercase letters.",
+              "_key": "1a29bdf45d5d"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d6fc00486faa5ab0007_brand-delta.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Delta Airlines logo with a black triangular shape resembling a stylized airplane wing next to the word DELTA in uppercase black letters.",
+              "_key": "968ebe607829"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d71f977df6334f1b36a_brand-hm.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Black stylized letters 'H&M' representing the H&M brand logo.",
+              "_key": "ada1700425c2"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ae26ff31538387ee2ac35db_Apple_black_sm.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Apple logo with a bite taken out of the right side and a leaf tilted to the right at the top.",
+              "_key": "48b707b962d6"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d72a75de0241c9526b5_brand-virgin.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Virgin brand logo in stylized black cursive script.",
+              "_key": "2f6da322613f"
+            }
+          ]
+        },
+        {
+          "_type": "logoRow",
+          "_key": "8997957b436e",
+          "logos": [
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d6f721d087e52cb105e_brand-dove.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Dove brand logo with the word 'Dove' in stylized black script and a small black silhouette of a dove bird above the letter 'v'.",
+              "_key": "7ea6a0b3c2ca"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d6f5af8fcd0be1d2cf1_brand-american-express.png",
+                  "type": "image"
+                }
+              },
+              "alt": "American Express wordmark logo in bold black uppercase letters.",
+              "_key": "2d5994dcbbc7"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d6fe6efcfedb32dac66_brand-hilton.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Hilton",
+              "_key": "eb7d8d4b2127"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d72d5bfcc5e8df57dd8_brand-tim-hortons.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Tim Hortons wordmark logo in black script font.",
+              "_key": "fa84554a66cb"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d71aac92ef2c3eef509_brand-uniqlo.png",
+                  "type": "image"
+                }
+              },
+              "alt": "UNIQLO brand logo with white uppercase letters in a black square.",
+              "_key": "074d1862fea4"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d71500313b6f07fc6f3_brand-marriott.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Stylized black letter M above the word Marriott in uppercase letters.",
+              "_key": "6d17dcd326e0"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad78d70fe73d3e3de5305af_brand-air-canada.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Air Canada logo featuring a black maple leaf inside a circle above the text 'AIR CANADA' in uppercase letters.",
+              "_key": "0d56206ed98a"
+            }
+          ]
+        }
+      ],
+      "_key": "6d215a5b4705"
+    },
+    {
+      "_type": "statementSection",
+      "heading": "Today, brands run creator marketing as one-off campaigns across disconnected tools\n\nWhen they end, creators leave, data disappears, and the next campaign starts from zero",
+      "effect": "scrub",
+      "_key": "6c96f5d8b71d"
+    },
+    {
+      "_type": "showcaseSection",
+      "image": {
+        "_type": "altImage",
+        "asset": {
+          "_upload": {
+            "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ae2373c87ef74668c48f229_Homepage.gif",
+            "type": "image"
+          }
+        },
+        "alt": "User interface screen for Northwind Outfitters Trail Season 2026 showing creator profile of Cross Novia with photo, social media tags Hiking, Gear reviews, Van life. Indicators show no recent competitor work, previous collaborations, no conflicting categories, and high engagement. Instagram stats include 519,948 followers, 30,425 median in-feed views, 5.85% in-feed view rate, 7,153 average engagements, 1.38% engagement rate, and 10,399 average story views. Sidebar lists other creators with colored initials."
+      },
+      "heading": "With #paid, your creators, workflows, and data live\nin one place, so every campaign builds on the last",
+      "gallery": [
+        {
+          "_type": "mediaItem",
+          "_key": "cdcc5e36e839",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7fe0b043498cf49685_img7283-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Person with dark hair in a low bun, wearing a red sleeveless top, white pants, black sandals, gold jewelry, and carrying a white handbag, standing in an elevator and holding the door handle."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "b65776973d9c",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "NWeQD24jgn",
+            "poster": {
+              "_vidzflowPoster": "NWeQD24jgn"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "e08b508d46b2",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "P2XjDoleOf",
+            "poster": {
+              "_vidzflowPoster": "P2XjDoleOf"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "c0fa1d09e8fa",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7f774b3c23fc832eeb_microhydro-2.avif",
+                "type": "image"
+              }
+            },
+            "alt": "A woman wearing a white t-shirt, denim shorts, a colorful headscarf, and brown woven slip-on shoes walks on a city street corner near a crosswalk, carrying a pink water bottle over her shoulder."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "5aee349fdf17",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "ePRhLmvFEL",
+            "poster": {
+              "_vidzflowPoster": "ePRhLmvFEL"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "c844b76a9cd1",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "33bWQqsP3S",
+            "poster": {
+              "_vidzflowPoster": "33bWQqsP3S"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "ee26aa15b7c5",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7f17e1a4834af27822_withwendy-1-2.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Woman with shoulder-length black hair wearing a light yellow ribbed sweater and black pants, holding a small white handbag against a teal background."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "f9fe62150845",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "A04LX9iwgG",
+            "poster": {
+              "_vidzflowPoster": "A04LX9iwgG"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "8af9188ca6a1",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "6hBOaq5YJK",
+            "poster": {
+              "_vidzflowPoster": "6hBOaq5YJK"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "97268f7cb517",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7f15e0aa5133389a87_microhydropic1-draft1-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Woman wearing sunglasses, a black sleeveless top, and a black skirt with white polka dots stands on a sidewalk near grass. She holds a small black purse open, as various pink-themed items like a water bottle, lip gloss, bow, and heart float in the air beside her, along with a MetroCard and sparkle emojis."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "5f15cc8b0cfd",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "yClMmc2xST",
+            "poster": {
+              "_vidzflowPoster": "yClMmc2xST"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "d36255140ad3",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "wubtFipbWR",
+            "poster": {
+              "_vidzflowPoster": "wubtFipbWR"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "6ee5c8b88255",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7ef6d96ec17078566f_virginhotel-7-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Woman in a long light blue dress and red hat holding a small brown dog wearing an orange bandana outside a building with a red neon sign that reads Virgin Hotels."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "3072badd39ed",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "LmzezhtzIx",
+            "poster": {
+              "_vidzflowPoster": "LmzezhtzIx"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "33ebf67ddf02",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "lMslZPVaux",
+            "poster": {
+              "_vidzflowPoster": "lMslZPVaux"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "3b154a0f7331",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7e97b2f0eec3aff422_tezza-8150-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Smiling young woman with glasses wearing a matching mauve sweatshirt and pants, holding books, standing by a lake surrounded by dense green forest under a partly cloudy sky."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "9baf40c4ce23",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "Zj5SIz8PZK",
+            "poster": {
+              "_vidzflowPoster": "Zj5SIz8PZK"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "2061c6ce1874",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "ywQ5ZVytR6",
+            "poster": {
+              "_vidzflowPoster": "ywQ5ZVytR6"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "390b02409fe5",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7ecea680fbd63dd964_virginhotel-11-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Black and white photo of a woman in a bathrobe holding a coffee cup and applying lip balm while looking into a rectangular illuminated mirror in a modern bathroom."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "df6965c81247",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "0Up1xgAEfc",
+            "poster": {
+              "_vidzflowPoster": "0Up1xgAEfc"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "aed9d08eb49f",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "4UfLYLyikm",
+            "poster": {
+              "_vidzflowPoster": "4UfLYLyikm"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "bcf715592c30",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7e5b6fe9b11ebbd0c4_virginhotels-10-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "A man with short hair and a tattoo on his neck sits cross-legged on a bed with white sheets and pillows, holding a small cup and saucer, against a green upholstered headboard and a brick-patterned wall with a bedside lamp and speaker."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "03ef91e9b0e8",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "IyYkjOCq8w",
+            "poster": {
+              "_vidzflowPoster": "IyYkjOCq8w"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "62f74c3f50e5",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "dTBNsZ1zMA",
+            "poster": {
+              "_vidzflowPoster": "dTBNsZ1zMA"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "e29de589ad94",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7e43572f68d1f66def_virginhotel-4-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Woman wearing a red hat and blue dress sitting on a dark green velvet couch in a modern cafe corner, holding a drink with a straw, next to two small round tables and two orange stools, with wooden shelves and green wall light in the background."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "2cae1859e9ac",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "kgKjPZ5QAh",
+            "poster": {
+              "_vidzflowPoster": "kgKjPZ5QAh"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "3eed69f11bc5",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "iO1ucfGP3T",
+            "poster": {
+              "_vidzflowPoster": "iO1ucfGP3T"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "6b1f255e34c6",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7e54a123888ff5f5ef_tennis-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Woman in a white tennis dress and visor tossing a tennis ball up with one hand and holding a tennis racket with the other on a sunny outdoor tennis court."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "5ba5217e1dd6",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "P7i4OxxYrh",
+            "poster": {
+              "_vidzflowPoster": "P7i4OxxYrh"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "7abe671fb558",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "uOQVie5aEM",
+            "poster": {
+              "_vidzflowPoster": "uOQVie5aEM"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "317f26561da7",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7e5b6fe9b11ebbd0b3_virginhotel-9-3.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Person in white bathrobe and towel on head sitting in bed drinking from a mug with an open magazine on their lap, beside a nightstand with a framed photo and wall lamp."
+          }
+        }
+      ],
+      "colorScheme": "dark",
+      "_key": "b7e2450dfa15"
+    },
+    {
+      "_type": "featureTabsSection",
+      "groups": [
+        {
+          "_type": "featureTabGroup",
+          "_key": "0a0daa764a9d",
+          "tag": "Creators",
+          "heading": "Engaged creator network that wants to work with you",
+          "imageSide": "right",
+          "tabs": [
+            {
+              "_type": "featureTab",
+              "_key": "6dcefb09f508",
+              "title": "Authenticated, opted in, and ready",
+              "description": "Creators come to us for collaborations. They authenticate their social accounts, and connect their bank details and set their rates before ever getting on a campaign.",
+              "image": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adb9140fe57c89ea69a7e10_authenticated-opted-in-and-ready.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "User profile panel showing the username smilesdavis with a verified checkmark, full name Smiles Jacob Davis, and connected social media icons for Instagram, TikTok, and YouTube each with a green checkmark, flanked by panels depicting user engagement on the left and payouts ready info on the right."
+              },
+              "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"#060606\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><circle cx=\"12\" cy=\"12\" fill=\"none\" r=\"9\" stroke=\"currentcolor\" stroke-width=\"2px\" style=\"\"></circle><path d=\"M8.2 12.3l2.6 2.6 5-5.2\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\" style=\"\"></path></svg>"
+            },
+            {
+              "_type": "featureTab",
+              "_key": "b85cecdd42d7",
+              "title": "Hear directly from creators",
+              "description": "When a campaign goes live, creators raise their hand to work with you, and send  a brief pitch on why they're a fit for the collaboration.",
+              "image": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adb91416fb623e52c48bd96_hear-directly-from-creators.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Side profile of a woman with long hair wearing a pink sweatshirt and carrying a gray jacket over her shoulder, standing outdoors with greenery behind her; next to her is a white speech bubble with text expressing love for content about exploring BC and seasonal moments, ending with a black button labeled 'Share handraise'."
+              },
+              "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"#060606\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g fill=\"none\" stroke=\"#060606\" stroke-width=\"2px\" transform=\"translate(0 0.6) rotate(-12 12.5 12)\"><path d=\"M4 9a1.5 1.5 0 0 1 3 0V5.5a1.5 1.5 0 0 1 3 0V4a1.5 1.5 0 0 1 3 0v2a1.5 1.5 0 0 1 3 0v7l2.26-3.97a1.5 1.5 0 0 1 2.68 1.34L18.4 16.3c-1.2 2.8-3.6 4.5-6.8 4.5-4.4 0-7.6-2.7-7.6-7z\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\"></path><path d=\"M7 9v3.3M10 5.5V12M13 6v6\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\"></path></g></svg>"
+            },
+            {
+              "_type": "featureTab",
+              "_key": "5187f13e5393",
+              "title": "First-party creator signals",
+              "description": "Plan campaigns around real creator life moments, interests, and personal trends that don’t show up anywhere else.",
+              "image": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adb9140c531016fbfea6f8d_first-party-creator-signals.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Bar chart showing percentages of active hobbies: 35% Running, 49% Home workout, 57% Strength training, 81% Walking/hiking, 41% Pilates, 36% Yoga, 23% Dance, under the heading 'Active hobbies. Creators move, and they do it in more ways than one.'"
+              },
+              "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"#060606\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><circle cx=\"12\" cy=\"9\" fill=\"currentcolor\" r=\"2\" stroke=\"none\" stroke-width=\"2px\"></circle><path d=\"M12 11v10M9 21h6\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\"></path><path d=\"M15.83 5.79a5 5 0 0 1 0 6.42M8.17 12.21a5 5 0 0 1 0-6.42M18.89 3.21a9 9 0 0 1 0 11.58M5.11 14.79a9 9 0 0 1 0-11.58\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\"></path></svg>"
+            }
+          ]
+        },
+        {
+          "_type": "featureTabGroup",
+          "_key": "8cfc144cb467",
+          "tag": "Creators",
+          "heading": "Every workflow, from brief to payout",
+          "imageSide": "left",
+          "tabs": [
+            {
+              "_type": "featureTab",
+              "_key": "a48ecf5c9c13",
+              "title": "One platform for everything",
+              "description": "Briefing, sourcing, contracting, legal, approvals, payments, and measurement all live in one place. You can go from 5 to 500 creators without straining your internal teams.",
+              "image": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adb91412b1a77d3a87986c0_one-platform-for-everything.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Large cruise ship docked at a harbor with a city skyline at sunset, surrounded by labeled gray speech bubbles with text such as Measurement, Approvals, Versioning, Rights, Briefing, Creator roster, Media planning, Contracting, Rates, Social screening, Licensing, and Legal, and a row of five small circular profile photos beneath."
+              },
+              "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"currentcolor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><circle cx=\"7\" cy=\"7\" fill=\"none\" r=\"3.5\" stroke=\"currentcolor\" stroke-width=\"2px\" style=\"\"></circle><rect fill=\"none\" height=\"7\" rx=\"2\" stroke=\"currentcolor\" stroke-width=\"2px\" style=\"\" width=\"7\" x=\"13.5\" y=\"3.5\"></rect><path d=\"M7 13.5v7M3.5 17h7\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\" style=\"\"></path><path d=\"M17 20.5s-3.8-2.3-3.8-4.9a1.9 1.9 0 0 1 3.8-.4 1.9 1.9 0 0 1 3.8.4c0 2.6-3.8 4.9-3.8 4.9z\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\" style=\"\"></path></svg>"
+            },
+            {
+              "_type": "featureTab",
+              "_key": "dc2dafa152da",
+              "title": "Connected to every major platform",
+              "description": "Directly integrated into TikTok, Meta, YouTube, Pinterest, and Snap, so you can work with creators across every social channel from the same place.",
+              "image": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adb9140b49c8e726c1a5c27_connected-to-every-major-platform.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Grid of six popular social media app icons: Pinterest, TikTok, Instagram on top row; Facebook, Snapchat, and YouTube on bottom row."
+              },
+              "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"currentcolor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M9 2.5V7M15 2.5V7\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\"></path><path d=\"M6 7h12v3.5a6 6 0 0 1-12 0z\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\"></path><path d=\"M12 16.5V18c0 2-1.5 3.5-3.5 3.5\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\"></path></svg>"
+            },
+            {
+              "_type": "featureTab",
+              "_key": "40e4ab2de487",
+              "title": "Human to human",
+              "description": "Experts that balance your brand strategy with the creator's voice, media expertise to amplify what's working, and oversight to keep your launches on schedule.",
+              "image": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adb914133d2cf47bee11989_human-to-human.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Man with a beard and sunglasses wearing a grey hoodie and sweatpants standing with hands in pockets against a light brick wall, with overlay graphics showing social media performance metrics, a checklist for task progress, and a slider indicating brand strategy to creator voice."
+              },
+              "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"currentcolor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><circle cx=\"7.5\" cy=\"9\" fill=\"none\" r=\"3\" stroke=\"currentcolor\" stroke-width=\"2px\"></circle><circle cx=\"16.5\" cy=\"9\" fill=\"none\" r=\"3\" stroke=\"currentcolor\" stroke-width=\"2px\"></circle><path d=\"M3 20a4.5 4.5 0 0 1 9 0 4.5 4.5 0 0 1 9 0\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\"></path></svg>"
+            }
+          ]
+        },
+        {
+          "_type": "featureTabGroup",
+          "_key": "2593e229d16d",
+          "tag": "Data",
+          "heading": "Every campaign\ngets smarter than your last",
+          "imageSide": "right",
+          "tabs": [
+            {
+              "_type": "featureTab",
+              "_key": "78991aca065d",
+              "title": "Creator programs built on data",
+              "description": "Every part of your program is informed by data from thousands of campaigns and creators, so you know who to work with and how to build your program right from the start.",
+              "image": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adb9141171274969442b9b7_creator-programs-built-on-data.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "A woman in a white bathrobe and towel wrapped around her head sits on a bed drinking from a mug with a magazine on her lap."
+              },
+              "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"currentcolor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><circle cx=\"10.5\" cy=\"10.5\" fill=\"none\" r=\"7\" stroke=\"currentcolor\" stroke-width=\"2px\" style=\"\"></circle><path d=\"M15.5 15.5L21 21\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\" style=\"\"></path><path d=\"M7.5 13v-1.5M10.5 13V8M13.5 13v-3\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\" style=\"\"></path></svg>"
+            },
+            {
+              "_type": "featureTab",
+              "_key": "d917d647977d",
+              "title": "Learning compounds",
+              "description": "Every campaign teaches the next. What creators drove results, which creative attributes worked, and what themes to double down on. All the insights feed back into your program, so you’re never starting from zero.",
+              "image": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adb914127e18798433741a3_learning-compounds.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "Three photos of women drinking from reusable water bottles, each labeled with campaign ROAS: left woman smiling by brick wall, middle woman walking on street with headscarf and white shirt, right woman in athletic wear by beach."
+              },
+              "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"currentcolor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M3.5 3.5v17h17\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\"></path><path d=\"M7 16.5c4 0 7.5-2.2 10.5-9\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\"></path><path d=\"M14.2 8.8l3.3-1.3 1.3 3.3\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\"></path></svg>"
+            },
+            {
+              "_type": "featureTab",
+              "_key": "031fa48e2caf",
+              "title": "Measure what matters",
+              "description": "Creator-level performance, sentiment analysis, paid media optimization, and a variety of lift studies to prove performance. So you can invest confidently in your next campaign.",
+              "image": {
+                "_type": "altImage",
+                "asset": {
+                  "_upload": {
+                    "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adb91404266da3a0a2eac02_authenticated-opted-in-and-ready-1.avif",
+                    "type": "image"
+                  }
+                },
+                "alt": "User profile card for 'smilesdavis' showing a round profile photo of a cloudy sky, a verified check mark, and comment sentiment analysis with 92% positive, 95% neutral, and 3% negative from 1,284 comments analyzed, alongside adjacent metrics about affinity, purchase intent, consideration, and spend optimization details."
+              },
+              "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"currentcolor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M5.6 19.4a9 9 0 1 1 12.8 0\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\"></path><path d=\"M12 14l4-4\" fill=\"none\" stroke=\"currentcolor\" stroke-width=\"2px\"></path><circle cx=\"12\" cy=\"14\" fill=\"currentcolor\" r=\"2\" stroke=\"none\" stroke-width=\"2px\"></circle></svg>"
+            }
+          ]
+        }
+      ],
+      "tabDuration": 8,
+      "colorScheme": "light",
+      "_key": "8e6815c5d9f3"
+    },
+    {
+      "_type": "testimonialCarouselSection",
+      "quotes": [
+        {
+          "_type": "carouselQuote",
+          "_key": "8efb506820ae",
+          "quote": "“Love the platform!! Super user friendly, can easily find everything.”",
+          "size": "large",
+          "name": "Solange Grimard",
+          "company": "The Coca-Cola Company",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6aea62f61e4eb67921c133e4_Solange.webp",
+                "type": "image"
+              }
+            },
+            "alt": "Portrait of Solange from the Coca-Cola Company"
+          }
+        },
+        {
+          "_type": "carouselQuote",
+          "_key": "ffee32b8f8df",
+          "quote": "“#paid has the best creator platform we’ve used.”",
+          "size": "large",
+          "name": "Emily Martin",
+          "company": "Church & Dwight",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6aeb6ae27c71d2511c53a207_1688430382048.jpeg",
+                "type": "image"
+              }
+            },
+            "alt": "Smiling woman with long wavy dark hair wearing a light-colored blouse with small floral patterns against a soft gray background."
+          }
+        },
+        {
+          "_type": "carouselQuote",
+          "_key": "80ab2c14fc3e",
+          "quote": "\"Great experience, excited for more!\"",
+          "size": "large",
+          "name": "Nathan Maddock",
+          "company": "Arterra Wines",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6aeb788b519c2f6d51008aaf_1685496775448.jpg",
+                "type": "image"
+              }
+            },
+            "alt": "Black and white portrait of a man with dark hair and beard wearing a suit and tie, looking to his right with a slight smile, standing indoors against a plain wall with a framed object partially visible on the left."
+          }
+        },
+        {
+          "_type": "carouselQuote",
+          "_key": "d723025ca825",
+          "quote": "“Given the quick turnaround on our end, the team did a great job executing efficiently and staying flexible throughout. We really appreciated the responsiveness and partnership. Excited to continue building together on the next one!”",
+          "size": "small",
+          "name": "Amandie Delva",
+          "company": "Angry Orchard",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6aecadb8420618edc6587369_1749850612122.jpg",
+                "type": "image"
+              }
+            },
+            "alt": "Smiling woman with long braided hair, wearing a navy blue top with white puffed sleeves and a gold necklace, against a light blue background."
+          }
+        },
+        {
+          "_type": "carouselQuote",
+          "_key": "531fefc73186",
+          "quote": "“They know what we want, and we have the expectation that they’re going to deliver. And they deliver.”",
+          "size": "large",
+          "name": "Mizanur Rahman",
+          "company": "Optimum",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ae0ea4f3d62853927a2c9b2_1655842914137.jpeg",
+                "type": "image"
+              }
+            },
+            "alt": "Smiling young man with dark curly hair and beard wearing a light blue button-up shirt, standing with arms crossed against a light brick wall."
+          }
+        },
+        {
+          "_type": "carouselQuote",
+          "_key": "e45a93819eeb",
+          "quote": "“#paid brings something unique to the market.\nWe saw the brand grow more than 55%.”",
+          "size": "large",
+          "name": "Charlene Zapisocki",
+          "company": "Bayer",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/649b3298fd8967db451a026d_hp-charlene-headshot.jpg",
+                "type": "image"
+              }
+            },
+            "alt": "Charlene Zapisocki portrait"
+          }
+        },
+        {
+          "_type": "carouselQuote",
+          "_key": "99f384842880",
+          "quote": "“We also have a strong partnership with #paid that facilitates meetings between us and our core roster of creators where they can get to know us, our key messages, what’s important to us.”",
+          "size": "small",
+          "name": "Sonia Whiteson",
+          "company": "RBC",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ae10ac0e4d225fff837629f_1702155599210.jpeg",
+                "type": "image"
+              }
+            },
+            "alt": "Smiling woman with dark hair tied in a bun, wearing a white shirt and sitting indoors near wooden stairs."
+          }
+        },
+        {
+          "_type": "carouselQuote",
+          "_key": "a1f940199a81",
+          "quote": "“We invest a lot of time in the creator selection process, leveraging the #paid platform. We make sure there is a fit between the creator and the brand, and we strive for diversity of people, pets and geography.”",
+          "size": "small",
+          "name": "Idan Driman",
+          "company": "Pet Valu",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ae10b17e412f1a4ca70b1f6_1791248333753.jpeg",
+                "type": "image"
+              }
+            },
+            "alt": "Man with glasses and beard sitting in a black armchair, speaking into a microphone, gesturing with his left hand on a stage with a textured backdrop."
+          }
+        }
+      ],
+      "autoplaySeconds": 6.0,
+      "_key": "7a61f705e7b6"
+    },
+    {
+      "_type": "comparisonSection",
+      "heading": "Why brands switch to #paid",
+      "without": {
+        "label": "Without #paid",
+        "items": [
+          "Endless scrolling to find the right creators",
+          "Back-and-forth on rates, contracts, and admin",
+          "Limited visibility into campaign performance"
+        ]
+      },
+      "with": {
+        "label": "With #paid",
+        "items": [
+          "Creators matched to your brand",
+          "Rates, legal, and admin handled for you",
+          "Clear performance tracking at every step"
+        ]
+      },
+      "_key": "0ad95dffc80c"
+    },
+    {
+      "_type": "caseStudiesSection",
+      "heading": "Learn why consumer brands choose #paid",
+      "studies": [
+        {
+          "_type": "caseStudyCard",
+          "_key": "9dca9cf86e21",
+          "brand": "Sephora",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad796faea326674e5f7b1f9_case-sephora-card.jpg",
+                "type": "image"
+              }
+            },
+            "alt": "Woman with short black hair wearing a blue satin floral-patterned blouse, holding a colorful rectangular box with a floral design against a beige background and a dress form to her side."
+          },
+          "link": {
+            "_type": "link",
+            "label": "Read case study",
+            "href": "https://hashtagpaid.com/case-studies/how-sephora-launched-a-diwali-campaign-achieving-96-positive-sentiment",
+            "openInNewTab": false
+          },
+          "palette": "purple"
+        },
+        {
+          "_type": "caseStudyCard",
+          "_key": "5b241901f23d",
+          "brand": "Ikea",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad796fb992bf282fa66d5a3_case-ikea.jpg",
+                "type": "image"
+              }
+            },
+            "alt": "A woman in a pink dress holding hands with a young girl in a pink and white dress against a yellow wall, both carrying large blue reusable shopping bags."
+          },
+          "link": {
+            "_type": "link",
+            "label": "Read case study",
+            "href": "https://hashtagpaid.com/case-studies/how-ikea-drove-in-store-traffic-and-decreased-the-cost-per-visit-by-40",
+            "openInNewTab": false
+          },
+          "palette": "pink"
+        },
+        {
+          "_type": "caseStudyCard",
+          "_key": "861859b28c0d",
+          "brand": "Cheerios",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad796fa2b3f0a478905b4d6_case-cheerios.jpg",
+                "type": "image"
+              }
+            },
+            "alt": "Smiling woman with long brown hair wearing a white shirt holding a bowl of Cheerios cereal in a bright kitchen, with a family-size box of Cheerios, a bottle of milk, strawberries, and another bowl of cereal on the table."
+          },
+          "link": {
+            "_type": "link",
+            "label": "Read case study",
+            "href": "https://hashtagpaid.com/case-studies/cheerios-takes-the-lead-as-1-healthy-cereal-option-with-the-help-of-creators",
+            "openInNewTab": false
+          },
+          "palette": "lightBlue"
+        },
+        {
+          "_type": "caseStudyCard",
+          "_key": "6e8d554fed73",
+          "brand": "McDonald’s",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad796fa079e9c8bbc4b07c3_case-mcdonalds.jpg",
+                "type": "image"
+              }
+            },
+            "alt": "A smiling woman with long brown hair inside a vehicle holding up a McDonald's drink cup with a straw, wearing a yellow top and a seatbelt."
+          },
+          "link": {
+            "_type": "link",
+            "label": "Read case study",
+            "href": "https://hashtagpaid.com/case-studies/mcdonalds-drives-awareness-for-summer-drink-days",
+            "openInNewTab": false
+          },
+          "palette": "cream"
+        },
+        {
+          "_type": "caseStudyCard",
+          "_key": "3abda8ee0a6e",
+          "brand": "Infiniti",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad796fb73b38b12a6bab3d7_case-infiniti.jpg",
+                "type": "image"
+              }
+            },
+            "alt": "White Infiniti SUV parked on a paved surface with mountainous landscape and cloudy sky in the background during dusk."
+          },
+          "link": {
+            "_type": "link",
+            "label": "Read case study",
+            "href": "https://hashtagpaid.com/case-studies/infiniti-increases-brand-affinity-by-19-points-by-partnering-with-local-creators",
+            "openInNewTab": false
+          },
+          "palette": "grey"
+        }
+      ],
+      "_key": "114510fa26ce"
+    }
+  ]
+}

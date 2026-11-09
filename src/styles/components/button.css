@@ -49,7 +49,9 @@
   transition: transform 0.24s var(--ease--out);
 }
 .button.is-icon:hover .button_icon { transform: translateX(2px); }
+.button.is-icon.text-color-secondary { color: var(--text-color--secondary); }
 .button.is-icon.text-color-secondary:hover { color: var(--text-color--primary); }
+.button.is-icon.text-color-secondary-on-dark { color: var(--text-color--secondary-on-dark); }
 .button.is-icon.text-color-secondary-on-dark:hover { color: var(--text-color--secondary); }
 
 @media screen and (max-width: 991px) {

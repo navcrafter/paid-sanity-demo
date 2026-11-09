@@ -15,11 +15,307 @@
 export declare const internalGroqTypeReferenceTo: unique symbol;
 
 // Source: src/sanity/extract.json
+export type Announcement = {
+  tag?: string;
+  link?: Link;
+};
+
+export type Without = {
+  label?: string;
+  items?: Array<string>;
+};
+
+export type With = {
+  label?: string;
+  items?: Array<string>;
+};
+
+export type JobBoard = {
+  heading?: string;
+  anchorId?: string;
+  jobs?: Array<{
+    title?: string;
+    location?: string;
+    department?: string;
+    type?: string;
+    url?: string;
+    _type: "job";
+    _key: string;
+  }>;
+};
+
+export type InvestorsSection = {
+  _type: "investorsSection";
+  heading?: string;
+  text?: string;
+  people?: Array<{
+    name?: string;
+    role?: string;
+    photo?: AltImage;
+    _type: "person";
+    _key: string;
+  }>;
+  hidden?: boolean;
+};
+
+export type TeamMarqueeSection = {
+  _type: "teamMarqueeSection";
+  heading?: string;
+  text?: string;
+  rows?: Array<{
+    photos?: Array<
+      {
+        _key: string;
+      } & AltImage
+    >;
+    _type: "photoRow";
+    _key: string;
+  }>;
+  hidden?: boolean;
+};
+
+export type MissionSection = {
+  _type: "missionSection";
+  blocks?: Array<{
+    heading?: string;
+    text?: string;
+    image?: AltImage;
+    quote?: string;
+    quoteMeta?: Array<{
+      label?: string;
+      iconSvg?: string;
+      _type: "quoteMetaItem";
+      _key: string;
+    }>;
+    cardSide?: "right" | "left";
+    _type: "missionBlock";
+    _key: string;
+  }>;
+  hidden?: boolean;
+};
+
+export type FaqSection = {
+  _type: "faqSection";
+  heading?: string;
+  intro?: string;
+  introLink?: Link;
+  items?: Array<{
+    question?: string;
+    answer?: string;
+    _type: "faqItem";
+    _key: string;
+  }>;
+  colorScheme?: "none" | "dark" | "light";
+  hidden?: boolean;
+};
+
+export type VideoBannerSection = {
+  _type: "videoBannerSection";
+  heading?: string;
+  text?: string;
+  video?: VideoEmbed;
+  buttonLabel?: string;
+  fullVideoId?: string;
+  colorScheme?: "none" | "dark" | "light";
+  hidden?: boolean;
+};
+
+export type CreatorTestimonialsSection = {
+  _type: "creatorTestimonialsSection";
+  heading?: string;
+  items?: Array<{
+    quote?: string;
+    handle?: string;
+    tag?: string;
+    video?: VideoEmbed;
+    _type: "creatorTestimonial";
+    _key: string;
+  }>;
+  hidden?: boolean;
+};
+
+export type BenefitsSection = {
+  _type: "benefitsSection";
+  heading?: string;
+  text?: string;
+  cards?: Array<{
+    title?: string;
+    description?: string;
+    iconSvg?: string;
+    _type: "benefitCard";
+    _key: string;
+  }>;
+  jobBoard?: JobBoard;
+  anchorId?: Slug;
+  hidden?: boolean;
+};
+
+export type StackCardsSection = {
+  _type: "stackCardsSection";
+  cards?: Array<{
+    heading?: string;
+    text?: string;
+    video?: VideoEmbed;
+    color?: "blue" | "purple" | "orange";
+    iconSvg?: string;
+    _type: "stackCard";
+    _key: string;
+  }>;
+  hidden?: boolean;
+};
+
+export type CaseStudiesSection = {
+  _type: "caseStudiesSection";
+  heading?: string;
+  studies?: Array<{
+    brand?: string;
+    image?: AltImage;
+    link?: Link;
+    palette?: "purple" | "pink" | "lightBlue" | "cream" | "grey";
+    _type: "caseStudyCard";
+    _key: string;
+  }>;
+  hidden?: boolean;
+};
+
+export type ComparisonSection = {
+  _type: "comparisonSection";
+  heading?: string;
+  without?: Without;
+  with?: With;
+  hidden?: boolean;
+};
+
+export type TestimonialCarouselSection = {
+  _type: "testimonialCarouselSection";
+  quotes?: Array<{
+    quote?: string;
+    size?: "large" | "small";
+    name?: string;
+    company?: string;
+    photo?: AltImage;
+    _type: "carouselQuote";
+    _key: string;
+  }>;
+  autoplaySeconds?: number;
+  hidden?: boolean;
+};
+
+export type FeatureTabsSection = {
+  _type: "featureTabsSection";
+  groups?: Array<{
+    tag?: string;
+    heading?: string;
+    imageSide?: "right" | "left";
+    tabs?: Array<{
+      title?: string;
+      description?: string;
+      image?: AltImage;
+      iconSvg?: string;
+      _type: "featureTab";
+      _key: string;
+    }>;
+    _type: "featureTabGroup";
+    _key: string;
+  }>;
+  tabDuration?: number;
+  colorScheme?: "none" | "dark" | "light";
+  hidden?: boolean;
+};
+
+export type ShowcaseSection = {
+  _type: "showcaseSection";
+  image?: AltImage;
+  heading?: string;
+  gallery?: Array<
+    {
+      _key: string;
+    } & MediaItem
+  >;
+  colorScheme?: "none" | "dark" | "light";
+  hidden?: boolean;
+};
+
+export type StatementSection = {
+  _type: "statementSection";
+  heading?: string;
+  effect?: "scrub" | "reveal" | "none";
+  hidden?: boolean;
+};
+
+export type HeroSection = {
+  _type: "heroSection";
+  announcement?: Announcement;
+  heading?: string;
+  text?: string;
+  cta?: Link;
+  galleryStyle?: "orbit" | "ring" | "drift" | "none";
+  gallery?: Array<
+    {
+      _key: string;
+    } & MediaItem
+  >;
+  logosHeading?: string;
+  logoRows?: Array<{
+    logos?: Array<
+      {
+        _key: string;
+      } & AltImage
+    >;
+    _type: "logoRow";
+    _key: string;
+  }>;
+  theme?: "cream" | "dark";
+  headingSize?: "display" | "large";
+  hidden?: boolean;
+};
+
+export type MediaItem = {
+  _type: "mediaItem";
+  kind?: "image" | "video";
+  image?: AltImage;
+  video?: VideoEmbed;
+};
+
+export type SanityFileAssetReference = {
+  _ref: string;
+  _type: "reference";
+  _weak?: boolean;
+  [internalGroqTypeReferenceTo]?: "sanity.fileAsset";
+};
+
 export type SanityImageAssetReference = {
   _ref: string;
   _type: "reference";
   _weak?: boolean;
   [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
+};
+
+export type VideoEmbed = {
+  _type: "videoEmbed";
+  source?: "vidzflow" | "file";
+  vidzflowId?: string;
+  file?: {
+    asset?: SanityFileAssetReference;
+    media?: unknown;
+    _type: "file";
+  };
+  poster?: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    _type: "image";
+  };
+};
+
+export type AltImage = {
+  _type: "altImage";
+  asset?: SanityImageAssetReference;
+  media?: unknown;
+  hotspot?: SanityImageHotspot;
+  crop?: SanityImageCrop;
+  alt?: string;
 };
 
 export type Seo = {
@@ -85,6 +381,53 @@ export type CompanyPage = {
   _updatedAt: string;
   _rev: string;
   title?: string;
+  sections?: Array<
+    | ({
+        _key: string;
+      } & HeroSection)
+    | ({
+        _key: string;
+      } & StatementSection)
+    | ({
+        _key: string;
+      } & ShowcaseSection)
+    | ({
+        _key: string;
+      } & FeatureTabsSection)
+    | ({
+        _key: string;
+      } & TestimonialCarouselSection)
+    | ({
+        _key: string;
+      } & ComparisonSection)
+    | ({
+        _key: string;
+      } & CaseStudiesSection)
+    | ({
+        _key: string;
+      } & StackCardsSection)
+    | ({
+        _key: string;
+      } & BenefitsSection)
+    | ({
+        _key: string;
+      } & CreatorTestimonialsSection)
+    | ({
+        _key: string;
+      } & VideoBannerSection)
+    | ({
+        _key: string;
+      } & FaqSection)
+    | ({
+        _key: string;
+      } & MissionSection)
+    | ({
+        _key: string;
+      } & TeamMarqueeSection)
+    | ({
+        _key: string;
+      } & InvestorsSection)
+  >;
   footerCta?: FooterCta;
   seo?: Seo;
 };
@@ -96,6 +439,53 @@ export type CreatorsPage = {
   _updatedAt: string;
   _rev: string;
   title?: string;
+  sections?: Array<
+    | ({
+        _key: string;
+      } & HeroSection)
+    | ({
+        _key: string;
+      } & StatementSection)
+    | ({
+        _key: string;
+      } & ShowcaseSection)
+    | ({
+        _key: string;
+      } & FeatureTabsSection)
+    | ({
+        _key: string;
+      } & TestimonialCarouselSection)
+    | ({
+        _key: string;
+      } & ComparisonSection)
+    | ({
+        _key: string;
+      } & CaseStudiesSection)
+    | ({
+        _key: string;
+      } & StackCardsSection)
+    | ({
+        _key: string;
+      } & BenefitsSection)
+    | ({
+        _key: string;
+      } & CreatorTestimonialsSection)
+    | ({
+        _key: string;
+      } & VideoBannerSection)
+    | ({
+        _key: string;
+      } & FaqSection)
+    | ({
+        _key: string;
+      } & MissionSection)
+    | ({
+        _key: string;
+      } & TeamMarqueeSection)
+    | ({
+        _key: string;
+      } & InvestorsSection)
+  >;
   footerCta?: FooterCta;
   seo?: Seo;
 };
@@ -107,8 +497,71 @@ export type HomePage = {
   _updatedAt: string;
   _rev: string;
   title?: string;
+  sections?: Array<
+    | ({
+        _key: string;
+      } & HeroSection)
+    | ({
+        _key: string;
+      } & StatementSection)
+    | ({
+        _key: string;
+      } & ShowcaseSection)
+    | ({
+        _key: string;
+      } & FeatureTabsSection)
+    | ({
+        _key: string;
+      } & TestimonialCarouselSection)
+    | ({
+        _key: string;
+      } & ComparisonSection)
+    | ({
+        _key: string;
+      } & CaseStudiesSection)
+    | ({
+        _key: string;
+      } & StackCardsSection)
+    | ({
+        _key: string;
+      } & BenefitsSection)
+    | ({
+        _key: string;
+      } & CreatorTestimonialsSection)
+    | ({
+        _key: string;
+      } & VideoBannerSection)
+    | ({
+        _key: string;
+      } & FaqSection)
+    | ({
+        _key: string;
+      } & MissionSection)
+    | ({
+        _key: string;
+      } & TeamMarqueeSection)
+    | ({
+        _key: string;
+      } & InvestorsSection)
+  >;
   footerCta?: FooterCta;
   seo?: Seo;
+};
+
+export type SanityImageCrop = {
+  _type: "sanity.imageCrop";
+  top: number;
+  bottom: number;
+  left: number;
+  right: number;
+};
+
+export type SanityImageHotspot = {
+  _type: "sanity.imageHotspot";
+  x: number;
+  y: number;
+  height: number;
+  width: number;
 };
 
 export type SiteSettings = {
@@ -165,22 +618,6 @@ export type SiteSettings = {
   title: string;
   hubspotPortalId?: string;
   seo?: Seo;
-};
-
-export type SanityImageCrop = {
-  _type: "sanity.imageCrop";
-  top: number;
-  bottom: number;
-  left: number;
-  right: number;
-};
-
-export type SanityImageHotspot = {
-  _type: "sanity.imageHotspot";
-  x: number;
-  y: number;
-  height: number;
-  width: number;
 };
 
 export type SanityImagePaletteSwatch = {
@@ -281,7 +718,30 @@ export type Geopoint = {
 };
 
 export type AllSanitySchemaTypes =
+  | Announcement
+  | Without
+  | With
+  | JobBoard
+  | InvestorsSection
+  | TeamMarqueeSection
+  | MissionSection
+  | FaqSection
+  | VideoBannerSection
+  | CreatorTestimonialsSection
+  | BenefitsSection
+  | StackCardsSection
+  | CaseStudiesSection
+  | ComparisonSection
+  | TestimonialCarouselSection
+  | FeatureTabsSection
+  | ShowcaseSection
+  | StatementSection
+  | HeroSection
+  | MediaItem
+  | SanityFileAssetReference
   | SanityImageAssetReference
+  | VideoEmbed
+  | AltImage
   | Seo
   | FooterCta
   | Link
@@ -290,9 +750,9 @@ export type AllSanitySchemaTypes =
   | CompanyPage
   | CreatorsPage
   | HomePage
-  | SiteSettings
   | SanityImageCrop
   | SanityImageHotspot
+  | SiteSettings
   | SanityImagePaletteSwatch
   | SanityImagePalette
   | SanityImageDimensions
@@ -366,12 +826,59 @@ export type FOOTER_QUERY_RESULT = {
 
 // Source: src/sanity/lib/queries.ts
 // Variable: PAGE_QUERY
-// Query: *[_id == $id][0]{    _id,    _type,    title,    footerCta{heading, button{label, href, openInNewTab}},    seo  }
+// Query: *[_id == $id][0]{    _id,    _type,    title,    sections,    footerCta{heading, button{label, href, openInNewTab}},    seo  }
 export type PAGE_QUERY_RESULT =
   | {
       _id: string;
       _type: "companyPage";
       title: string | null;
+      sections: Array<
+        | ({
+            _key: string;
+          } & BenefitsSection)
+        | ({
+            _key: string;
+          } & CaseStudiesSection)
+        | ({
+            _key: string;
+          } & ComparisonSection)
+        | ({
+            _key: string;
+          } & CreatorTestimonialsSection)
+        | ({
+            _key: string;
+          } & FaqSection)
+        | ({
+            _key: string;
+          } & FeatureTabsSection)
+        | ({
+            _key: string;
+          } & HeroSection)
+        | ({
+            _key: string;
+          } & InvestorsSection)
+        | ({
+            _key: string;
+          } & MissionSection)
+        | ({
+            _key: string;
+          } & ShowcaseSection)
+        | ({
+            _key: string;
+          } & StackCardsSection)
+        | ({
+            _key: string;
+          } & StatementSection)
+        | ({
+            _key: string;
+          } & TeamMarqueeSection)
+        | ({
+            _key: string;
+          } & TestimonialCarouselSection)
+        | ({
+            _key: string;
+          } & VideoBannerSection)
+      > | null;
       footerCta: {
         heading: string | null;
         button: {
@@ -386,6 +893,53 @@ export type PAGE_QUERY_RESULT =
       _id: string;
       _type: "creatorsPage";
       title: string | null;
+      sections: Array<
+        | ({
+            _key: string;
+          } & BenefitsSection)
+        | ({
+            _key: string;
+          } & CaseStudiesSection)
+        | ({
+            _key: string;
+          } & ComparisonSection)
+        | ({
+            _key: string;
+          } & CreatorTestimonialsSection)
+        | ({
+            _key: string;
+          } & FaqSection)
+        | ({
+            _key: string;
+          } & FeatureTabsSection)
+        | ({
+            _key: string;
+          } & HeroSection)
+        | ({
+            _key: string;
+          } & InvestorsSection)
+        | ({
+            _key: string;
+          } & MissionSection)
+        | ({
+            _key: string;
+          } & ShowcaseSection)
+        | ({
+            _key: string;
+          } & StackCardsSection)
+        | ({
+            _key: string;
+          } & StatementSection)
+        | ({
+            _key: string;
+          } & TeamMarqueeSection)
+        | ({
+            _key: string;
+          } & TestimonialCarouselSection)
+        | ({
+            _key: string;
+          } & VideoBannerSection)
+      > | null;
       footerCta: {
         heading: string | null;
         button: {
@@ -400,6 +954,7 @@ export type PAGE_QUERY_RESULT =
       _id: string;
       _type: "event";
       title: string;
+      sections: null;
       footerCta: null;
       seo: Seo | null;
     }
@@ -407,6 +962,53 @@ export type PAGE_QUERY_RESULT =
       _id: string;
       _type: "homePage";
       title: string | null;
+      sections: Array<
+        | ({
+            _key: string;
+          } & BenefitsSection)
+        | ({
+            _key: string;
+          } & CaseStudiesSection)
+        | ({
+            _key: string;
+          } & ComparisonSection)
+        | ({
+            _key: string;
+          } & CreatorTestimonialsSection)
+        | ({
+            _key: string;
+          } & FaqSection)
+        | ({
+            _key: string;
+          } & FeatureTabsSection)
+        | ({
+            _key: string;
+          } & HeroSection)
+        | ({
+            _key: string;
+          } & InvestorsSection)
+        | ({
+            _key: string;
+          } & MissionSection)
+        | ({
+            _key: string;
+          } & ShowcaseSection)
+        | ({
+            _key: string;
+          } & StackCardsSection)
+        | ({
+            _key: string;
+          } & StatementSection)
+        | ({
+            _key: string;
+          } & TeamMarqueeSection)
+        | ({
+            _key: string;
+          } & TestimonialCarouselSection)
+        | ({
+            _key: string;
+          } & VideoBannerSection)
+      > | null;
       footerCta: {
         heading: string | null;
         button: {
@@ -421,6 +1023,7 @@ export type PAGE_QUERY_RESULT =
       _id: string;
       _type: "sanity.fileAsset";
       title: string | null;
+      sections: null;
       footerCta: null;
       seo: null;
     }
@@ -428,6 +1031,7 @@ export type PAGE_QUERY_RESULT =
       _id: string;
       _type: "sanity.imageAsset";
       title: string | null;
+      sections: null;
       footerCta: null;
       seo: null;
     }
@@ -435,6 +1039,7 @@ export type PAGE_QUERY_RESULT =
       _id: string;
       _type: "siteSettings";
       title: string;
+      sections: null;
       footerCta: null;
       seo: Seo | null;
     }
@@ -476,7 +1081,7 @@ declare global {
   interface SanityQueries {
     '\n  *[_type == "siteSettings" && _id == "siteSettings"][0].navigation{\n    links[]{label, href, openInNewTab},\n    loginLabel,\n    loginLinks[]{label, href, openInNewTab},\n    cta{label, href, openInNewTab}\n  }\n': NAVIGATION_QUERY_RESULT;
     '\n  *[_type == "siteSettings" && _id == "siteSettings"][0].footer{\n    cta{heading, button{label, href, openInNewTab}},\n    columns[]{_key, title, links[]{_key, ...{label, href, openInNewTab}}},\n    socialLinks[]{_key, platform, url},\n    badges[]{_key, size, ...{\n  alt,\n  "url": asset->url,\n  "width": asset->metadata.dimensions.width,\n  "height": asset->metadata.dimensions.height,\n  "lqip": asset->metadata.lqip\n}},\n    companyName,\n    locations\n  }\n': FOOTER_QUERY_RESULT;
-    "\n  *[_id == $id][0]{\n    _id,\n    _type,\n    title,\n    footerCta{heading, button{label, href, openInNewTab}},\n    seo\n  }\n": PAGE_QUERY_RESULT;
+    "\n  *[_id == $id][0]{\n    _id,\n    _type,\n    title,\n    sections,\n    footerCta{heading, button{label, href, openInNewTab}},\n    seo\n  }\n": PAGE_QUERY_RESULT;
     '*[_type == "event" && defined(slug.current) && defined(category)]{"category": category, "slug": slug.current}': EVENT_PATHS_QUERY_RESULT;
     '\n  *[_type == "event" && category == $category && slug.current == $slug][0]{\n    _id,\n    _type,\n    title,\n    category,\n    template,\n    theme,\n    startDateTime,\n    location,\n    venue,\n    registration,\n    seo\n  }\n': EVENT_QUERY_RESULT;
   }

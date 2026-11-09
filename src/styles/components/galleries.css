@@ -1,0 +1,203 @@
+/* ==========================================================================
+   Galleries: Orbit (Home hero), Ring (Creators hero), Drift (Home + Company)
+   ========================================================================== */
+
+/* ---------- Orbit: cards drift right to left through 3D, drag to move ---------- */
+.orbit_component {
+  --orbit-card: 26.8538rem;
+  --u: calc(var(--orbit-card) / 4.42);
+  --orbit-time: 40s;
+  position: relative;
+  display: block;
+  height: calc(var(--orbit-card) * 1.19);
+  perspective: calc(var(--u) * 12);
+  transform-style: preserve-3d;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+  animation: orbit-in 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+}
+.orbit_component.is-dragging { cursor: grabbing; }
+
+.orbit_card {
+  position: absolute;
+  inset: 0;
+  width: var(--orbit-card);
+  height: var(--orbit-card);
+  margin: auto;
+  overflow: hidden;
+  border-radius: 1.65125rem;
+  box-shadow: 0 44.58px 59.44px rgb(0 0 0 / 0.2);
+  animation: orbit var(--orbit-time) linear infinite;
+}
+.orbit_component.is-dragging .orbit_card { animation-play-state: paused; }
+
+.orbit_card :is(.orbit_image, .orbit_video) {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+@keyframes orbit-in {
+  from { opacity: 0; transform: translateY(3rem); }
+}
+
+/* Positions from the reference's formulas: off right → centre → off left */
+@keyframes orbit {
+  0% { transform: translate3d(calc(var(--u) * 17.75), calc(var(--u) * 1.05), calc(var(--u) * -4.2)) rotateY(1.168rad) rotateZ(-0.14rad) scale(0.817); opacity: 0; }
+  7.14% { transform: translate3d(calc(var(--u) * 15.21), calc(var(--u) * 1.05), calc(var(--u) * -4.2)) rotateY(1.108rad) rotateZ(-0.14rad) scale(0.817); opacity: 0; }
+  14.29% { transform: translate3d(calc(var(--u) * 12.68), calc(var(--u) * 0.856), calc(var(--u) * -3.02)) rotateY(1.009rad) rotateZ(-0.14rad) scale(0.817); opacity: 0; }
+  21.43% { transform: translate3d(calc(var(--u) * 10.14), calc(var(--u) * 0.566), calc(var(--u) * -1.25)) rotateY(0.883rad) rotateZ(-0.14rad) scale(0.817); opacity: 0.34; }
+  28.57% { transform: translate3d(calc(var(--u) * 7.61), calc(var(--u) * 0.326), calc(var(--u) * 0.211)) rotateY(0.714rad) rotateZ(-0.13rad) scale(0.817); opacity: 1; }
+  35.71% { transform: translate3d(calc(var(--u) * 5.07), calc(var(--u) * 0.148), calc(var(--u) * 1.3)) rotateY(0.456rad) rotateZ(-0.082rad) scale(0.817); opacity: 1; }
+  42.86% { transform: translate3d(calc(var(--u) * 2.54), calc(var(--u) * 0.037), calc(var(--u) * 1.973)) rotateY(0.191rad) rotateZ(-0.026rad) scale(0.817); opacity: 1; }
+  50% { transform: translate3d(0, 0, calc(var(--u) * 2.2)) rotateY(0rad) rotateZ(0rad) scale(0.817); opacity: 1; }
+  57.14% { transform: translate3d(calc(var(--u) * -2.54), calc(var(--u) * 0.037), calc(var(--u) * 1.973)) rotateY(-0.191rad) rotateZ(0.026rad) scale(0.817); opacity: 1; }
+  64.29% { transform: translate3d(calc(var(--u) * -5.07), calc(var(--u) * 0.148), calc(var(--u) * 1.3)) rotateY(-0.456rad) rotateZ(0.082rad) scale(0.817); opacity: 1; }
+  71.43% { transform: translate3d(calc(var(--u) * -7.61), calc(var(--u) * 0.326), calc(var(--u) * 0.211)) rotateY(-0.714rad) rotateZ(0.13rad) scale(0.817); opacity: 1; }
+  78.57% { transform: translate3d(calc(var(--u) * -10.14), calc(var(--u) * 0.566), calc(var(--u) * -1.25)) rotateY(-0.883rad) rotateZ(0.14rad) scale(0.817); opacity: 0.34; }
+  85.71% { transform: translate3d(calc(var(--u) * -12.68), calc(var(--u) * 0.856), calc(var(--u) * -3.02)) rotateY(-1.009rad) rotateZ(0.14rad) scale(0.817); opacity: 0; }
+  92.86% { transform: translate3d(calc(var(--u) * -15.21), calc(var(--u) * 1.05), calc(var(--u) * -4.2)) rotateY(-1.108rad) rotateZ(0.14rad) scale(0.817); opacity: 0; }
+  100% { transform: translate3d(calc(var(--u) * -17.75), calc(var(--u) * 1.05), calc(var(--u) * -4.2)) rotateY(-1.168rad) rotateZ(0.14rad) scale(0.817); opacity: 0; }
+}
+
+@media (max-width: 991px) {
+  .orbit_component { --orbit-card: 20rem; }
+}
+@media (max-width: 767px) {
+  .orbit_component { --orbit-card: 16rem; }
+}
+
+/* ---------- Ring: tall cards spinning in 3D (positions set by RingGallery.tsx) ---------- */
+.ring_component {
+  --card: clamp(13rem, 23vw, 28rem);
+  position: relative;
+  display: block;
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  height: calc(var(--card) * 1.25 + 4rem);
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
+  perspective: calc(var(--card) * 7);
+  transform-style: preserve-3d;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.ring_component.is-dragging { cursor: grabbing; }
+
+.ring_card {
+  position: absolute;
+  inset: 0;
+  width: var(--card);
+  height: calc(var(--card) * 1.25);
+  margin: auto;
+  border-radius: clamp(1rem, 1.84vw, 1.75rem);
+  transform-style: preserve-3d;
+  transform-origin: 50% 50%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.ring_card > * {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.ring_card .ring_image {
+  display: block;
+  object-fit: cover;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+@media (max-width: 991px) {
+  .ring_component { padding-left: 2.5rem; padding-right: 2.5rem; }
+}
+@media (max-width: 767px) {
+  .ring_component {
+    --card: clamp(10.5rem, 46vw, 13rem);
+    height: calc(var(--card) * 1.25 + 3rem);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+/* ---------- Drift: full-bleed row that drifts left ---------- */
+.drift_component {
+  --col: 20.03rem;
+  --gap: 1.375rem;
+  display: block;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  overflow: hidden;
+}
+.drift_track {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap);
+  width: max-content;
+  padding-right: var(--gap); /* so -50% lands exactly on the copy */
+  animation: drift var(--drift, 60s) linear infinite;
+}
+.drift_component:hover .drift_track { animation-play-state: paused; }
+@keyframes drift { to { transform: translateX(-50%); } }
+
+.drift_column {
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  gap: var(--gap);
+  width: var(--col);
+  /* parallax (--shift from DriftGallery) + entrance */
+  transform: translateY(calc(var(--shift, 0) * var(--speed, 0) * var(--depth, 1) * 1px));
+  translate: 0 80px;
+  opacity: 0;
+  transition:
+    translate 1.2s cubic-bezier(0.16, 1, 0.3, 1) var(--enter-delay, 0s),
+    opacity 0.8s ease var(--enter-delay, 0s);
+}
+.drift_column.is-offset-medium { padding-top: 3.75rem; }
+.drift_column.is-offset-large { padding-top: 7.5rem; }
+.drift_component[data-in] .drift_column {
+  translate: 0 0;
+  opacity: 1;
+}
+
+.drift_image {
+  display: block;
+  width: 100%;
+  height: calc(var(--col) * 0.8875);
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+.drift_item:only-child .drift_image { height: calc(var(--col) * 1.7875); }
+.drift_video {
+  width: 100%;
+  height: 17.8125rem;
+  border-radius: 1.5rem;
+}
+
+@media (max-width: 767px) {
+  .drift_component { --col: 7.125rem; --gap: 0.61875rem; --depth: 0.5; padding-top: 2rem; padding-bottom: 2rem; }
+  .drift_column.is-offset-medium { padding-top: 1.6875rem; }
+  .drift_column.is-offset-large { padding-top: 3.375rem; }
+  .drift_video { height: 8.01563rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit_component { animation: none; }
+  .orbit_card { animation-play-state: paused; }
+  .drift_track { animation: none; }
+  .drift_column { transform: none; translate: none; opacity: 1; transition: none; }
+}

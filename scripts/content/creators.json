@@ -1,0 +1,500 @@
+{
+  "sections": [
+    {
+      "_type": "heroSection",
+      "theme": "dark",
+      "headingSize": "display",
+      "heading": "Work with your favorite brands",
+      "text": "Set your rate, raise your hand for the brands you love, pitch in your own words, and let #paid handle the contracts, rights, and payments.",
+      "cta": {
+        "_type": "link",
+        "label": "Join as a creator",
+        "href": "https://app.hashtagpaid.app/sign-up",
+        "openInNewTab": true
+      },
+      "galleryStyle": "ring",
+      "gallery": [
+        {
+          "_type": "mediaItem",
+          "_key": "9d4d9d64a955",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "33bWQqsP3S",
+            "poster": {
+              "_vidzflowPoster": "33bWQqsP3S"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "3ab59355952d",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "A04LX9iwgG",
+            "poster": {
+              "_vidzflowPoster": "A04LX9iwgG"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "73573970363a",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "6hBOaq5YJK",
+            "poster": {
+              "_vidzflowPoster": "6hBOaq5YJK"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "ee69c7b0d70d",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "yClMmc2xST",
+            "poster": {
+              "_vidzflowPoster": "yClMmc2xST"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "04e21adf507d",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "wubtFipbWR",
+            "poster": {
+              "_vidzflowPoster": "wubtFipbWR"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "7deb9e8c11ae",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "LmzezhtzIx",
+            "poster": {
+              "_vidzflowPoster": "LmzezhtzIx"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "ef1b187ea4be",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "lMslZPVaux",
+            "poster": {
+              "_vidzflowPoster": "lMslZPVaux"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "5447c1f9d09f",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "Zj5SIz8PZK",
+            "poster": {
+              "_vidzflowPoster": "Zj5SIz8PZK"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "9faa71638194",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "ywQ5ZVytR6",
+            "poster": {
+              "_vidzflowPoster": "ywQ5ZVytR6"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "5dd4226eb696",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "0Up1xgAEfc",
+            "poster": {
+              "_vidzflowPoster": "0Up1xgAEfc"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "dc1857e05709",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "4UfLYLyikm",
+            "poster": {
+              "_vidzflowPoster": "4UfLYLyikm"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "ea6d000db9a6",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "IyYkjOCq8w",
+            "poster": {
+              "_vidzflowPoster": "IyYkjOCq8w"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "bdabbdf1c040",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "dTBNsZ1zMA",
+            "poster": {
+              "_vidzflowPoster": "dTBNsZ1zMA"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "ee0400c2ed2e",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "kgKjPZ5QAh",
+            "poster": {
+              "_vidzflowPoster": "kgKjPZ5QAh"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "f44e9b5254d2",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "iO1ucfGP3T",
+            "poster": {
+              "_vidzflowPoster": "iO1ucfGP3T"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "bae1d08a73d0",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "P7i4OxxYrh",
+            "poster": {
+              "_vidzflowPoster": "P7i4OxxYrh"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "a9a0b948c9aa",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "uOQVie5aEM",
+            "poster": {
+              "_vidzflowPoster": "uOQVie5aEM"
+            }
+          }
+        }
+      ],
+      "announcement": {
+        "tag": "New",
+        "link": {
+          "_type": "link",
+          "label": "Join the waitlist for Creator Marketing Summit 2027",
+          "href": "https://hashtagpaid.com/creator-marketing-summit",
+          "openInNewTab": false
+        }
+      },
+      "_key": "7d4600665074"
+    },
+    {
+      "_type": "stackCardsSection",
+      "cards": [
+        {
+          "_type": "stackCard",
+          "_key": "8211bb88aa39",
+          "heading": "Apply and authenticate",
+          "text": "Connect your social accounts, set your rates, and add your payment details once. You’re vetted, verified, and ready for every future collaboration.",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "ePRhLmvFEL",
+            "poster": {
+              "_vidzflowPoster": "ePRhLmvFEL"
+            }
+          },
+          "color": "blue",
+          "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"#B9D4DA\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><circle cx=\"12\" cy=\"12\" fill=\"none\" r=\"9\" stroke=\"#B9D4DA\" stroke-width=\"2px\" style=\"\"></circle><path d=\"M8.2 12.3l2.6 2.6 5-5.2\" fill=\"none\" stroke=\"#B9D4DA\" stroke-width=\"2px\" style=\"\"></path></svg>"
+        },
+        {
+          "_type": "stackCard",
+          "_key": "a54b0b5ad430",
+          "heading": "Raise your hand",
+          "text": "When a campaign from a brand you love goes live, pitch them directly with Handraise—in your voice, on your terms.",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "NWeQD24jgn",
+            "poster": {
+              "_vidzflowPoster": "NWeQD24jgn"
+            }
+          },
+          "color": "purple",
+          "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"#3E332F\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><g fill=\"none\" stroke=\"#3E332F\" stroke-width=\"2px\" transform=\"translate(0 0.6) rotate(-12 12.5 12)\"><path d=\"M4 9a1.5 1.5 0 0 1 3 0V5.5a1.5 1.5 0 0 1 3 0V4a1.5 1.5 0 0 1 3 0v2a1.5 1.5 0 0 1 3 0v7l2.26-3.97a1.5 1.5 0 0 1 2.68 1.34L18.4 16.3c-1.2 2.8-3.6 4.5-6.8 4.5-4.4 0-7.6-2.7-7.6-7z\" fill=\"none\" stroke=\"#3E332F\" stroke-width=\"2px\" style=\"\"></path><path d=\"M7 9v3.3M10 5.5V12M13 6v6\" fill=\"none\" stroke=\"#3E332F\" stroke-width=\"2px\" style=\"\"></path></g></svg>"
+        },
+        {
+          "_type": "stackCard",
+          "_key": "a7c340673e5d",
+          "heading": "Create and get paid in 45 days",
+          "text": "Contracts, usage rights, and payments run through #paid. You keep your creative voice—and you get paid on time, every time.",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "P2XjDoleOf",
+            "poster": {
+              "_vidzflowPoster": "P2XjDoleOf"
+            }
+          },
+          "color": "orange",
+          "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect fill=\"none\" height=\"15.5\" rx=\"3\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\" width=\"17\" x=\"3.5\" y=\"5\"></rect><path d=\"M3.5 10h17\" fill=\"none\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\"></path><path d=\"M8 3v4M16 3v4\" fill=\"none\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\"></path><path d=\"M9.2 15.1l1.9 1.9 3.8-3.9\" fill=\"none\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\"></path></svg>"
+        }
+      ],
+      "_key": "6080e5a38b52"
+    },
+    {
+      "_type": "benefitsSection",
+      "heading": "Work with brands on your terms",
+      "text": null,
+      "cards": [
+        {
+          "_type": "benefitCard",
+          "_key": "7b127ccc69b9",
+          "title": "Set your own rates",
+          "description": "Your prices, set by you—photo, video, and story, and now TV ads and billboards.",
+          "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M3.5 11.6V5a1.5 1.5 0 0 1 1.5-1.5h6.6a1.5 1.5 0 0 1 1.06.44l7.6 7.6a1.5 1.5 0 0 1 0 2.12l-6.6 6.6a1.5 1.5 0 0 1-2.12 0l-7.6-7.6a1.5 1.5 0 0 1-.44-1.06z\" fill=\"none\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\"></path><circle cx=\"8.3\" cy=\"8.3\" data-svg-origin=\"6.800000190734863 6.800000190734863\" fill=\"#FBF9F5\" r=\"1.5\" stroke=\"none\" stroke-width=\"2px\" style=\"transform-origin: 0px 0px;\"></circle></svg>"
+        },
+        {
+          "_type": "benefitCard",
+          "_key": "6e21e650c178",
+          "title": "Choose your brands",
+          "description": "Work with brands and products you genuinely like and want to create for.",
+          "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M12 20.3 4.7 13a4.7 4.7 0 0 1 6.6-6.6l.7.7.7-.7a4.7 4.7 0 0 1 6.6 6.6z\" fill=\"none\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\" transform=\"rotate(-10 12 12.5)\"></path></svg>"
+        },
+        {
+          "_type": "benefitCard",
+          "_key": "eac7be0128b4",
+          "title": "Get paid on time",
+          "description": "Automatic payments arrive within 45 days of approval, with no invoices to chase.",
+          "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><circle cx=\"12\" cy=\"12\" fill=\"none\" r=\"8.5\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\"></circle><path d=\"M12 7.5V12l3 2\" fill=\"none\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\"></path></svg>"
+        },
+        {
+          "_type": "benefitCard",
+          "_key": "be37d50f16d3",
+          "title": "Build repeat partnerships",
+          "description": "Strong work leads to more opportunities with brands that already know and trust you.",
+          "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M12 12c-1.8-2.4-3.4-3.6-5.2-3.6a3.6 3.6 0 0 0 0 7.2c1.8 0 3.4-1.2 5.2-3.6s3.4-3.6 5.2-3.6a3.6 3.6 0 0 1 0 7.2c-1.8 0-3.4-1.2-5.2-3.6z\" fill=\"none\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\"></path></svg>"
+        },
+        {
+          "_type": "benefitCard",
+          "_key": "06c34fc5e7eb",
+          "title": "Know your usage rights",
+          "description": "Clear terms outline how your content can be used, where, and for how long.",
+          "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M14 3.5H7.5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2V8z\" fill=\"none\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\"></path><path d=\"M14 3.5V8h4.5\" fill=\"none\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\"></path><path d=\"M9 12.5h6M9 16h3.5\" fill=\"none\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\"></path></svg>"
+        },
+        {
+          "_type": "benefitCard",
+          "_key": "242913924a27",
+          "title": "Create across platforms",
+          "description": "Work across Instagram, TikTok, YouTube, Pinterest, and Snapchat all in one place.",
+          "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><rect fill=\"none\" height=\"18\" rx=\"2.5\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\" width=\"11\" x=\"6.5\" y=\"3\"></rect><path d=\"M11 6h2\" fill=\"none\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\"></path><path d=\"M10.8 10.4v4.4l3.6-2.2z\" fill=\"none\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\"></path></svg>"
+        }
+      ],
+      "anchorId": {
+        "_type": "slug",
+        "current": "benefits"
+      },
+      "_key": "78b563b66021"
+    },
+    {
+      "_type": "creatorTestimonialsSection",
+      "heading": "Why creators love #paid",
+      "items": [
+        {
+          "_type": "creatorTestimonial",
+          "_key": "2710d47324ab",
+          "quote": "“With the talent agency backend, this is so much easier!”",
+          "handle": "@mattkring",
+          "tag": "Creator",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "cAueh3Kk6t",
+            "poster": {
+              "_vidzflowPoster": "cAueh3Kk6t"
+            }
+          }
+        },
+        {
+          "_type": "creatorTestimonial",
+          "_key": "adb37b17900d",
+          "quote": "\"I love #paid. Truly the best platform I've ever been on as it pertains to working with brands. Very grateful.\"",
+          "handle": "@thetravelingpov",
+          "tag": "Creator",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "BHpSWpOf18",
+            "poster": {
+              "_vidzflowPoster": "BHpSWpOf18"
+            }
+          }
+        },
+        {
+          "_type": "creatorTestimonial",
+          "_key": "bf9501d5db8b",
+          "quote": "“Overall a really great experience.”",
+          "handle": "@carriebernans",
+          "tag": "Creator",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "JP3j3ZZpRG",
+            "poster": {
+              "_vidzflowPoster": "JP3j3ZZpRG"
+            }
+          }
+        },
+        {
+          "_type": "creatorTestimonial",
+          "_key": "d186fe944937",
+          "quote": "“I went from literally not getting anything to landing a year-long campaign, all because of one campaign I got through #paid… This platform is amazing. It’s changing people’s lives, and it changed mine.”",
+          "handle": "@sweetbitsnellie",
+          "tag": "Creator",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "ll64FfHmYj",
+            "poster": {
+              "_vidzflowPoster": "ll64FfHmYj"
+            }
+          }
+        }
+      ],
+      "_key": "82805e9f28b2"
+    },
+    {
+      "_type": "videoBannerSection",
+      "heading": "We bring creators\ntogether IRL, too",
+      "text": "Strategy sessions at brand HQs, meetups in cities across North America, speaking opportunities, on-site brand campaigns, Cannes, and more. The relationships are the whole point.",
+      "video": {
+        "_type": "videoEmbed",
+        "source": "vidzflow",
+        "vidzflowId": "zFW0XwLcHJ",
+        "poster": {
+          "_vidzflowPoster": "zFW0XwLcHJ"
+        }
+      },
+      "buttonLabel": "Watch the full video",
+      "fullVideoId": "zFW0XwLcHJ",
+      "colorScheme": "dark",
+      "_key": "e6e10d2845ed"
+    },
+    {
+      "_type": "faqSection",
+      "heading": "Questions, answered",
+      "intro": "Can’t find what you’re looking for? Visit our",
+      "introLink": {
+        "_type": "link",
+        "label": "Help center",
+        "href": "https://hashtagpaid.zendesk.com/hc/en-us",
+        "openInNewTab": true
+      },
+      "items": [
+        {
+          "_type": "faqItem",
+          "_key": "724b8d0676c3",
+          "question": "Who can join #paid as a creator?",
+          "answer": "Anyone with a public Instagram or TikTok profile can apply. We typically look for an audience of 10,000 or more and an engagement rate above 1.5%. It’s free to join."
+        },
+        {
+          "_type": "faqItem",
+          "_key": "7bf99118738c",
+          "question": "How do I set my rates?",
+          "answer": "You set your own rates in your account settings for content, Instagram, TikTok and usage rights, and you can adjust them for each collaboration when you opt in. Keep them accurate, since they help us match you with brands whose budgets fit."
+        },
+        {
+          "_type": "faqItem",
+          "_key": "14d7fbcbba75",
+          "question": "When do I get paid?",
+          "answer": "Once a brand approves your content (or your post insights are validated), your payment starts a 30-day processing cycle. You’re then paid on the next 15th or last day of the month, and it lands in your account one to three days later. You can track every payment under Your Earnings."
+        },
+        {
+          "_type": "faqItem",
+          "_key": "70b1598ac4ee",
+          "question": "How do brands find me?",
+          "answer": "When a brand launches a campaign, we match creators to it by audience, location, engagement and content categories, then send you an opt-in with all the details. You can also raise your hand for open campaigns on the job board. Most creators see their first request within a few months."
+        },
+        {
+          "_type": "faqItem",
+          "_key": "4f50024bae1a",
+          "question": "What are usage rights?",
+          "answer": "Every collaboration includes 12 months of owned and operated rights, so the brand can share your content on its own channels, website and newsletters. Brands can also buy more, like running ads with your content, which you price per month. More money, no extra work."
+        },
+        {
+          "_type": "faqItem",
+          "_key": "6c72065e7392",
+          "question": "Do my social profiles need to be public?",
+          "answer": "Yes. Brands need to discover your work, and we need to see how your posts perform so you get paid."
+        },
+        {
+          "_type": "faqItem",
+          "_key": "0aafd247aee9",
+          "question": "What if a brand closes a campaign early?",
+          "answer": "If you’d already submitted content, you’re paid between 25% and 100%, depending on how far the collaboration got, and you don’t have to post it. If you hadn’t submitted anything yet, the collaboration simply closes."
+        }
+      ],
+      "colorScheme": "light",
+      "_key": "fd81dc64a38f"
+    }
+  ]
+}

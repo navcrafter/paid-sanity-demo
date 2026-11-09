@@ -69,7 +69,7 @@
 .margin-large { margin: 3rem; }
 .margin-xlarge { margin: 4rem; }
 .margin-xxlarge { margin: 5rem; }
-.margin-huge { margin: 6rem; }
+.margin-huge { margin: 6.25rem; }
 .margin-xhuge { margin: 6.5rem; }
 
 .padding-0 { padding: 0 !important; }
@@ -82,11 +82,28 @@
 .padding-xxlarge { padding: 5rem; }
 
 @media screen and (max-width: 991px) {
+  .margin-large { margin: 2.5rem; }
+  .margin-xlarge { margin: 5rem; }
   .padding-xxlarge { padding: 4rem; }
 }
 @media screen and (max-width: 767px) {
+  .margin-medium { margin: 1.5rem; }
+  .margin-large { margin: 2rem; }
+  .margin-xlarge { margin: 1.25rem; }
   .margin-xhuge { margin: 5rem; }
   .padding-xxlarge { padding: 3rem; }
+}
+
+/* Max widths */
+.max-width-xxsmall { width: 100%; max-width: 20rem; }
+.max-width-xsmall { width: 100%; max-width: 25rem; }
+.max-width-small { width: 100%; max-width: 32rem; }
+.max-width-medium { width: 100%; max-width: 35rem; }
+.max-width-large { width: 100%; max-width: 48rem; }
+.align-center { margin-left: auto; margin-right: auto; }
+
+@media screen and (max-width: 991px) {
+  .max-width-xxsmall { max-width: none; }
 }
 
 /* ---------- Typography ---------- */

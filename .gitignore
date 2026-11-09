@@ -45,3 +45,6 @@ next-env.d.ts
 
 # raw source material (fonts, Webflow captures) — processed copies live in /public
 /_source/
+
+# seed upload cache
+/scripts/.asset-cache.json

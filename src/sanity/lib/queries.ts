@@ -41,6 +41,7 @@ export const PAGE_QUERY = defineQuery(`
     _id,
     _type,
     title,
+    sections,
     footerCta{heading, button${LINK}},
     seo
   }

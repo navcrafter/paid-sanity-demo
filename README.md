@@ -24,6 +24,21 @@ Next.js 16 with Sanity Studio embedded at `/studio`.
 | `npm run build` | Production build |
 | `npm run lint` | ESLint |
 | `npm run typegen` | Re-extracts the Sanity schema and regenerates `src/sanity/sanity.types.ts`. Run after changing schemas or GROQ queries. |
+| `npm run seed:settings` | Fills Site settings (navigation, footer, badges) with the live site's content. |
+| `npm run seed:pages [-- home creators company]` | Loads page sections from `scripts/content/*.json` (captured from the live site), uploading images and Vidzflow posters to Sanity. **Overwrites** the pages' sections. |
+
+## Page builder
+
+Home, Creators and Company are lists of **sections** (Studio → Pages → a page → Page sections).
+Each section type lives in three places:
+
+- Schema: `src/sanity/schemaTypes/sections/`
+- Component: `src/components/sections/` (registered in `registry.ts`)
+- Styles: `src/styles/sections/` (Client-First class names)
+
+Shared animations (word reveal, fade-up, scroll colour switch, letter roll, galleries,
+tickers, Vidzflow players) are in `src/components/effects`, `src/components/galleries`
+and `src/components/media`.
 
 ## Project layout
 

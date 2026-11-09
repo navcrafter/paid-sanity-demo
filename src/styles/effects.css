@@ -1,0 +1,147 @@
+/* ==========================================================================
+   Effects shared by every page (ported from the live site's custom code).
+   JS lives in components/effects/ScrollEffects.tsx; it only toggles data attributes.
+   ========================================================================== */
+
+/* ---------- Word reveal: words fade in where they sit, one after another ---------- */
+.t-word {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: 0.1em;
+  margin-bottom: -0.1em;
+}
+[data-word-reveal] .t-word > span {
+  display: inline-block;
+  opacity: 0;
+}
+[data-word-reveal][data-revealed] .t-word > span {
+  opacity: 1;
+  transition: opacity 0.8s ease calc(var(--reveal-delay, 0ms) + var(--i) * 30ms);
+}
+
+/* ---------- Fade up: fades in and rises 16px once, staggered by ScrollEffects ---------- */
+[data-fade-up] {
+  opacity: 0;
+  translate: 0 16px;
+  transition:
+    opacity 0.9s var(--ease--out) var(--fade-delay, 0s),
+    translate 0.9s var(--ease--out) var(--fade-delay, 0s);
+}
+[data-fade-up][data-in] {
+  opacity: 1;
+  translate: 0 0;
+}
+
+/* ---------- Image reveal (CSS only): frame opens from a soft inset as it scrolls in ---------- */
+@supports (animation-timeline: view()) {
+  [data-reveal-image] {
+    overflow: hidden;
+    view-timeline-name: --reveal;
+    animation: reveal-frame linear both;
+    animation-timeline: --reveal;
+    animation-range: cover 12vh cover 60vh;
+  }
+  [data-reveal-image] :is(img, .video-player) {
+    animation: reveal-photo linear both;
+    animation-timeline: --reveal;
+    animation-range: cover 12vh cover 75vh;
+  }
+  @keyframes reveal-frame {
+    from { clip-path: inset(7% round 14px); }
+    to { clip-path: inset(0 round 4px); }
+  }
+  @keyframes reveal-photo {
+    from { transform: scale(1.12); }
+    to { transform: none; }
+  }
+}
+:where(.overflow-hidden):has([data-reveal-image]) { overflow: clip; }
+
+/* ---------- Letter roll on hover (mouse only) ---------- */
+.roll,
+.job-roll {
+  display: inline-flex;
+  align-items: flex-start;
+  height: 1.2em;
+  line-height: 1.2em;
+  overflow: hidden;
+  vertical-align: top;
+}
+.roll > span,
+.job-roll > span {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.6s var(--ease--out) calc(var(--i) * 16ms);
+}
+.roll > span > span,
+.job-roll > span > span {
+  display: block;
+  height: 1.2em;
+  line-height: 1.2em;
+}
+/* Touch screens (and reduced motion): plain text, as on the live site */
+@media (hover: none), (prefers-reduced-motion: reduce) {
+  .roll,
+  .job-roll { height: auto; line-height: inherit; overflow: visible; }
+  .roll > span > span:last-child,
+  .job-roll > span > span:last-child { display: none; }
+  .roll > span > span,
+  .job-roll > span > span { height: auto; line-height: inherit; }
+}
+@media (hover: hover) and (pointer: fine) {
+  [data-hover='roll']:is(:hover, :focus-visible) .roll > span {
+    transform: translateY(-50%);
+    transition-delay: calc(var(--i) * 22ms);
+  }
+}
+
+/* ---------- Section colour switch (html[data-scheme] set by ScrollEffects) ---------- */
+[data-theme],
+[data-theme] :is(h1, h2, h3, h4, .feature-tabs_tab, .feature-tabs_title, .text-color-secondary),
+[data-theme] .feature-tabs_timer-bar {
+  transition:
+    background-color 0.4s var(--ease--out),
+    color 0.4s var(--ease--out),
+    opacity 0.15s ease;
+}
+html[data-scheme='dark'] [data-theme] { background-color: var(--base-color-neutral--black); color: var(--base-color-neutral--cream); }
+html[data-scheme='light'] [data-theme] { background-color: var(--base-color-neutral--white); color: var(--text-color--primary); }
+html[data-scheme] [data-theme] :is(h1, h2, h3, h4, .feature-tabs_tab, .feature-tabs_title) { color: inherit; }
+html[data-scheme='dark'] [data-theme] .text-color-secondary { color: rgb(251 249 245 / 0.6); }
+html[data-scheme='light'] [data-theme] .text-color-secondary { color: var(--text-color--secondary); }
+html[data-scheme='dark'] [data-theme] .feature-tabs_timer-bar { background-color: rgb(251 249 245 / 0.15); }
+html[data-scheme='light'] [data-theme] .text-color-secondary-on-dark .text-style-link { color: var(--text-color--primary); }
+
+/* ---------- Video player (poster until the stream is actually playing) ---------- */
+.video-player {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 0.06);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.video-player_frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: cover;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.video-player.is-playing .video-player_frame { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-word-reveal] .t-word > span,
+  [data-fade-up] { opacity: 1; translate: none; transition: none; }
+  [data-reveal-image],
+  [data-reveal-image] :is(img, .video-player) { animation: none; }
+  .roll > span,
+  .job-roll > span { transition: none; }
+}

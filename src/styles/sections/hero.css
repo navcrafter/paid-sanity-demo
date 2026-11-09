@@ -1,0 +1,120 @@
+/* ==========================================================================
+   Hero (Home, Creators, Company)
+   ========================================================================== */
+
+.section_hero { overflow: hidden; }
+.section_hero.is-cream {
+  background-color: var(--base-color-neutral--cream);
+  color: var(--text-color--primary);
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2px;
+}
+.section_hero.is-dark {
+  color: var(--base-color-neutral--cream);
+}
+/* Ring and drift galleries run to the bottom edge of the section */
+.section_hero.is-flush-bottom > .padding-section-huge { padding-bottom: 0; }
+
+.hero_tag {
+  padding: 0.4375rem;
+  border-radius: 0.25rem;
+  background-color: var(--base-color-brand--light-pink);
+  color: #bf2e69;
+  font-weight: 600;
+  letter-spacing: -0.01rem;
+}
+.section_hero .button.is-icon { font-size: 1rem; }
+
+.hero_heading-wrapper {
+  width: 100%;
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero_heading-wrapper.is-large { max-width: 55rem; }
+.section_hero.is-dark .hero_heading-wrapper { max-width: 65.875rem; }
+
+.button-group.is-center { justify-content: center; }
+
+.hero_gallery { margin-top: 6.25rem; }
+.hero_gallery.is-drift { margin-top: 5rem; }
+
+/* ---------- Logos: rows stacked in one spot, each fades in for its turn ---------- */
+.hero_logos { margin-top: 6.25rem; }
+
+.hero_logo-rows {
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 1rem;
+}
+.hero_logos-heading { text-align: center; }
+.hero_logo-row {
+  grid-area: 2 / 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.875rem;
+}
+.hero_logo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10.5rem;
+  height: 6.75rem;
+  opacity: 0;
+  animation: logo-fade-3 var(--cycle, 10.65s) ease-in-out infinite both;
+  animation-delay: calc(var(--set) * 3.55s - 0.8s + var(--k, 0) * 0.08s);
+}
+.hero_logo-rows.is-rows-2 .hero_logo-item { animation-name: logo-fade-2; }
+.hero_logo-rows.is-rows-4 .hero_logo-item { animation-name: logo-fade-4; }
+.hero_logo-rows.is-rows-1 .hero_logo-item { animation: none; opacity: 1; }
+
+.hero_logo {
+  width: auto;
+  height: auto;
+  max-width: 10.5rem;
+  max-height: 3.5rem;
+  opacity: 0.4;
+}
+
+@keyframes logo-fade-2 {
+  0% { opacity: 0; }
+  9% { opacity: 1; }
+  50% { opacity: 1; }
+  59% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes logo-fade-3 {
+  0% { opacity: 0; }
+  6% { opacity: 1; }
+  33.333% { opacity: 1; }
+  39.333% { opacity: 0; }
+  100% { opacity: 0; }
+}
+@keyframes logo-fade-4 {
+  0% { opacity: 0; }
+  4.5% { opacity: 1; }
+  25% { opacity: 1; }
+  29.5% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@media screen and (max-width: 991px) {
+  .hero_logo-row { gap: 1rem; }
+}
+@media screen and (max-width: 767px) {
+  .hero_logo-row { gap: 0; }
+  .hero_logo-item { width: 8rem; height: 5rem; }
+  .hero_logo { max-width: none; max-height: 2.8rem; }
+}
+@media screen and (max-width: 479px) {
+  .hero_logo-row { gap: 0.25rem; }
+  .hero_logo-item { width: 5rem; height: 2.5rem; }
+  .hero_logo { max-height: 1.85rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero_logo-item { animation: none; opacity: 1; }
+  .hero_logo-row ~ .hero_logo-row { visibility: hidden; }
+}

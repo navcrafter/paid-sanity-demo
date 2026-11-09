@@ -1,0 +1,1444 @@
+{
+  "sections": [
+    {
+      "_type": "heroSection",
+      "theme": "cream",
+      "headingSize": "large",
+      "heading": "We see a world where creators are empowered\nto make a living doing\nwhat they love",
+      "text": null,
+      "cta": {
+        "_type": "link",
+        "label": "We’re hiring",
+        "href": "#jobs",
+        "openInNewTab": false
+      },
+      "galleryStyle": "drift",
+      "gallery": [
+        {
+          "_type": "mediaItem",
+          "_key": "9f0e7c32a2da",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7fe0b043498cf49685_img7283-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Person with dark hair in a low bun, wearing a red sleeveless top, white pants, black sandals, gold jewelry, and carrying a white handbag, standing in an elevator and holding the door handle."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "a1e0002ad555",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "NWeQD24jgn",
+            "poster": {
+              "_vidzflowPoster": "NWeQD24jgn"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "a427651e50d7",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "P2XjDoleOf",
+            "poster": {
+              "_vidzflowPoster": "P2XjDoleOf"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "a57f8282b26d",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7f774b3c23fc832eeb_microhydro-2.avif",
+                "type": "image"
+              }
+            },
+            "alt": "A woman wearing a white t-shirt, denim shorts, a colorful headscarf, and brown woven slip-on shoes walks on a city street corner near a crosswalk, carrying a pink water bottle over her shoulder."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "f01c1db94e16",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "ePRhLmvFEL",
+            "poster": {
+              "_vidzflowPoster": "ePRhLmvFEL"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "ca5ed54e9570",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "33bWQqsP3S",
+            "poster": {
+              "_vidzflowPoster": "33bWQqsP3S"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "e074de022cf2",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7f17e1a4834af27822_withwendy-1-2.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Woman with shoulder-length black hair wearing a light yellow ribbed sweater and black pants, holding a small white handbag against a teal background."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "040925f3696a",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "A04LX9iwgG",
+            "poster": {
+              "_vidzflowPoster": "A04LX9iwgG"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "bca38cd34782",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "6hBOaq5YJK",
+            "poster": {
+              "_vidzflowPoster": "6hBOaq5YJK"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "40e3531be2e0",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7f15e0aa5133389a87_microhydropic1-draft1-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Woman wearing sunglasses, a black sleeveless top, and a black skirt with white polka dots stands on a sidewalk near grass. She holds a small black purse open, as various pink-themed items like a water bottle, lip gloss, bow, and heart float in the air beside her, along with a MetroCard and sparkle emojis."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "d05d3007d405",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "yClMmc2xST",
+            "poster": {
+              "_vidzflowPoster": "yClMmc2xST"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "a21f0ced24bd",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "wubtFipbWR",
+            "poster": {
+              "_vidzflowPoster": "wubtFipbWR"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "45c3030bd785",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7ef6d96ec17078566f_virginhotel-7-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Woman in a long light blue dress and red hat holding a small brown dog wearing an orange bandana outside a building with a red neon sign that reads Virgin Hotels."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "84781f2a7cea",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "LmzezhtzIx",
+            "poster": {
+              "_vidzflowPoster": "LmzezhtzIx"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "af8073181115",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "lMslZPVaux",
+            "poster": {
+              "_vidzflowPoster": "lMslZPVaux"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "2f140b32c62f",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7e97b2f0eec3aff422_tezza-8150-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Smiling young woman with glasses wearing a matching mauve sweatshirt and pants, holding books, standing by a lake surrounded by dense green forest under a partly cloudy sky."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "49f8cf5b2ddd",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "Zj5SIz8PZK",
+            "poster": {
+              "_vidzflowPoster": "Zj5SIz8PZK"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "62f3516bf0cb",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "ywQ5ZVytR6",
+            "poster": {
+              "_vidzflowPoster": "ywQ5ZVytR6"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "b45fa6a09a74",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7ecea680fbd63dd964_virginhotel-11-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Black and white photo of a woman in a bathrobe holding a coffee cup and applying lip balm while looking into a rectangular illuminated mirror in a modern bathroom."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "4eb2b02d0720",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "0Up1xgAEfc",
+            "poster": {
+              "_vidzflowPoster": "0Up1xgAEfc"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "20c8b2925c7f",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "4UfLYLyikm",
+            "poster": {
+              "_vidzflowPoster": "4UfLYLyikm"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "b649303db3e2",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7e5b6fe9b11ebbd0c4_virginhotels-10-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "A man with short hair and a tattoo on his neck sits cross-legged on a bed with white sheets and pillows, holding a small cup and saucer, against a green upholstered headboard and a brick-patterned wall with a bedside lamp and speaker."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "089e29768a7d",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "IyYkjOCq8w",
+            "poster": {
+              "_vidzflowPoster": "IyYkjOCq8w"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "705f9d68cb4a",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "dTBNsZ1zMA",
+            "poster": {
+              "_vidzflowPoster": "dTBNsZ1zMA"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "01d924caf325",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7e43572f68d1f66def_virginhotel-4-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Woman wearing a red hat and blue dress sitting on a dark green velvet couch in a modern cafe corner, holding a drink with a straw, next to two small round tables and two orange stools, with wooden shelves and green wall light in the background."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "7ccd366041e8",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "kgKjPZ5QAh",
+            "poster": {
+              "_vidzflowPoster": "kgKjPZ5QAh"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "3b0551d58df6",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "iO1ucfGP3T",
+            "poster": {
+              "_vidzflowPoster": "iO1ucfGP3T"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "eaf2900c10d2",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7e54a123888ff5f5ef_tennis-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Woman in a white tennis dress and visor tossing a tennis ball up with one hand and holding a tennis racket with the other on a sunny outdoor tennis court."
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "4acd58bfcfaa",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "P7i4OxxYrh",
+            "poster": {
+              "_vidzflowPoster": "P7i4OxxYrh"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "30fd23921b0b",
+          "kind": "video",
+          "video": {
+            "_type": "videoEmbed",
+            "source": "vidzflow",
+            "vidzflowId": "uOQVie5aEM",
+            "poster": {
+              "_vidzflowPoster": "uOQVie5aEM"
+            }
+          }
+        },
+        {
+          "_type": "mediaItem",
+          "_key": "9179953363ff",
+          "kind": "image",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adbcc7e5b6fe9b11ebbd0b3_virginhotel-9-3.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Person in white bathrobe and towel on head sitting in bed drinking from a mug with an open magazine on their lap, beside a nightstand with a framed photo and wall lamp."
+          }
+        }
+      ],
+      "_key": "ec7c476d6962"
+    },
+    {
+      "_type": "missionSection",
+      "blocks": [
+        {
+          "_type": "missionBlock",
+          "_key": "87f4cb3271d8",
+          "heading": "Powering all brand collaborations across the creator economy",
+          "text": "That's our mission. We're building toward a future where every brand collaboration feels like a true partnership, one built on trust, made to last, and worth more with every campaign. In that future, great creative work isn't a one-off. It becomes a lasting part of how culture moves.",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adba391902483576cbd48ac_frame-2147220859.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Group of people dining together on a wooden deck at an outdoor beachside restaurant with orange umbrellas and ocean."
+          },
+          "quote": "I love coming to work every day because of the culture and the welcoming environment filled with incredible minds.",
+          "quoteMeta": [
+            {
+              "_type": "quoteMetaItem",
+              "_key": "21deea57e1b4",
+              "label": "USA",
+              "iconSvg": "<svg fill=\"none\" height=\"15\" viewbox=\"0 0 15 15\" width=\"15\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n<g clip-path=\"url(#clip0_1032_13162)\">\n<use fill=\"#A19F9A\" xlink:href=\"#stroke0_1032_13162\"></use>\n<mask fill=\"black\" height=\"15\" id=\"stroke1_1032_13162\" maskunits=\"userSpaceOnUse\" width=\"15\" x=\"-0.316406\" y=\"-0.573242\">\n<rect fill=\"white\" height=\"15\" width=\"15\" x=\"-0.316406\" y=\"-0.573242\"></rect>\n<use xlink:href=\"#stroke0_1032_13162\"></use>\n</mask>\n<path d=\"M2.4385 13.8079H11.798C12.2634 13.8079 12.7098 13.623 13.0389 13.2939C13.368 12.9648 13.5529 12.5184 13.5529 12.053V3.57096C13.5529 3.10553 13.368 2.65916 13.0389 2.33005C12.7098 2.00095 12.2634 1.81605 11.798 1.81605H10.628V1.01172C10.628 0.856582 10.5664 0.707793 10.4567 0.598091C10.347 0.488388 10.1982 0.426758 10.0431 0.426758C9.88793 0.426758 9.73914 0.488388 9.62943 0.598091C9.51973 0.707793 9.4581 0.856582 9.4581 1.01172V1.81605H4.77836V1.01172C4.77836 0.856582 4.71673 0.707793 4.60703 0.598091C4.49733 0.488388 4.34854 0.426758 4.1934 0.426758C4.03825 0.426758 3.88947 0.488388 3.77976 0.598091C3.67006 0.707793 3.60843 0.856582 3.60843 1.01172V1.81605H2.4385C1.97307 1.81605 1.5267 2.00095 1.19759 2.33005C0.868485 2.65916 0.683594 3.10553 0.683594 3.57096V12.053C0.683594 12.5184 0.868485 12.9648 1.19759 13.2939C1.5267 13.623 1.97307 13.8079 2.4385 13.8079ZM11.798 12.6379H2.4385C2.28335 12.6379 2.13456 12.5763 2.02486 12.4666C1.91516 12.3569 1.85353 12.2081 1.85353 12.053V8.227H12.3829V12.053C12.3829 12.2081 12.3213 12.3569 12.2116 12.4666C12.1019 12.5763 11.9531 12.6379 11.798 12.6379ZM2.4385 2.98599H3.60843V3.64408C3.60843 3.79922 3.67006 3.94801 3.77976 4.05771C3.88947 4.16741 4.03825 4.22904 4.1934 4.22904C4.34854 4.22904 4.49733 4.16741 4.60703 4.05771C4.71673 3.94801 4.77836 3.79922 4.77836 3.64408V2.98599H9.4581V3.64408C9.4581 3.79922 9.51973 3.94801 9.62943 4.05771C9.73914 4.16741 9.88793 4.22904 10.0431 4.22904C10.1982 4.22904 10.347 4.16741 10.4567 4.05771C10.5664 3.94801 10.628 3.79922 10.628 3.64408V2.98599H11.798C11.9531 2.98599 12.1019 3.04762 12.2116 3.15732C12.3213 3.26702 12.3829 3.41581 12.3829 3.57096V7.05707H1.85353V3.57096C1.85353 3.41581 1.91516 3.26702 2.02486 3.15732C2.13456 3.04762 2.28335 2.98599 2.4385 2.98599Z\" mask=\"url(#stroke1_1032_13162)\" stroke=\"#A19F9A\" stroke-width=\"0.5\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_1032_13162\">\n<rect fill=\"white\" height=\"14.2398\" width=\"14.2398\"></rect>\n</clippath>\n<path d=\"M2.4385 13.8079H11.798C12.2634 13.8079 12.7098 13.623 13.0389 13.2939C13.368 12.9648 13.5529 12.5184 13.5529 12.053V3.57096C13.5529 3.10553 13.368 2.65916 13.0389 2.33005C12.7098 2.00095 12.2634 1.81605 11.798 1.81605H10.628V1.01172C10.628 0.856582 10.5664 0.707793 10.4567 0.598091C10.347 0.488388 10.1982 0.426758 10.0431 0.426758C9.88793 0.426758 9.73914 0.488388 9.62943 0.598091C9.51973 0.707793 9.4581 0.856582 9.4581 1.01172V1.81605H4.77836V1.01172C4.77836 0.856582 4.71673 0.707793 4.60703 0.598091C4.49733 0.488388 4.34854 0.426758 4.1934 0.426758C4.03825 0.426758 3.88947 0.488388 3.77976 0.598091C3.67006 0.707793 3.60843 0.856582 3.60843 1.01172V1.81605H2.4385C1.97307 1.81605 1.5267 2.00095 1.19759 2.33005C0.868485 2.65916 0.683594 3.10553 0.683594 3.57096V12.053C0.683594 12.5184 0.868485 12.9648 1.19759 13.2939C1.5267 13.623 1.97307 13.8079 2.4385 13.8079ZM11.798 12.6379H2.4385C2.28335 12.6379 2.13456 12.5763 2.02486 12.4666C1.91516 12.3569 1.85353 12.2081 1.85353 12.053V8.227H12.3829V12.053C12.3829 12.2081 12.3213 12.3569 12.2116 12.4666C12.1019 12.5763 11.9531 12.6379 11.798 12.6379ZM2.4385 2.98599H3.60843V3.64408C3.60843 3.79922 3.67006 3.94801 3.77976 4.05771C3.88947 4.16741 4.03825 4.22904 4.1934 4.22904C4.34854 4.22904 4.49733 4.16741 4.60703 4.05771C4.71673 3.94801 4.77836 3.79922 4.77836 3.64408V2.98599H9.4581V3.64408C9.4581 3.79922 9.51973 3.94801 9.62943 4.05771C9.73914 4.16741 9.88793 4.22904 10.0431 4.22904C10.1982 4.22904 10.347 4.16741 10.4567 4.05771C10.5664 3.94801 10.628 3.79922 10.628 3.64408V2.98599H11.798C11.9531 2.98599 12.1019 3.04762 12.2116 3.15732C12.3213 3.26702 12.3829 3.41581 12.3829 3.57096V7.05707H1.85353V3.57096C1.85353 3.41581 1.91516 3.26702 2.02486 3.15732C2.13456 3.04762 2.28335 2.98599 2.4385 2.98599Z\" id=\"stroke0_1032_13162\"></path>\n</defs>\n</svg>"
+            },
+            {
+              "_type": "quoteMetaItem",
+              "_key": "9dc6f6f63588",
+              "label": "Company Team",
+              "iconSvg": "<svg fill=\"none\" height=\"15\" viewbox=\"0 0 15 15\" width=\"15\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"7.12061\" cy=\"4.0188\" r=\"2.72803\" stroke=\"#A19F9A\" stroke-width=\"1.6\"></circle>\n<path d=\"M2.53125 12.9489C2.53125 10.5909 4.58613 8.67944 7.12095 8.67944C9.65576 8.67944 11.7106 10.5909 11.7106 12.9489H2.53125Z\" stroke=\"#A19F9A\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n</svg>"
+            }
+          ],
+          "cardSide": "right"
+        },
+        {
+          "_type": "missionBlock",
+          "_key": "e9d1501192d6",
+          "heading": "The people behind the partnerships",
+          "text": "We're a team of strategists, client partners, engineers, and creator champions who believe creators deserve to be paid fairly for work that moves culture. We bring that belief to every partnership we build with the world's biggest brands.",
+          "image": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6adba391f7fc08d0ef3107c9_frame-2147220858.avif",
+                "type": "image"
+              }
+            },
+            "alt": "A diverse group of adults attentively seated in rows inside a modern, industrial-style conference room with large windows, listening to an unseen speaker."
+          },
+          "quote": "I appreciate how much you value employees and provide the benefits needed for a strong work life balance and happy culture.",
+          "quoteMeta": [
+            {
+              "_type": "quoteMetaItem",
+              "_key": "67f59a430854",
+              "label": "USA",
+              "iconSvg": "<svg fill=\"none\" height=\"15\" viewbox=\"0 0 15 15\" width=\"15\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n<g clip-path=\"url(#clip0_1032_13162)\">\n<use fill=\"#A19F9A\" xlink:href=\"#stroke0_1032_13162\"></use>\n<mask fill=\"black\" height=\"15\" id=\"stroke1_1032_13162\" maskunits=\"userSpaceOnUse\" width=\"15\" x=\"-0.316406\" y=\"-0.573242\">\n<rect fill=\"white\" height=\"15\" width=\"15\" x=\"-0.316406\" y=\"-0.573242\"></rect>\n<use xlink:href=\"#stroke0_1032_13162\"></use>\n</mask>\n<path d=\"M2.4385 13.8079H11.798C12.2634 13.8079 12.7098 13.623 13.0389 13.2939C13.368 12.9648 13.5529 12.5184 13.5529 12.053V3.57096C13.5529 3.10553 13.368 2.65916 13.0389 2.33005C12.7098 2.00095 12.2634 1.81605 11.798 1.81605H10.628V1.01172C10.628 0.856582 10.5664 0.707793 10.4567 0.598091C10.347 0.488388 10.1982 0.426758 10.0431 0.426758C9.88793 0.426758 9.73914 0.488388 9.62943 0.598091C9.51973 0.707793 9.4581 0.856582 9.4581 1.01172V1.81605H4.77836V1.01172C4.77836 0.856582 4.71673 0.707793 4.60703 0.598091C4.49733 0.488388 4.34854 0.426758 4.1934 0.426758C4.03825 0.426758 3.88947 0.488388 3.77976 0.598091C3.67006 0.707793 3.60843 0.856582 3.60843 1.01172V1.81605H2.4385C1.97307 1.81605 1.5267 2.00095 1.19759 2.33005C0.868485 2.65916 0.683594 3.10553 0.683594 3.57096V12.053C0.683594 12.5184 0.868485 12.9648 1.19759 13.2939C1.5267 13.623 1.97307 13.8079 2.4385 13.8079ZM11.798 12.6379H2.4385C2.28335 12.6379 2.13456 12.5763 2.02486 12.4666C1.91516 12.3569 1.85353 12.2081 1.85353 12.053V8.227H12.3829V12.053C12.3829 12.2081 12.3213 12.3569 12.2116 12.4666C12.1019 12.5763 11.9531 12.6379 11.798 12.6379ZM2.4385 2.98599H3.60843V3.64408C3.60843 3.79922 3.67006 3.94801 3.77976 4.05771C3.88947 4.16741 4.03825 4.22904 4.1934 4.22904C4.34854 4.22904 4.49733 4.16741 4.60703 4.05771C4.71673 3.94801 4.77836 3.79922 4.77836 3.64408V2.98599H9.4581V3.64408C9.4581 3.79922 9.51973 3.94801 9.62943 4.05771C9.73914 4.16741 9.88793 4.22904 10.0431 4.22904C10.1982 4.22904 10.347 4.16741 10.4567 4.05771C10.5664 3.94801 10.628 3.79922 10.628 3.64408V2.98599H11.798C11.9531 2.98599 12.1019 3.04762 12.2116 3.15732C12.3213 3.26702 12.3829 3.41581 12.3829 3.57096V7.05707H1.85353V3.57096C1.85353 3.41581 1.91516 3.26702 2.02486 3.15732C2.13456 3.04762 2.28335 2.98599 2.4385 2.98599Z\" mask=\"url(#stroke1_1032_13162)\" stroke=\"#A19F9A\" stroke-width=\"0.5\"></path>\n</g>\n<defs>\n<clippath id=\"clip0_1032_13162\">\n<rect fill=\"white\" height=\"14.2398\" width=\"14.2398\"></rect>\n</clippath>\n<path d=\"M2.4385 13.8079H11.798C12.2634 13.8079 12.7098 13.623 13.0389 13.2939C13.368 12.9648 13.5529 12.5184 13.5529 12.053V3.57096C13.5529 3.10553 13.368 2.65916 13.0389 2.33005C12.7098 2.00095 12.2634 1.81605 11.798 1.81605H10.628V1.01172C10.628 0.856582 10.5664 0.707793 10.4567 0.598091C10.347 0.488388 10.1982 0.426758 10.0431 0.426758C9.88793 0.426758 9.73914 0.488388 9.62943 0.598091C9.51973 0.707793 9.4581 0.856582 9.4581 1.01172V1.81605H4.77836V1.01172C4.77836 0.856582 4.71673 0.707793 4.60703 0.598091C4.49733 0.488388 4.34854 0.426758 4.1934 0.426758C4.03825 0.426758 3.88947 0.488388 3.77976 0.598091C3.67006 0.707793 3.60843 0.856582 3.60843 1.01172V1.81605H2.4385C1.97307 1.81605 1.5267 2.00095 1.19759 2.33005C0.868485 2.65916 0.683594 3.10553 0.683594 3.57096V12.053C0.683594 12.5184 0.868485 12.9648 1.19759 13.2939C1.5267 13.623 1.97307 13.8079 2.4385 13.8079ZM11.798 12.6379H2.4385C2.28335 12.6379 2.13456 12.5763 2.02486 12.4666C1.91516 12.3569 1.85353 12.2081 1.85353 12.053V8.227H12.3829V12.053C12.3829 12.2081 12.3213 12.3569 12.2116 12.4666C12.1019 12.5763 11.9531 12.6379 11.798 12.6379ZM2.4385 2.98599H3.60843V3.64408C3.60843 3.79922 3.67006 3.94801 3.77976 4.05771C3.88947 4.16741 4.03825 4.22904 4.1934 4.22904C4.34854 4.22904 4.49733 4.16741 4.60703 4.05771C4.71673 3.94801 4.77836 3.79922 4.77836 3.64408V2.98599H9.4581V3.64408C9.4581 3.79922 9.51973 3.94801 9.62943 4.05771C9.73914 4.16741 9.88793 4.22904 10.0431 4.22904C10.1982 4.22904 10.347 4.16741 10.4567 4.05771C10.5664 3.94801 10.628 3.79922 10.628 3.64408V2.98599H11.798C11.9531 2.98599 12.1019 3.04762 12.2116 3.15732C12.3213 3.26702 12.3829 3.41581 12.3829 3.57096V7.05707H1.85353V3.57096C1.85353 3.41581 1.91516 3.26702 2.02486 3.15732C2.13456 3.04762 2.28335 2.98599 2.4385 2.98599Z\" id=\"stroke0_1032_13162\"></path>\n</defs>\n</svg>"
+            },
+            {
+              "_type": "quoteMetaItem",
+              "_key": "f3e01c9b5fa7",
+              "label": "Company Team",
+              "iconSvg": "<svg fill=\"none\" height=\"15\" viewbox=\"0 0 15 15\" width=\"15\" xmlns=\"http://www.w3.org/2000/svg\">\n<circle cx=\"7.12061\" cy=\"4.0188\" r=\"2.72803\" stroke=\"#A19F9A\" stroke-width=\"1.6\"></circle>\n<path d=\"M2.53125 12.9489C2.53125 10.5909 4.58613 8.67944 7.12095 8.67944C9.65576 8.67944 11.7106 10.5909 11.7106 12.9489H2.53125Z\" stroke=\"#A19F9A\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n</svg>"
+            }
+          ],
+          "cardSide": "left"
+        }
+      ],
+      "_key": "feea3607734f"
+    },
+    {
+      "_type": "teamMarqueeSection",
+      "heading": "Build what's next for creators and the brands who love them",
+      "text": "We're a team of curious, hard-working people shaping a category that's still being written.",
+      "rows": [
+        {
+          "_type": "photoRow",
+          "_key": "f47aeea1f449",
+          "photos": [
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bc1bb3dd84348d827b_Frame%202147220751.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling woman with long wavy blonde hair, wearing a black top.",
+              "_key": "e0e8a990a402"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694c01e45a99d7152a46e_Frame%202147220761.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Close-up portrait of a young woman with dark hair tied back, wearing a blue denim jacket and gold hoop earrings, smiling softly.",
+              "_key": "1d0065c38285"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bfe306b0c3f7f022ec_Frame%202147220758.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Portrait of a smiling woman with long black hair wearing a white turtleneck.",
+              "_key": "327015a3268b"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bf9999ab5e8e53e187_Frame%202147220762.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Portrait of a smiling woman with long wavy hair wearing a black top and black blazer.",
+              "_key": "a0266f25f648"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694be9999ab5e8e53e15c_Frame%202147220757.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Young man taking a mirror selfie with a smartphone, wearing a black cap with a red logo, black shirt, silver chain, and a jacket with a gray hood, standing in a kitchen.",
+              "_key": "c1ecd8e19502"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694ba8e4b4863a3e7cdcd_Frame%202147220748.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling man wearing a black baseball cap and a blue denim jacket over a gray hoodie.",
+              "_key": "a0a2fd8f163b"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694beff27b442d65d541f_Frame%202147220760.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Close-up portrait of a young woman with light skin and long blonde hair, wearing gold hoop earrings and layered gold necklaces, looking at the camera with a slight smile.",
+              "_key": "aec70901f695"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bbaf537cb3a939d7fe_Frame%202147220749.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling woman with long light brown hair wearing a black top.",
+              "_key": "fb750d3aeaa8"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694beed99371157755d25_Frame%202147220756.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling man with short curly hair and a beard holding a DSLR camera, looking slightly to the side.",
+              "_key": "55d2231ed6ae"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694ba962225df3fee89ca_Frame%202147220750.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling woman with long blonde hair wearing a bright pink satin blouse, posed in front of a bright window.",
+              "_key": "b16d7928315b"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bcae3e4f993e1a91c8_Frame%202147220752.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling woman with long blonde hair resting her chin on her hand, wearing a black top and a necklace.",
+              "_key": "7f31c830dcbc"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694be152654f5200e7502_Frame%202147220753.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling woman with long light brown hair, wearing hoop earrings and a light brown top with white polka dots, in front of a softly lit window.",
+              "_key": "c401e4b20daa"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694be6b192d1fe5506623_Frame%202147220755.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Portrait of a young woman with long brown hair wearing a black top, sitting outdoors with green foliage and a building.",
+              "_key": "c6720450cff6"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694beeb78f2cc0424c3c7_Frame%202147220754.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Portrait of a smiling woman with dark hair styled in a loose updo, wearing a white top and small earrings.",
+              "_key": "db8cc0efb85e"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694c0962225df3fee8b3c_Frame%202147220759.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Black and white circular portrait of a smiling woman with long hair, looking straight at the camera.",
+              "_key": "dfb3e5807801"
+            }
+          ]
+        },
+        {
+          "_type": "photoRow",
+          "_key": "8443e4534d86",
+          "photos": [
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bae9be86a0e65b2366_Frame%202147220749-1.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Black and white photo of a young person smiling, wearing glasses and a collared shirt, with short curly hair.",
+              "_key": "fa73a695eb0e"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bceb78f2cc0424c37a_Frame%202147220752-1.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Headshot of a woman with long black hair, light skin, and wearing a light gray top, smiling slightly.",
+              "_key": "2bd49b0ad0da"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694be4e0972748f8a03af_Frame%202147220755-1.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling woman with long, wavy brown hair wearing hoop earrings and a necklace.",
+              "_key": "7b93f721a665"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bc4e0972748f8a0336_Frame%202147220751-1.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Headshot of a young person with short black hair and glasses, wearing a brown shirt.",
+              "_key": "b9dcc847b844"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694beea1c9641471abb8f_Frame%202147220758-1.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Black and white portrait of a woman with light-colored hair styled back, looking directly at the camera with a slight smile, wearing a light-colored top.",
+              "_key": "32a9c794fc14"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bbddcb9aff0219be2b_Frame%202147220750-1.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Portrait of a smiling woman with long dark hair wearing a black top and a small necklace with a green pendant.",
+              "_key": "0d34152db566"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694ba3d87d6d71666bde3_Frame%202147220748-1.png",
+                  "type": "image"
+                }
+              },
+              "alt": "A woman with light brown, shoulder-length hair wearing a beige blazer and white top, smiling softly.",
+              "_key": "3e73d5603c40"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bfd894dd79ea730bb1_Frame%202147220761-1.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Portrait of a young man with short brown hair, a trimmed beard, and brown eyes, looking directly at the camera with a slight smile.",
+              "_key": "395a1291f7b1"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bfae4388136acbc2b1_Frame%202147220760-1.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling bald man with a trimmed beard and mustache wearing a dark crew-neck shirt, shown in a circular frame.",
+              "_key": "4d051d86c441"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694c00c767da5174fb058_Frame%202147220759-1.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Portrait of a woman with long blonde hair, light makeup, and a slight smile, wearing a white top with grid lines.",
+              "_key": "264750cfe864"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694be61765ff6c1fbc4f8_Frame%202147220754-1.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Black and white circular portrait of a woman with shoulder-length hair, smiling gently at the camera.",
+              "_key": "44cb8f7b6315"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694be8fe3e44f3424cdbd_Frame%202147220753-1.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling bearded man with short dark hair wearing a black shirt patterned with white hashtags, standing against a white brick wall.",
+              "_key": "29bb75fa86ae"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694be1bb3dd84348d82d3_Frame%202147220756-1.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling person with curly hair wearing sunglasses and a dark shirt.",
+              "_key": "fc1d0d3c4fa3"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bec219362f823310ab_Frame%202147220757-1.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling person wearing round reflective sunglasses, a gray beanie hat with a small logo, and a dark jacket, with greenery.",
+              "_key": "3bbe785ec14a"
+            }
+          ]
+        },
+        {
+          "_type": "photoRow",
+          "_key": "dafbfb7216e4",
+          "photos": [
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bcc453375c757e0247_Frame%202147220751-2.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Black and white portrait of a smiling woman with long straight hair, wearing a patterned top.",
+              "_key": "9449c56d4408"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694c085917f9b39f033a1_Frame%202147220758-2.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling young woman with long hair wearing a black jacket and a black baseball cap with a red and white figure on it, resting her head on her right hand outdoors near a potted plant.",
+              "_key": "344e2602e901"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bcf610cdc01146eee5_Frame%202147220752-2.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling young woman with light skin, straight light brown hair, wearing dangling earrings.",
+              "_key": "e3d04fbbe076"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bfc0b5f37b890c7e22_Frame%202147220762-1.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Portrait of a young woman with long dark hair wearing a blue top, smiling gently in indoor lighting.",
+              "_key": "b405ff9d7833"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bce2b195fbc39611f6_Frame%202147220749-2.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling man with short hair and mustache wearing an olive green jacket over a white shirt, standing outdoors with blurred natural.",
+              "_key": "a479ffd6d3aa"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694ba3d87d6d71666bde9_Frame%202147220748-2.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Black and white portrait of a woman with long hair and bangs smiling, framed in a circular crop.",
+              "_key": "33c0b2ec87e4"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bf6b192d1fe5506638_Frame%202147220761-2.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Portrait of a woman with long wavy dark brown hair, brown eyes, and warm medium skin tone, smiling slightly and wearing a light-colored top.",
+              "_key": "a19cf9fe4cf7"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694babdec8326a17fad08_Frame%202147220750-2.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Portrait of a smiling man with short hair wearing a dark collared shirt.",
+              "_key": "97bf39373096"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bec219362f82331088_Frame%202147220755-2.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Portrait of a young man wearing glasses and a light blue shirt, smiling slightly and facing the camera.",
+              "_key": "f405d402a6b1"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bf1e45a99d7152a40f_Frame%202147220756-2.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Portrait of a smiling woman with long black hair.",
+              "_key": "70511a74494c"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694be593e2dff3e935104_Frame%202147220757-2.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Person with blonde hair tied in a bun wearing a gray hoodie holding a black and white puppy with blue eyes on a paved area with a white truck.",
+              "_key": "5e6df85fc644"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bd074c350506d7a9d9_Frame%202147220753-2.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling woman with long brown hair wearing a yellow and black top, looking at the camera.",
+              "_key": "3612b5ca315e"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694be928350444112dc81_Frame%202147220754-2.png",
+                  "type": "image"
+                }
+              },
+              "alt": "A smiling woman with dark hair pulled back, resting her head on her right hand, sitting in a room with wooden walls and framed pictures behind her.",
+              "_key": "d51f0249fc3a"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694c0934055669583d06f_Frame%202147220759-2.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Smiling young woman with long wavy blonde hair wearing a pink top, outdoors with buildings and greenery.",
+              "_key": "e57168d44664"
+            },
+            {
+              "_type": "altImage",
+              "asset": {
+                "_upload": {
+                  "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad694bf9999ab5e8e53e177_Frame%202147220760-2.png",
+                  "type": "image"
+                }
+              },
+              "alt": "Portrait of a young man with short black hair wearing a gray sweater.",
+              "_key": "10af51d74c20"
+            }
+          ]
+        }
+      ],
+      "_key": "d3d19a3e507d"
+    },
+    {
+      "_type": "benefitsSection",
+      "heading": "Why work at #paid?",
+      "text": "Creators are changing how people decide what to buy, watch, and believe in. We give brands like Coca-Cola, and the creators they partner with, the network, data, and technology to make that work at scale. In 2025, campaigns on #paid reached more than 1 billion people. The category is still being written, and the people here get to write it.",
+      "cards": [
+        {
+          "_type": "benefitCard",
+          "_key": "8a456276a4af",
+          "title": "Remote first",
+          "description": null,
+          "iconSvg": "<svg fill=\"none\" height=\"24\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M3 11L12 3.5L21 11\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M5 9.5V20H19V9.5\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n</svg>"
+        },
+        {
+          "_type": "benefitCard",
+          "_key": "5fe718e9131c",
+          "title": "Health coverage",
+          "description": null,
+          "iconSvg": "<svg fill=\"none\" height=\"24\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8 9H4C3.44772 9 3 9.44772 3 10V14C3 14.5523 3.44772 15 4 15H8C8.55228 15 9 15.4477 9 16V20C9 20.5523 9.44772 21 10 21H14C14.5523 21 15 20.5523 15 20V16C15 15.4477 15.4477 15 16 15H20C20.5523 15 21 14.5523 21 14V10C21 9.44772 20.5523 9 20 9H16C15.4477 9 15 8.55228 15 8V4C15 3.44772 14.5523 3 14 3H10C9.44772 3 9 3.44772 9 4V8C9 8.55228 8.55228 9 8 9Z\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n</svg>"
+        },
+        {
+          "_type": "benefitCard",
+          "_key": "64e4cf7f71a7",
+          "title": "Growth Budget",
+          "description": null,
+          "iconSvg": "<svg fill=\"none\" height=\"24\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M7 15H17L15.8 20.5H8.2L7 15Z\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M12 15V9\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M11.9998 11.4998C8.9998 11.4998 7.2998 9.7998 7.2998 6.7998C10.2998 6.7998 11.9998 8.4998 11.9998 11.4998Z\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M12 9.0002C12 6.0002 13.7 4.2002 16.7 4.2002C16.7 7.2002 15 9.0002 12 9.0002Z\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n</svg>"
+        },
+        {
+          "_type": "benefitCard",
+          "_key": "a58df6d198bb",
+          "title": "Spending account",
+          "description": null,
+          "iconSvg": "<svg fill=\"none\" height=\"24\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M6.5 8.5002L8 4.2002L17.6 7.0002L17.2 8.5002\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M4 10.5C4 9.4 4.9 8.5 6 8.5H18C19.1 8.5 20 9.4 20 10.5V17.5C20 18.6 19.1 19.5 18 19.5H6C4.9 19.5 4 18.6 4 17.5V10.5Z\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M20 12H16.5C15.7 12 15 12.7 15 13.5C15 14.3 15.7 15 16.5 15H20\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n</svg>"
+        },
+        {
+          "_type": "benefitCard",
+          "_key": "56b5ef820058",
+          "title": "Team socials",
+          "description": null,
+          "iconSvg": "<svg fill=\"none\" height=\"24\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M20.2508 14C20.2508 18.5568 16.5568 22.2508 12 22.2508C7.44322 22.2508 3.74922 18.5568 3.74922 14C3.74922 9.44322 7.44322 5.74922 12 5.74922C16.5568 5.74922 20.2508 9.44322 20.2508 14Z\" stroke=\"#FBF9F5\" stroke-width=\"1.6\"></path>\n<path d=\"M5.30029 11.5127C9.00029 12.8127 15.0003 12.8127 18.7003 11.5127\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M4.59473 16.2153C8.68431 17.6522 15.3161 17.6522 19.4057 16.2153\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M11.9999 6C8.1999 9 8.1999 19 11.9999 22\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M12 6C15.8 9 15.8 19 12 22\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n</svg>"
+        },
+        {
+          "_type": "benefitCard",
+          "_key": "59943519f80e",
+          "title": "Summer Fridays",
+          "description": null,
+          "iconSvg": "<svg fill=\"none\" height=\"24\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M16.7 12C16.7 14.5957 14.5957 16.7 12 16.7C9.40426 16.7 7.3 14.5957 7.3 12C7.3 9.40426 9.40426 7.3 12 7.3C14.5957 7.3 16.7 9.40426 16.7 12Z\" stroke=\"#FBF9F5\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M19.9004 12H21.9004\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M17.5898 17.5898L18.9998 18.9998\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M12 19.8999V21.8999\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M6.41 17.5898L5 18.9998\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M4.09961 12H2.09961\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M6.41 6.41L5 5\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M12 4.1001V2.1001\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M17.5898 6.41L18.9998 5\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n</svg>"
+        },
+        {
+          "_type": "benefitCard",
+          "_key": "f21a4a9e7917",
+          "title": "Equity plan",
+          "description": null,
+          "iconSvg": "<svg fill=\"none\" height=\"24\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<mask fill=\"white\" id=\"stroke0_1025_12781\">\n<path d=\"M18.5 13C18.5 14.4834 18.0601 15.9334 17.236 17.1668C16.4119 18.4001 15.2406 19.3614 13.8701 19.9291C12.4997 20.4968 10.9917 20.6453 9.53682 20.3559C8.08196 20.0665 6.74559 19.3522 5.6967 18.3033C4.64781 17.2544 3.9335 15.918 3.64411 14.4632C3.35472 13.0083 3.50325 11.5003 4.0709 10.1299C4.63856 8.75943 5.59985 7.58809 6.83322 6.76398C8.06659 5.93987 9.51664 5.5 11 5.5V13H18.5Z\"></path>\n</mask>\n<path d=\"M18.5 13C18.5 14.4834 18.0601 15.9334 17.236 17.1668C16.4119 18.4001 15.2406 19.3614 13.8701 19.9291C12.4997 20.4968 10.9917 20.6453 9.53682 20.3559C8.08197 20.0665 6.74559 19.3522 5.6967 18.3033C4.64781 17.2544 3.9335 15.918 3.64411 14.4632C3.35472 13.0083 3.50325 11.5003 4.0709 10.1299C4.63856 8.75943 5.59985 7.58809 6.83322 6.76398C8.06659 5.93987 9.51664 5.5 11 5.5L11 13H18.5Z\" mask=\"url(#stroke0_1025_12781)\" stroke=\"#FBF9F5\" stroke-linejoin=\"round\" stroke-width=\"3.2\"></path>\n<mask fill=\"white\" id=\"stroke1_1025_12781\">\n<path d=\"M13 3.5C13.9849 3.5 14.9602 3.69399 15.8701 4.0709C16.7801 4.44781 17.6069 5.00026 18.3033 5.6967C18.9997 6.39314 19.5522 7.21993 19.9291 8.12988C20.306 9.03982 20.5 10.0151 20.5 11L13 11V3.5Z\"></path>\n</mask>\n<path d=\"M13 3.5C13.9849 3.5 14.9602 3.69399 15.8701 4.0709C16.7801 4.44781 17.6069 5.00026 18.3033 5.6967C18.9997 6.39314 19.5522 7.21993 19.9291 8.12988C20.306 9.03982 20.5 10.0151 20.5 11L13 11L13 3.5Z\" mask=\"url(#stroke1_1025_12781)\" stroke=\"#FBF9F5\" stroke-linejoin=\"round\" stroke-width=\"3.2\"></path>\n</svg>"
+        },
+        {
+          "_type": "benefitCard",
+          "_key": "fdfde39a0bb3",
+          "title": "Paid vacation",
+          "description": null,
+          "iconSvg": "<svg aria-hidden=\"true\" fill=\"none\" height=\"24\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2px\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"><path d=\"M4 11.5a8 8 0 0 1 16 0z\" fill=\"none\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\"></path><path d=\"M12 11.5V20\" fill=\"none\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\"></path><path d=\"M4.5 20h15\" fill=\"none\" stroke=\"#FBF9F5\" stroke-width=\"2px\" style=\"\"></path></svg>"
+        },
+        {
+          "_type": "benefitCard",
+          "_key": "b229c2858faf",
+          "title": "Connectivity stipend",
+          "description": null,
+          "iconSvg": "<svg fill=\"none\" height=\"24\" viewbox=\"0 0 24 24\" width=\"24\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8.7998 15.2C10.5998 13.6 13.3998 13.6 15.1998 15.2\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M5.7998 12.0001C9.3998 8.8001 14.5998 8.8001 18.1998 12.0001\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<path d=\"M2.7998 8.8001C8.1998 4.2001 15.7998 4.2001 21.1998 8.8001\" stroke=\"#FBF9F5\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"1.6\"></path>\n<circle cx=\"12\" cy=\"19\" fill=\"#FBF9F5\" r=\"1.5\"></circle>\n</svg>"
+        }
+      ],
+      "jobBoard": {
+        "heading": "Join the team",
+        "anchorId": "jobs",
+        "jobs": [
+          {
+            "_type": "job",
+            "_key": "142b50526a52",
+            "title": "Senior Client Partner, New York & Chicago",
+            "location": "Remote US",
+            "department": "Sales",
+            "type": "Full-time",
+            "url": "https://jobs.lever.co/hashtagpaid/55c58b47-0618-4556-a8b0-e70788c83268"
+          },
+          {
+            "_type": "job",
+            "_key": "bafad707a8f9",
+            "title": "Senior Client Success Manager - US",
+            "location": "New York",
+            "department": "Customer Experience",
+            "type": "Full-time",
+            "url": "https://jobs.lever.co/hashtagpaid/8cedee2a-453d-426f-aa53-50c8584215d2"
+          },
+          {
+            "_type": "job",
+            "_key": "ad439bfa4465",
+            "title": "Senior Creator Acquisition Partner",
+            "location": "Remote",
+            "department": "Operations",
+            "type": "Full-time",
+            "url": "https://jobs.lever.co/hashtagpaid/5298b494-0bf7-462a-886f-807c7b0f47c4"
+          },
+          {
+            "_type": "job",
+            "_key": "c306481bbcfc",
+            "title": "Senior Product Manager",
+            "location": "Remote US/CA",
+            "department": "Product, Design & Data",
+            "type": "Full-time",
+            "url": "https://jobs.lever.co/hashtagpaid/0159b0f3-0c99-4f4b-9d1d-fe28e894d345"
+          },
+          {
+            "_type": "job",
+            "_key": "b6c12fc70094",
+            "title": "General Applications",
+            "location": "Remote",
+            "department": "General",
+            "type": "Full-time - Remote",
+            "url": "https://jobs.lever.co/hashtagpaid/1975185b-7063-4f09-b246-1dcd27717df1"
+          }
+        ]
+      },
+      "_key": "710258fd065a"
+    },
+    {
+      "_type": "investorsSection",
+      "heading": "Backed by the best",
+      "text": "We are fortunate to work with some of the\nbest investors in the industry. Our backers include the top venture firms and some of\nthe world’s most exceptional founders and product builders.",
+      "people": [
+        {
+          "_type": "person",
+          "_key": "80095d3cb0bc",
+          "name": "Adam Ryan",
+          "role": "Co-founder & CEO, Workweek",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a45dd83ad6118bbc033c_photo.avif",
+                "type": "image"
+              }
+            },
+            "alt": "A smiling man with brown hair wearing a dark blue button-up shirt and jeans, leaning slightly forward outdoors near a body of water with greenery."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "30df30cfe7ed",
+          "name": "Alen Palander",
+          "role": "Creator & Creative Director, Palander Studios",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a45b1b5ca9fbf4fb8cfe_photo-1.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Bearded man wearing a black cap and black and white jacket, looking at the camera with a serious expression."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "205e05fa2422",
+          "name": "Allen Lau",
+          "role": "Co-founder, Wattpad & Two Small Fish Ventures",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a45d9e50c28eb50c9e24_photo-2.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Man wearing black suit, red shirt, and patterned tie sitting on a blue chair against a brown backdrop with hands clasped and looking forward."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "5c807a073070",
+          "name": "Arati Sharma",
+          "role": "Co-founder, Good Future & Backbone Angels",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a456bacbd49711402c25_frame-2147236568.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Woman with long dark hair wearing hoop earrings, a black crop top, and teal pants, smiling gently while sitting indoors with wooden shelves."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "d4cb11d2670a",
+          "name": "Arjun Sethi",
+          "role": "Co-CEO, Kraken; Chairman, Tribe Capital",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a4563d0efafb17c3c2bf_frame-2147236569.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Man with short black hair and beard wearing a blue blazer and gray shirt speaks while seated, wearing a headset microphone."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "a33bbf348d2b",
+          "name": "Cash XO",
+          "role": "Co-founder, XO (Manager, The Weeknd)",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a456a5e0c67369146da3_frame-2147236570.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Man with a beard and mustache wearing large amber-tinted sunglasses, a beige double-breasted suit, white shirt, and black tie standing indoors in front of a wooden cabinet with bottles."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "9d3d07657031",
+          "name": "Christian Collins",
+          "role": "Founder & Creator (@christiancollins)",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a456a623940af22d5cdf_frame-2147236571.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Smiling young man with curly hair wearing an open white shirt sitting in a white woven hanging chair."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "bcbba95b030f",
+          "name": "Crawford Collins",
+          "role": "Podcast & Creator (@crawfordcollins)",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a456787a543ccbb95056_frame-2147236572.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Smiling man wearing a brown baseball cap backwards, black glasses, and a white hoodie with text on it, standing in front of partially visible illuminated signage."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "2dcff45d52aa",
+          "name": "Daniel Patricio",
+          "role": "Co-founder & CEO, Abra (ex-Shopify)",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a4569124725944406092_frame-2147236573.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Smiling young man with short dark hair wearing a black shirt."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "e7ee1ccd4ad4",
+          "name": "Eva Lau",
+          "role": "Co-founder & GP, Two Small Fish Ventures",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a4560fad6aa66b39e059_frame-2147236574.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Smiling woman with black hair wearing a red academic gown and a purple stole with a microphone headset, standing in front of a blurred audience in similar academic attire."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "dd7b8dfc097c",
+          "name": "Jasmine Lorimer",
+          "role": "Star of The Bachelorette (@jasminelorimer)",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a45aa623940af22d5db1_frame-2147236575.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Blonde woman with long wavy hair and blue eyes wearing a black sleeveless top and a silver necklace, looking at the camera."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "18682ce3e93f",
+          "name": "Jason Tartick",
+          "role": "Author & Host, Trading Secrets",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a45a324ae0484b5184b8_frame-2147236576.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Smiling man with dark hair and beard wearing a black leather jacket over a black shirt."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "ac31abd8b959",
+          "name": "Murda Beatz",
+          "role": "Multi-platinum Producer",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a45aeb91d92248c57d4d_frame-2147236577.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Young man with curly brown hair and beard wearing red-tinted sunglasses and dressed in black, holding up a large diamond-studded necklace pendant that spells 'MORAD' with a figure below, posed in front of a white backdrop with partial logos containing musical notes."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "a86e88fd57b2",
+          "name": "Nik Sharma",
+          "role": "CEO, Sharma Brands (“The DTC Guy”)",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a45b65b91f994740b96b_frame-2147236578.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Smiling man with a thick beard and short dark hair wearing a dark t-shirt, looking slightly to the side."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "9cbaac0a0292",
+          "name": "Ryan Millier",
+          "role": "Creator & Entrepreneur (@ryanmillier)",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a45b1a8b24fed149c470_frame-2147236579.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Man wearing round black sunglasses and a dark jacket leaning against a window, with his reflection visible on the glass and an ornate red brick wall behind him."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "34f8dee74871",
+          "name": "Sander Daniels",
+          "role": "Co-founder, Thumbtack",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a45beb91d92248c57d78_frame-2147236580.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Smiling young man with short light brown hair and blue eyes wearing a gray shirt."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "d4b8e27957b7",
+          "name": "Satish Kanwar",
+          "role": "Co-founder, Good Future (ex-Shopify)",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a45ba22de76ea50b44bf_frame-2147236581.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Smiling man with black hair, beard, and glasses wearing a light blue button-up shirt and dark blue jacket."
+          }
+        },
+        {
+          "_type": "person",
+          "_key": "4fdc2d47e177",
+          "name": "Web Smith",
+          "role": "Founder, 2PM",
+          "photo": {
+            "_type": "altImage",
+            "asset": {
+              "_upload": {
+                "url": "https://cdn.prod.website-files.com/5c34f4c0ee3329913fc72eac/6ad6a456a5e0c67369146d91_frame-2147220890.avif",
+                "type": "image"
+              }
+            },
+            "alt": "Portrait of a smiling person with short curly hair and light brown eyes wearing a black high-neck shirt."
+          }
+        }
+      ],
+      "_key": "78cb136672ea"
+    }
+  ]
+}

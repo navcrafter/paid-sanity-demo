@@ -1,10 +1,12 @@
 import {DocumentIcon} from '@sanity/icons/Document'
 import {HomeIcon} from '@sanity/icons/Home'
 import {UsersIcon} from '@sanity/icons/Users'
-import {defineField, defineType} from 'sanity'
+import {defineArrayMember, defineField, defineType} from 'sanity'
 
-// Phase 1 shells for the three static pages. Each page gets its ordered list of
-// design sections (hero, galleries, tabs, testimonials, FAQ...) in phase 3.
+import {sectionTypes} from '../sections'
+
+// Home, Creators and Company: an ordered list of design sections. Any section type
+// can be used on any page; sections can be reordered, duplicated or hidden.
 
 function definePage(name: string, title: string, icon: typeof DocumentIcon) {
   return defineType({
@@ -19,6 +21,15 @@ function definePage(name: string, title: string, icon: typeof DocumentIcon) {
         type: 'string',
         initialValue: title,
         readOnly: true,
+        hidden: true,
+      }),
+      defineField({
+        name: 'sections',
+        title: 'Page sections',
+        description: 'Drag to reorder. Use "Hide this section" inside a section to take it off the page without deleting it.',
+        type: 'array',
+        of: sectionTypes.map((section) => defineArrayMember({type: section.name})),
+        options: {insertMenu: {views: [{name: 'list'}]}},
       }),
       defineField({
         name: 'footerCta',

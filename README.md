@@ -84,7 +84,12 @@ scripts/                      One-off content scripts (`npx sanity exec <file> -
 - Sanity: the Netlify URL is an allowed CORS origin (with credentials), and the webhook
   "Netlify: refresh cached pages" posts to `/api/revalidate` on publish, unpublish and delete.
 - Every push to `main` deploys through GitHub Actions (`.github/workflows/deploy.yml`), which
-  needs the repository secrets `NETLIFY_AUTH_TOKEN` and `SANITY_API_READ_TOKEN`. Netlify's own Git
+  needs the repository secrets `NETLIFY_AUTH_TOKEN` and `SANITY_API_READ_TOKEN`.
+- **Staging = pull request previews.** Every PR is built and deployed by
+  `.github/workflows/preview.yml` to `https://pr-<number>--paid-sanity-demo.netlify.app`
+  (Studio at `/studio` on that URL); the link is posted as a comment on the PR and updated on
+  every push. For the Studio to log in on a preview URL, Sanity needs the CORS origin
+  `https://*--paid-sanity-demo.netlify.app` (with credentials). The published pages work without it. Netlify's own Git
   integration needs a paid plan for private organization repos. Re-run a deploy from the
   Actions tab → "Deploy to Netlify" → Run workflow.
 - Manual deploy from this machine: `npx netlify-cli deploy --build --prod`. On Windows, stop

@@ -12,7 +12,7 @@ export interface TeamMarqueeData {
 }
 
 /** Company: rows of round team photos gliding sideways (middle row the other way). */
-export function TeamMarqueeSection({data}: SectionProps<TeamMarqueeData>) {
+export function TeamMarqueeSection({data, edit}: SectionProps<TeamMarqueeData>) {
   return (
     <section className="section_team-marquee">
       <div className="padding-global padding-section-huge">
@@ -31,7 +31,14 @@ export function TeamMarqueeSection({data}: SectionProps<TeamMarqueeData>) {
             {data.rows?.map((row, i) => (
               <Ticker key={row._key} speed={18} reverse={i % 2 === 1} className="team-marquee_row">
                 {row.photos?.map((photo) => (
-                  <SanityImage key={photo._key} image={photo} className="team-marquee_photo" sizes="66px" draggable={false} />
+                  <SanityImage
+                    key={photo._key}
+                    image={photo}
+                    className="team-marquee_photo"
+                    sizes="66px"
+                    draggable={false}
+                    editAttr={edit(`rows[_key=="${row._key}"].photos[_key=="${photo._key}"]`)}
+                  />
                 ))}
               </Ticker>
             ))}

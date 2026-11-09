@@ -15,6 +15,7 @@ import {eventStarter} from './src/sanity/eventStarters'
 import {resolve} from './src/sanity/presentation/resolve'
 import {schemaTypes} from './src/sanity/schemaTypes'
 import {structure} from './src/sanity/structure'
+import {StudioLogo} from './src/sanity/StudioLogo'
 
 const singletonTypes = new Set<string>(SINGLETON_TYPES)
 const singletonActions = new Set(['publish', 'discardChanges', 'restore'])
@@ -32,6 +33,7 @@ const DEFAULT_TEMPLATE_BY_CATEGORY: Record<string, EventTemplate> = {
 export default defineConfig({
   name: 'default',
   title: '#paid Demo',
+  icon: StudioLogo,
   basePath: studioUrl,
   projectId,
   dataset,

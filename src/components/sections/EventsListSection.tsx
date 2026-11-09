@@ -3,6 +3,7 @@ import Link from 'next/link'
 import {stegaClean} from 'next-sanity'
 
 import {EVENT_CATEGORIES} from '@/sanity/constants'
+import {editAttrFor} from '@/sanity/lib/edit'
 import {cachedSanity} from '@/sanity/lib/live'
 import {EVENT_CARDS_QUERY} from '@/sanity/lib/queries'
 
@@ -43,6 +44,8 @@ export async function EventsListSection({data, options}: SectionProps<EventsList
     const start = event.startDateTime ? new Date(event.startDateTime).getTime() : 0
     const upcoming = start >= now - 12 * 60 * 60 * 1000 // still "upcoming" on the day itself
     const image = event.cardImage ?? event.heroImage ?? event.poster
+    const imagePath = event.cardImage ? 'cardImage' : event.heroImage ? 'heroImage' : 'heroVideo.poster'
+    const edit = editAttrFor({_id: event._id, _type: 'event'}, options.stega)
     const href = `/events/${category}/${stegaClean(event.slug)}`
     const description = event.excerpt || event.intro
 
@@ -53,7 +56,16 @@ export async function EventsListSection({data, options}: SectionProps<EventsList
       content: (
         <Link href={href} className="event-card">
           <div className="event-card_image-wrapper">
-            {image ? <SanityImage image={image} className="event-card_image" sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, 400px" /> : <div className="event-card_placeholder" />}
+            {image ? (
+              <SanityImage
+                image={image}
+                className="event-card_image"
+                sizes="(max-width: 767px) 90vw, (max-width: 991px) 45vw, 400px"
+                editAttr={edit(imagePath)}
+              />
+            ) : (
+              <div className="event-card_placeholder" data-sanity={edit('cardImage')} />
+            )}
             <span className="event-card_tag">{categoryTitle}</span>
           </div>
           <div className="event-card_content">

@@ -9,6 +9,23 @@ import {sectionTypes} from '../sections'
 // Home, Creators and Company: an ordered list of design sections. Any section type
 // can be used on any page; sections can be reordered, duplicated or hidden.
 
+/** Tabs in the "Add item" menu, so the 16 section types are easy to scan. */
+const SECTION_GROUPS = [
+  {name: 'intro', title: 'Intro', of: ['heroSection', 'statementSection', 'videoBannerSection']},
+  {
+    name: 'product',
+    title: 'Product',
+    of: ['showcaseSection', 'featureTabsSection', 'comparisonSection', 'stackCardsSection', 'benefitsSection'],
+  },
+  {
+    name: 'proof',
+    title: 'Social proof',
+    of: ['testimonialCarouselSection', 'caseStudiesSection', 'creatorTestimonialsSection', 'investorsSection'],
+  },
+  {name: 'company', title: 'Company', of: ['missionSection', 'teamMarqueeSection', 'faqSection']},
+  {name: 'events', title: 'Events', of: ['eventsListSection']},
+]
+
 function definePage(name: string, title: string, icon: typeof DocumentIcon) {
   return defineType({
     name,
@@ -30,7 +47,7 @@ function definePage(name: string, title: string, icon: typeof DocumentIcon) {
         description: 'Drag to reorder. Use "Hide this section" inside a section to take it off the page without deleting it.',
         type: 'array',
         of: sectionTypes.map((section) => defineArrayMember({type: section.name})),
-        options: {insertMenu: {views: [{name: 'list'}]}},
+        options: {insertMenu: {filter: true, groups: SECTION_GROUPS, views: [{name: 'list'}]}},
       }),
       defineField({
         name: 'footerCta',

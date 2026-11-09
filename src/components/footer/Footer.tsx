@@ -2,6 +2,7 @@ import Image from 'next/image'
 import {stegaClean} from 'next-sanity'
 import type {ComponentType, SVGProps} from 'react'
 
+import {editAttrFor} from '@/sanity/lib/edit'
 import {cachedSanity, type FetchOptions} from '@/sanity/lib/live'
 import {FOOTER_QUERY} from '@/sanity/lib/queries'
 
@@ -42,6 +43,8 @@ export interface FooterCtaData {
  */
 export async function Footer({options, ctaOverride}: {options: FetchOptions; ctaOverride?: FooterCtaData | null}) {
   const {data: footer} = await cachedSanity({query: FOOTER_QUERY, ...options})
+  // Click-to-edit for the parts without visible text (badges, social icons)
+  const edit = editAttrFor({_id: 'siteSettings', _type: 'siteSettings'}, options.stega)
 
   const heading = ctaOverride?.heading || footer?.cta?.heading
   const button = ctaOverride?.button?.href ? ctaOverride.button : footer?.cta?.button
@@ -93,6 +96,7 @@ export async function Footer({options, ctaOverride}: {options: FetchOptions; cta
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label={`#paid on ${SOCIAL_LABELS[platform]}`}
+                                data-sanity={edit(`footer.socialLinks[_key=="${social._key}"]`)}
                               >
                                 <Icon />
                               </a>
@@ -110,9 +114,10 @@ export async function Footer({options, ctaOverride}: {options: FetchOptions; cta
                                 src={badge.url}
                                 width={badge.width}
                                 height={badge.height}
-                                alt={badge.alt ?? ''}
+                                alt={stegaClean(badge.alt) ?? ''}
                                 className={BADGE_CLASSES[stegaClean(badge.size) ?? 'regular'] ?? 'footer_badge'}
                                 sizes="160px"
+                                data-sanity={edit(`footer.badges[_key=="${badge._key}"]`)}
                               />
                             ) : null,
                           )}

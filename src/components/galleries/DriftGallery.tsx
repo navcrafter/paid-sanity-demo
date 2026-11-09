@@ -100,7 +100,7 @@ export function DriftGallery({items, editAttrs}: {items: MediaValue[]; editAttrs
               <div
                 key={item._key ?? j}
                 className="drift_item"
-                data-sanity={column.copy ? undefined : (item._key ? editAttrs?.[item._key] : undefined)}
+                data-sanity={item._key ? editAttrs?.[item._key] : undefined}
               >
                 <Media
                   media={column.copy && item.image ? {...item, image: {...item.image, alt: ''}} : item}

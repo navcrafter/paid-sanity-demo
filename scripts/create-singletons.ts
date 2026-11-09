@@ -12,6 +12,7 @@ const singletons: IdentifiedSanityDocumentStub[] = [
   {_id: 'homePage', _type: 'homePage', title: 'Home'},
   {_id: 'creatorsPage', _type: 'creatorsPage', title: 'Creators'},
   {_id: 'companyPage', _type: 'companyPage', title: 'Company'},
+  {_id: 'eventsPage', _type: 'eventsPage', title: 'Events page'},
 ]
 
 async function run() {

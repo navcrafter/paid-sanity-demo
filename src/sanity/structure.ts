@@ -1,4 +1,6 @@
+import {ArchiveIcon} from '@sanity/icons/Archive'
 import {CalendarIcon} from '@sanity/icons/Calendar'
+import {ClockIcon} from '@sanity/icons/Clock'
 import {CogIcon} from '@sanity/icons/Cog'
 import {DocumentsIcon} from '@sanity/icons/Documents'
 import {FolderIcon} from '@sanity/icons/Folder'
@@ -9,6 +11,9 @@ import {companyPage, creatorsPage, eventsPage, homePage} from './schemaTypes/sin
 
 // Sidebar layout. Mirrors the Webflow page tree the team already knows:
 // Pages (Home, Creators, Company), Events split into category folders, Site settings.
+
+/** "New event" in the event lists offers the three layouts (see sanity.config.ts). */
+const STARTER_TEMPLATES = ['event-supper-club', 'event-mid-tier', 'event-webinar']
 
 function singleton(S: StructureBuilder, typeName: string, title: string, icon?: typeof CogIcon) {
   return S.listItem()
@@ -50,11 +55,29 @@ export const structure: StructureResolver = (S) =>
                   S.documentTypeList('event')
                     .title('All events')
                     .defaultOrdering([{field: 'startDateTime', direction: 'desc'}])
-                    .initialValueTemplates([
-                      S.initialValueTemplateItem('event-supper-club'),
-                      S.initialValueTemplateItem('event-mid-tier'),
-                      S.initialValueTemplateItem('event-webinar'),
-                    ]),
+                    .initialValueTemplates(STARTER_TEMPLATES.map((id) => S.initialValueTemplateItem(id))),
+                ),
+              S.listItem()
+                .title('Upcoming')
+                .id('events-upcoming')
+                .icon(ClockIcon)
+                .child(
+                  S.documentTypeList('event')
+                    .title('Upcoming events')
+                    .filter('_type == "event" && dateTime(startDateTime) >= dateTime(now())')
+                    .defaultOrdering([{field: 'startDateTime', direction: 'asc'}])
+                    .initialValueTemplates(STARTER_TEMPLATES.map((id) => S.initialValueTemplateItem(id))),
+                ),
+              S.listItem()
+                .title('Past')
+                .id('events-past')
+                .icon(ArchiveIcon)
+                .child(
+                  S.documentTypeList('event')
+                    .title('Past events')
+                    .filter('_type == "event" && dateTime(startDateTime) < dateTime(now())')
+                    .defaultOrdering([{field: 'startDateTime', direction: 'desc'}])
+                    .initialValueTemplates(STARTER_TEMPLATES.map((id) => S.initialValueTemplateItem(id))),
                 ),
               S.divider(),
               ...EVENT_CATEGORIES.map((category) =>

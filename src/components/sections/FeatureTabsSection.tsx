@@ -42,7 +42,9 @@ export function FeatureTabsSection({data, edit}: SectionProps<FeatureTabsData>) 
                       <div className="flex-vertical is-gap-1-5">
                         {group.tag && (
                           <div className="button-group">
-                            <div className="feature-tabs_tag">{group.tag}</div>
+                            <div className="feature-tabs_tag" data-sanity={edit(`${groupPath}.tag`)}>
+                              {group.tag}
+                            </div>
                           </div>
                         )}
                         <WordReveal text={group.heading} className="heading-style-h3 feature-tabs_heading-text" />

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import {stegaClean} from 'next-sanity'
 import type {CSSProperties} from 'react'
 
 import {resolveImage, type SanityImageValue} from '@/sanity/lib/assets'
@@ -6,6 +7,7 @@ import {resolveImage, type SanityImageValue} from '@/sanity/lib/assets'
 /**
  * A Sanity image through next/image (resized and format-negotiated by Sanity's CDN).
  * The editor's hotspot becomes the object-position for cropped/cover images.
+ * Alt text is cleaned of edit markers; images are made clickable with `editAttr`.
  */
 export function SanityImage({
   image,
@@ -34,7 +36,7 @@ export function SanityImage({
       src={resolved.url}
       width={resolved.width}
       height={resolved.height}
-      alt={alt ?? resolved.alt}
+      alt={stegaClean(alt ?? resolved.alt)}
       className={className}
       sizes={sizes}
       priority={priority}

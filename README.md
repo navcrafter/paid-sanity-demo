@@ -51,6 +51,15 @@ Shared animations (word reveal, fade-up, scroll colour switch, letter roll, gall
 tickers, Vidzflow players) are in `src/components/effects`, `src/components/galleries`
 and `src/components/media`.
 
+## Click-to-edit (Studio → Visual editing)
+
+- Text is clickable automatically: in draft mode Sanity hides edit markers inside the text.
+- Images, videos, icons and list items need a `data-sanity` attribute: pass `editAttr={edit('field.path')}`
+  (section components get `edit`, scoped to the section; other places use `editAttrFor(doc, options.stega)`).
+- Sanity adds no markers to fields named `tag`, `url`, `slug`, `color` and similar, so those need
+  `data-sanity` too (see the hero and feature-tab tags).
+- Use `stegaClean()` on any value used for logic, class names, URLs or `alt` text.
+
 ## Project layout
 
 ```

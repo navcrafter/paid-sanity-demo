@@ -48,7 +48,12 @@ export function HeroSection({data, edit}: SectionProps<HeroData>) {
             <div className="flex-vertical is-gap-1">
               {(data.announcement?.tag || data.announcement?.link?.label) && (
                 <div className="flex-horizontal is-align-center is-gap-0-5">
-                  {data.announcement?.tag && <div className="hero_tag">{data.announcement.tag}</div>}
+                  {/* Sanity doesn't add edit markers to "tag" fields, so this one is explicit */}
+                  {data.announcement?.tag && (
+                    <div className="hero_tag" data-sanity={edit('announcement.tag')}>
+                      {data.announcement.tag}
+                    </div>
+                  )}
                   {data.announcement?.link?.href && (
                     <SmartLink
                       link={data.announcement.link}

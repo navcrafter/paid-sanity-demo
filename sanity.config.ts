@@ -1,0 +1,99 @@
+'use client'
+
+/**
+ * Sanity Studio configuration. The Studio is served by Next.js at /studio
+ * (see src/app/studio/[[...tool]]/page.tsx).
+ */
+import {visionTool} from '@sanity/vision'
+import {defineConfig} from 'sanity'
+import {presentationTool} from 'sanity/presentation'
+import {structureTool} from 'sanity/structure'
+
+import {SINGLETON_TYPES, type EventTemplate} from './src/sanity/constants'
+import {apiVersion, dataset, projectId, studioUrl} from './src/sanity/env'
+import {resolve} from './src/sanity/presentation/resolve'
+import {schemaTypes} from './src/sanity/schemaTypes'
+import {structure} from './src/sanity/structure'
+
+const singletonTypes = new Set<string>(SINGLETON_TYPES)
+const singletonActions = new Set(['publish', 'discardChanges', 'restore'])
+const hiddenFromCreateMenu = new Set(['event', 'event-in-category'])
+
+// Which layout a new event starts with when created inside a category folder.
+const DEFAULT_TEMPLATE_BY_CATEGORY: Record<string, EventTemplate> = {
+  supperclub: 'supperClub',
+  industry: 'supperClub',
+  med: 'midTier',
+  shopping: 'midTier',
+  webinar: 'webinar',
+}
+
+export default defineConfig({
+  name: 'default',
+  title: '#paid Demo',
+  basePath: studioUrl,
+  projectId,
+  dataset,
+
+  schema: {
+    types: schemaTypes,
+    templates: (templates) => [
+      // Singletons can't be created from the "+" menu.
+      ...templates.filter(({schemaType}) => !singletonTypes.has(schemaType)),
+      // Event starters: replace the Webflow "[Draft] ... Template" pages.
+      {
+        id: 'event-supper-club',
+        title: 'Supper Club event',
+        schemaType: 'event',
+        value: {category: 'supperclub', template: 'supperClub', theme: {background: 'black', accent: 'default'}},
+      },
+      {
+        id: 'event-mid-tier',
+        title: 'Mid Tier event',
+        schemaType: 'event',
+        value: {template: 'midTier', theme: {background: 'black', accent: 'default'}},
+      },
+      {
+        id: 'event-webinar',
+        title: 'Webinar',
+        schemaType: 'event',
+        value: {category: 'webinar', template: 'webinar', theme: {background: 'light', accent: 'default'}},
+      },
+      // Used by the category folders in the sidebar to pre-fill the category.
+      {
+        id: 'event-in-category',
+        title: 'Event in category',
+        schemaType: 'event',
+        parameters: [{name: 'category', type: 'string'}],
+        value: ({category}: {category: string}) => ({
+          category,
+          template: DEFAULT_TEMPLATE_BY_CATEGORY[category] ?? 'supperClub',
+          theme: {background: category === 'webinar' ? 'light' : 'black', accent: 'default'},
+        }),
+      },
+    ],
+  },
+
+  document: {
+    // Singletons: no duplicate/delete, and hidden from the global "Create" menu.
+    actions: (input, context) =>
+      singletonTypes.has(context.schemaType)
+        ? input.filter(({action}) => action && singletonActions.has(action))
+        : input,
+    // The global "Create" menu offers the three event starters instead of a blank event.
+    newDocumentOptions: (prev, {creationContext}) =>
+      creationContext.type === 'global'
+        ? prev.filter(({templateId}) => !hiddenFromCreateMenu.has(templateId))
+        : prev,
+  },
+
+  plugins: [
+    structureTool({structure}),
+    presentationTool({
+      title: 'Visual editing',
+      resolve,
+      previewUrl: {previewMode: {enable: '/api/draft-mode/enable'}},
+    }),
+    visionTool({defaultApiVersion: apiVersion}),
+  ],
+})

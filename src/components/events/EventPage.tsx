@@ -1,4 +1,7 @@
 import {PortableText, stegaClean, type PortableTextBlock, type PortableTextComponents} from 'next-sanity'
+import type {CSSProperties} from 'react'
+
+import {HERO_COLORS} from '@/sanity/constants'
 
 import type {SanityImageValue} from '@/sanity/lib/assets'
 import {resolveImage} from '@/sanity/lib/assets'
@@ -52,11 +55,17 @@ const richText: PortableTextComponents = {
   },
 }
 
-/** Hero colour: Webinar and Mid Tier have their own; Supper Club is blue, or pink with the pink accent. */
-function heroVariant(template: string, accent: string) {
+/** Hero layout per template. Colours are separate: see heroColorStyle. */
+function heroVariant(template: string) {
   if (template === 'webinar') return 'webinar'
-  if (accent === 'pink') return 'pink'
-  return template === 'midTier' ? 'mid-tier' : 'blue'
+  return template === 'midTier' ? 'mid-tier' : 'supper-club'
+}
+
+/** Inline CSS variables for the chosen brand colour; "Default" sets none and the CSS fallbacks apply. */
+function heroColorStyle(accent: string): CSSProperties | undefined {
+  const color = HERO_COLORS.find((c) => c.value === accent)
+  if (!color?.card) return undefined
+  return {'--hero-card-bg': color.card, '--hero-card-fg': color.text, '--hero-band-bg': color.band} as CSSProperties
 }
 
 function Divider() {
@@ -66,7 +75,8 @@ function Divider() {
 export function EventPage({event, portalId, edit}: {event: EventData; portalId?: string | null; edit: EditAttr}) {
   const template = stegaClean(event.template) || 'supperClub'
   const background = stegaClean(event.theme?.background) || 'black'
-  const variant = heroVariant(template, stegaClean(event.theme?.accent) || 'default')
+  const variant = heroVariant(template)
+  const heroStyle = heroColorStyle(stegaClean(event.theme?.accent) || 'default')
   const isWebinar = template === 'webinar'
   const formId = stegaClean(event.registration?.hubspotFormId)
   const portal = stegaClean(portalId)
@@ -91,7 +101,7 @@ export function EventPage({event, portalId, edit}: {event: EventData; portalId?:
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(jsonLd)}} />
 
       {/* ---------------- Hero ---------------- */}
-      <section className={`section_event-hero is-${variant}`}>
+      <section className={`section_event-hero is-${variant}`} style={heroStyle} data-sanity={edit('theme.accent')}>
         <div className="padding-global event-hero_padding">
           <div className="event-hero_container">
             <div className={`event-hero_card is-${variant}`}>

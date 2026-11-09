@@ -1,12 +1,8 @@
 import {CalendarIcon} from '@sanity/icons/Calendar'
 import {defineArrayMember, defineField, defineType, type ConditionalPropertyCallbackContext} from 'sanity'
 
-import {
-  EVENT_ACCENTS,
-  EVENT_BACKGROUNDS,
-  EVENT_CATEGORIES,
-  EVENT_TEMPLATES,
-} from '../../constants'
+import {HeroColorInput} from '../../components/HeroColorInput'
+import {EVENT_BACKGROUNDS, EVENT_CATEGORIES, EVENT_TEMPLATES, HERO_COLORS} from '../../constants'
 
 // One collection for every event. Category sets the URL, Template sets the layout
 // (hero style and which fields apply), Theme sets the colours. The optional
@@ -56,7 +52,7 @@ export const event = defineType({
       name: 'template',
       type: 'string',
       group: 'setup',
-      description: 'Sets the hero layout and which fields apply.',
+      description: 'Sets the hero layout and which fields apply. Supper Club: video hero with date, location and time. Mid Tier: same layout, lighter card. Webinar: image hero with speakers.',
       options: {list: [...EVENT_TEMPLATES], layout: 'radio', direction: 'horizontal'},
       initialValue: 'supperClub',
       validation: (rule) => rule.required(),
@@ -78,8 +74,9 @@ export const event = defineType({
           name: 'accent',
           title: 'Hero colour',
           type: 'string',
-          description: 'Supper Club and Mid Tier heroes only.',
-          options: {list: [...EVENT_ACCENTS], layout: 'radio'},
+          description: 'Brand colour for the hero card and the band behind it. Default keeps the template\u2019s own look.',
+          options: {list: HERO_COLORS.map(({title, value}) => ({title, value}))},
+          components: {input: HeroColorInput},
           initialValue: 'default',
         }),
       ],
@@ -91,6 +88,13 @@ export const event = defineType({
       group: 'setup',
       description: 'Used to sort events and split upcoming from past on the Events page.',
       validation: (rule) => rule.required(),
+    }),
+    defineField({
+      name: 'owner',
+      title: 'Event owner',
+      type: 'string',
+      group: 'setup',
+      description: 'Internal. Who runs this event on the team (the "Event Owner" column in the events sheet). Not shown on the site.',
     }),
     defineField({
       name: 'cardImage',
@@ -316,14 +320,14 @@ export const event = defineType({
     {title: 'Event date, newest first', name: 'startDateTimeDesc', by: [{field: 'startDateTime', direction: 'desc'}]},
   ],
   preview: {
-    select: {title: 'title', category: 'category', template: 'template', date: 'startDateTime', media: 'cardImage', poster: 'heroVideo.poster', heroImage: 'heroImage'},
-    prepare({title, category, template, date, media, poster, heroImage}) {
+    select: {title: 'title', category: 'category', template: 'template', date: 'startDateTime', owner: 'owner', media: 'cardImage', poster: 'heroVideo.poster', heroImage: 'heroImage'},
+    prepare({title, category, template, date, owner, media, poster, heroImage}) {
       const categoryTitle = EVENT_CATEGORIES.find((c) => c.value === category)?.title
       const templateTitle = EVENT_TEMPLATES.find((t) => t.value === template)?.title
       const day = date ? new Date(date).toLocaleDateString('en-US', {dateStyle: 'medium'}) : null
       return {
         title: title || 'Untitled event',
-        subtitle: [categoryTitle, templateTitle, day].filter(Boolean).join(' · '),
+        subtitle: [categoryTitle, templateTitle, day, owner].filter(Boolean).join(' · '),
         media: media ?? heroImage ?? poster,
       }
     },

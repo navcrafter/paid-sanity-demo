@@ -195,17 +195,29 @@ export type ComparisonSection = {
   hidden?: boolean;
 };
 
+export type TestimonialReference = {
+  _ref: string;
+  _type: "reference";
+  _weak?: boolean;
+  [internalGroqTypeReferenceTo]?: "testimonial";
+};
+
 export type TestimonialCarouselSection = {
   _type: "testimonialCarouselSection";
-  quotes?: Array<{
-    quote?: string;
-    size?: "large" | "small";
-    name?: string;
-    company?: string;
-    photo?: AltImage;
-    _type: "carouselQuote";
-    _key: string;
-  }>;
+  quotes?: Array<
+    | ({
+        _key: string;
+      } & TestimonialReference)
+    | {
+        quote?: string;
+        size?: "large" | "small";
+        name?: string;
+        company?: string;
+        photo?: AltImage;
+        _type: "carouselQuote";
+        _key: string;
+      }
+  >;
   autoplaySeconds?: number;
   hidden?: boolean;
 };
@@ -351,6 +363,19 @@ export type Link = {
   label: string;
   href: string;
   openInNewTab?: boolean;
+};
+
+export type Testimonial = {
+  _id: string;
+  _type: "testimonial";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  quote: string;
+  name: string;
+  company?: string;
+  photo?: AltImage;
+  size?: "large" | "small";
 };
 
 export type Event = {
@@ -1040,6 +1065,7 @@ export type AllSanitySchemaTypes =
   | StackCardsSection
   | CaseStudiesSection
   | ComparisonSection
+  | TestimonialReference
   | TestimonialCarouselSection
   | FeatureTabsSection
   | ShowcaseSection
@@ -1053,6 +1079,7 @@ export type AllSanitySchemaTypes =
   | Seo
   | FooterCta
   | Link
+  | Testimonial
   | Event
   | Slug
   | EventsPage
@@ -1148,7 +1175,7 @@ export type FOOTER_QUERY_RESULT = {
 
 // Source: src/sanity/lib/queries.ts
 // Variable: PAGE_QUERY
-// Query: *[_id == $id][0]{    _id,    _type,    title,    sections,    footerCta{heading, button{label, href, openInNewTab}},    seo  }
+// Query: *[_id == $id][0]{    _id,    _type,    title,    sections[]{      ...,      _type == "testimonialCarouselSection" => {        "quotes": quotes[]{          _key,          ...select(_type == "reference" => @->{"docId": _id, quote, size, name, company, photo}, @)        }      }    },    footerCta{heading, button{label, href, openInNewTab}},    seo  }
 export type PAGE_QUERY_RESULT =
   | {
       _id: string;
@@ -1163,54 +1190,252 @@ export type PAGE_QUERY_RESULT =
       _type: "companyPage";
       title: string | null;
       sections: Array<
-        | ({
+        | {
             _key: string;
-          } & BenefitsSection)
-        | ({
+            _type: "benefitsSection";
+            heading?: string;
+            text?: string;
+            cards?: Array<{
+              title?: string;
+              description?: string;
+              iconSvg?: string;
+              _type: "benefitCard";
+              _key: string;
+            }>;
+            jobBoard?: JobBoard;
+            anchorId?: Slug;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & CaseStudiesSection)
-        | ({
+            _type: "caseStudiesSection";
+            heading?: string;
+            studies?: Array<{
+              brand?: string;
+              image?: AltImage;
+              link?: Link;
+              palette?: "cream" | "grey" | "lightBlue" | "pink" | "purple";
+              _type: "caseStudyCard";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & ComparisonSection)
-        | ({
+            _type: "comparisonSection";
+            heading?: string;
+            without?: Without;
+            with?: With;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & CreatorTestimonialsSection)
-        | ({
+            _type: "creatorTestimonialsSection";
+            heading?: string;
+            items?: Array<{
+              quote?: string;
+              handle?: string;
+              tag?: string;
+              video?: VideoEmbed;
+              _type: "creatorTestimonial";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & EventsListSection)
-        | ({
+            _type: "eventsListSection";
+            upcomingHeading?: string;
+            pastHeading?: string;
+            emptyText?: string;
+            showFilters?: boolean;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & FaqSection)
-        | ({
+            _type: "faqSection";
+            heading?: string;
+            intro?: string;
+            introLink?: Link;
+            items?: Array<{
+              question?: string;
+              answer?: string;
+              _type: "faqItem";
+              _key: string;
+            }>;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & FeatureTabsSection)
-        | ({
+            _type: "featureTabsSection";
+            groups?: Array<{
+              tag?: string;
+              heading?: string;
+              imageSide?: "left" | "right";
+              tabs?: Array<{
+                title?: string;
+                description?: string;
+                image?: AltImage;
+                iconSvg?: string;
+                _type: "featureTab";
+                _key: string;
+              }>;
+              _type: "featureTabGroup";
+              _key: string;
+            }>;
+            tabDuration?: number;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & HeroSection)
-        | ({
+            _type: "heroSection";
+            announcement?: Announcement;
+            heading?: string;
+            text?: string;
+            cta?: Link;
+            galleryStyle?: "drift" | "none" | "orbit" | "ring";
+            gallery?: Array<
+              {
+                _key: string;
+              } & MediaItem
+            >;
+            logosHeading?: string;
+            logoRows?: Array<{
+              logos?: Array<
+                {
+                  _key: string;
+                } & AltImage
+              >;
+              _type: "logoRow";
+              _key: string;
+            }>;
+            theme?: "cream" | "dark";
+            headingSize?: "display" | "large";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & InvestorsSection)
-        | ({
+            _type: "investorsSection";
+            heading?: string;
+            text?: string;
+            people?: Array<{
+              name?: string;
+              role?: string;
+              photo?: AltImage;
+              _type: "person";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & MissionSection)
-        | ({
+            _type: "missionSection";
+            blocks?: Array<{
+              heading?: string;
+              text?: string;
+              image?: AltImage;
+              quote?: string;
+              quoteMeta?: Array<{
+                label?: string;
+                iconSvg?: string;
+                _type: "quoteMetaItem";
+                _key: string;
+              }>;
+              cardSide?: "left" | "right";
+              _type: "missionBlock";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & ShowcaseSection)
-        | ({
+            _type: "showcaseSection";
+            image?: AltImage;
+            heading?: string;
+            gallery?: Array<
+              {
+                _key: string;
+              } & MediaItem
+            >;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & StackCardsSection)
-        | ({
+            _type: "stackCardsSection";
+            cards?: Array<{
+              heading?: string;
+              text?: string;
+              video?: VideoEmbed;
+              color?: "blue" | "orange" | "purple";
+              iconSvg?: string;
+              _type: "stackCard";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & StatementSection)
-        | ({
+            _type: "statementSection";
+            heading?: string;
+            effect?: "none" | "reveal" | "scrub";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & TeamMarqueeSection)
-        | ({
+            _type: "teamMarqueeSection";
+            heading?: string;
+            text?: string;
+            rows?: Array<{
+              photos?: Array<
+                {
+                  _key: string;
+                } & AltImage
+              >;
+              _type: "photoRow";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & TestimonialCarouselSection)
-        | ({
+            _type: "testimonialCarouselSection";
+            quotes: Array<
+              | {
+                  _key: string;
+                  quote?: string;
+                  size?: "large" | "small";
+                  name?: string;
+                  company?: string;
+                  photo?: AltImage;
+                  _type: "carouselQuote";
+                }
+              | {
+                  _key: string;
+                  docId: string;
+                  quote: string;
+                  size: "large" | "small" | null;
+                  name: string;
+                  company: string | null;
+                  photo: AltImage | null;
+                }
+            > | null;
+            autoplaySeconds?: number;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & VideoBannerSection)
+            _type: "videoBannerSection";
+            heading?: string;
+            text?: string;
+            video?: VideoEmbed;
+            buttonLabel?: string;
+            fullVideoId?: string;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
       > | null;
       footerCta: {
         heading: string | null;
@@ -1227,54 +1452,252 @@ export type PAGE_QUERY_RESULT =
       _type: "creatorsPage";
       title: string | null;
       sections: Array<
-        | ({
+        | {
             _key: string;
-          } & BenefitsSection)
-        | ({
+            _type: "benefitsSection";
+            heading?: string;
+            text?: string;
+            cards?: Array<{
+              title?: string;
+              description?: string;
+              iconSvg?: string;
+              _type: "benefitCard";
+              _key: string;
+            }>;
+            jobBoard?: JobBoard;
+            anchorId?: Slug;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & CaseStudiesSection)
-        | ({
+            _type: "caseStudiesSection";
+            heading?: string;
+            studies?: Array<{
+              brand?: string;
+              image?: AltImage;
+              link?: Link;
+              palette?: "cream" | "grey" | "lightBlue" | "pink" | "purple";
+              _type: "caseStudyCard";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & ComparisonSection)
-        | ({
+            _type: "comparisonSection";
+            heading?: string;
+            without?: Without;
+            with?: With;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & CreatorTestimonialsSection)
-        | ({
+            _type: "creatorTestimonialsSection";
+            heading?: string;
+            items?: Array<{
+              quote?: string;
+              handle?: string;
+              tag?: string;
+              video?: VideoEmbed;
+              _type: "creatorTestimonial";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & EventsListSection)
-        | ({
+            _type: "eventsListSection";
+            upcomingHeading?: string;
+            pastHeading?: string;
+            emptyText?: string;
+            showFilters?: boolean;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & FaqSection)
-        | ({
+            _type: "faqSection";
+            heading?: string;
+            intro?: string;
+            introLink?: Link;
+            items?: Array<{
+              question?: string;
+              answer?: string;
+              _type: "faqItem";
+              _key: string;
+            }>;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & FeatureTabsSection)
-        | ({
+            _type: "featureTabsSection";
+            groups?: Array<{
+              tag?: string;
+              heading?: string;
+              imageSide?: "left" | "right";
+              tabs?: Array<{
+                title?: string;
+                description?: string;
+                image?: AltImage;
+                iconSvg?: string;
+                _type: "featureTab";
+                _key: string;
+              }>;
+              _type: "featureTabGroup";
+              _key: string;
+            }>;
+            tabDuration?: number;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & HeroSection)
-        | ({
+            _type: "heroSection";
+            announcement?: Announcement;
+            heading?: string;
+            text?: string;
+            cta?: Link;
+            galleryStyle?: "drift" | "none" | "orbit" | "ring";
+            gallery?: Array<
+              {
+                _key: string;
+              } & MediaItem
+            >;
+            logosHeading?: string;
+            logoRows?: Array<{
+              logos?: Array<
+                {
+                  _key: string;
+                } & AltImage
+              >;
+              _type: "logoRow";
+              _key: string;
+            }>;
+            theme?: "cream" | "dark";
+            headingSize?: "display" | "large";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & InvestorsSection)
-        | ({
+            _type: "investorsSection";
+            heading?: string;
+            text?: string;
+            people?: Array<{
+              name?: string;
+              role?: string;
+              photo?: AltImage;
+              _type: "person";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & MissionSection)
-        | ({
+            _type: "missionSection";
+            blocks?: Array<{
+              heading?: string;
+              text?: string;
+              image?: AltImage;
+              quote?: string;
+              quoteMeta?: Array<{
+                label?: string;
+                iconSvg?: string;
+                _type: "quoteMetaItem";
+                _key: string;
+              }>;
+              cardSide?: "left" | "right";
+              _type: "missionBlock";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & ShowcaseSection)
-        | ({
+            _type: "showcaseSection";
+            image?: AltImage;
+            heading?: string;
+            gallery?: Array<
+              {
+                _key: string;
+              } & MediaItem
+            >;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & StackCardsSection)
-        | ({
+            _type: "stackCardsSection";
+            cards?: Array<{
+              heading?: string;
+              text?: string;
+              video?: VideoEmbed;
+              color?: "blue" | "orange" | "purple";
+              iconSvg?: string;
+              _type: "stackCard";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & StatementSection)
-        | ({
+            _type: "statementSection";
+            heading?: string;
+            effect?: "none" | "reveal" | "scrub";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & TeamMarqueeSection)
-        | ({
+            _type: "teamMarqueeSection";
+            heading?: string;
+            text?: string;
+            rows?: Array<{
+              photos?: Array<
+                {
+                  _key: string;
+                } & AltImage
+              >;
+              _type: "photoRow";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & TestimonialCarouselSection)
-        | ({
+            _type: "testimonialCarouselSection";
+            quotes: Array<
+              | {
+                  _key: string;
+                  quote?: string;
+                  size?: "large" | "small";
+                  name?: string;
+                  company?: string;
+                  photo?: AltImage;
+                  _type: "carouselQuote";
+                }
+              | {
+                  _key: string;
+                  docId: string;
+                  quote: string;
+                  size: "large" | "small" | null;
+                  name: string;
+                  company: string | null;
+                  photo: AltImage | null;
+                }
+            > | null;
+            autoplaySeconds?: number;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & VideoBannerSection)
+            _type: "videoBannerSection";
+            heading?: string;
+            text?: string;
+            video?: VideoEmbed;
+            buttonLabel?: string;
+            fullVideoId?: string;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
       > | null;
       footerCta: {
         heading: string | null;
@@ -1342,54 +1765,252 @@ export type PAGE_QUERY_RESULT =
       _type: "eventsPage";
       title: string | null;
       sections: Array<
-        | ({
+        | {
             _key: string;
-          } & BenefitsSection)
-        | ({
+            _type: "benefitsSection";
+            heading?: string;
+            text?: string;
+            cards?: Array<{
+              title?: string;
+              description?: string;
+              iconSvg?: string;
+              _type: "benefitCard";
+              _key: string;
+            }>;
+            jobBoard?: JobBoard;
+            anchorId?: Slug;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & CaseStudiesSection)
-        | ({
+            _type: "caseStudiesSection";
+            heading?: string;
+            studies?: Array<{
+              brand?: string;
+              image?: AltImage;
+              link?: Link;
+              palette?: "cream" | "grey" | "lightBlue" | "pink" | "purple";
+              _type: "caseStudyCard";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & ComparisonSection)
-        | ({
+            _type: "comparisonSection";
+            heading?: string;
+            without?: Without;
+            with?: With;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & CreatorTestimonialsSection)
-        | ({
+            _type: "creatorTestimonialsSection";
+            heading?: string;
+            items?: Array<{
+              quote?: string;
+              handle?: string;
+              tag?: string;
+              video?: VideoEmbed;
+              _type: "creatorTestimonial";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & EventsListSection)
-        | ({
+            _type: "eventsListSection";
+            upcomingHeading?: string;
+            pastHeading?: string;
+            emptyText?: string;
+            showFilters?: boolean;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & FaqSection)
-        | ({
+            _type: "faqSection";
+            heading?: string;
+            intro?: string;
+            introLink?: Link;
+            items?: Array<{
+              question?: string;
+              answer?: string;
+              _type: "faqItem";
+              _key: string;
+            }>;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & FeatureTabsSection)
-        | ({
+            _type: "featureTabsSection";
+            groups?: Array<{
+              tag?: string;
+              heading?: string;
+              imageSide?: "left" | "right";
+              tabs?: Array<{
+                title?: string;
+                description?: string;
+                image?: AltImage;
+                iconSvg?: string;
+                _type: "featureTab";
+                _key: string;
+              }>;
+              _type: "featureTabGroup";
+              _key: string;
+            }>;
+            tabDuration?: number;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & HeroSection)
-        | ({
+            _type: "heroSection";
+            announcement?: Announcement;
+            heading?: string;
+            text?: string;
+            cta?: Link;
+            galleryStyle?: "drift" | "none" | "orbit" | "ring";
+            gallery?: Array<
+              {
+                _key: string;
+              } & MediaItem
+            >;
+            logosHeading?: string;
+            logoRows?: Array<{
+              logos?: Array<
+                {
+                  _key: string;
+                } & AltImage
+              >;
+              _type: "logoRow";
+              _key: string;
+            }>;
+            theme?: "cream" | "dark";
+            headingSize?: "display" | "large";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & InvestorsSection)
-        | ({
+            _type: "investorsSection";
+            heading?: string;
+            text?: string;
+            people?: Array<{
+              name?: string;
+              role?: string;
+              photo?: AltImage;
+              _type: "person";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & MissionSection)
-        | ({
+            _type: "missionSection";
+            blocks?: Array<{
+              heading?: string;
+              text?: string;
+              image?: AltImage;
+              quote?: string;
+              quoteMeta?: Array<{
+                label?: string;
+                iconSvg?: string;
+                _type: "quoteMetaItem";
+                _key: string;
+              }>;
+              cardSide?: "left" | "right";
+              _type: "missionBlock";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & ShowcaseSection)
-        | ({
+            _type: "showcaseSection";
+            image?: AltImage;
+            heading?: string;
+            gallery?: Array<
+              {
+                _key: string;
+              } & MediaItem
+            >;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & StackCardsSection)
-        | ({
+            _type: "stackCardsSection";
+            cards?: Array<{
+              heading?: string;
+              text?: string;
+              video?: VideoEmbed;
+              color?: "blue" | "orange" | "purple";
+              iconSvg?: string;
+              _type: "stackCard";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & StatementSection)
-        | ({
+            _type: "statementSection";
+            heading?: string;
+            effect?: "none" | "reveal" | "scrub";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & TeamMarqueeSection)
-        | ({
+            _type: "teamMarqueeSection";
+            heading?: string;
+            text?: string;
+            rows?: Array<{
+              photos?: Array<
+                {
+                  _key: string;
+                } & AltImage
+              >;
+              _type: "photoRow";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & TestimonialCarouselSection)
-        | ({
+            _type: "testimonialCarouselSection";
+            quotes: Array<
+              | {
+                  _key: string;
+                  quote?: string;
+                  size?: "large" | "small";
+                  name?: string;
+                  company?: string;
+                  photo?: AltImage;
+                  _type: "carouselQuote";
+                }
+              | {
+                  _key: string;
+                  docId: string;
+                  quote: string;
+                  size: "large" | "small" | null;
+                  name: string;
+                  company: string | null;
+                  photo: AltImage | null;
+                }
+            > | null;
+            autoplaySeconds?: number;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & VideoBannerSection)
+            _type: "videoBannerSection";
+            heading?: string;
+            text?: string;
+            video?: VideoEmbed;
+            buttonLabel?: string;
+            fullVideoId?: string;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
       > | null;
       footerCta: {
         heading: string | null;
@@ -1406,54 +2027,252 @@ export type PAGE_QUERY_RESULT =
       _type: "homePage";
       title: string | null;
       sections: Array<
-        | ({
+        | {
             _key: string;
-          } & BenefitsSection)
-        | ({
+            _type: "benefitsSection";
+            heading?: string;
+            text?: string;
+            cards?: Array<{
+              title?: string;
+              description?: string;
+              iconSvg?: string;
+              _type: "benefitCard";
+              _key: string;
+            }>;
+            jobBoard?: JobBoard;
+            anchorId?: Slug;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & CaseStudiesSection)
-        | ({
+            _type: "caseStudiesSection";
+            heading?: string;
+            studies?: Array<{
+              brand?: string;
+              image?: AltImage;
+              link?: Link;
+              palette?: "cream" | "grey" | "lightBlue" | "pink" | "purple";
+              _type: "caseStudyCard";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & ComparisonSection)
-        | ({
+            _type: "comparisonSection";
+            heading?: string;
+            without?: Without;
+            with?: With;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & CreatorTestimonialsSection)
-        | ({
+            _type: "creatorTestimonialsSection";
+            heading?: string;
+            items?: Array<{
+              quote?: string;
+              handle?: string;
+              tag?: string;
+              video?: VideoEmbed;
+              _type: "creatorTestimonial";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & EventsListSection)
-        | ({
+            _type: "eventsListSection";
+            upcomingHeading?: string;
+            pastHeading?: string;
+            emptyText?: string;
+            showFilters?: boolean;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & FaqSection)
-        | ({
+            _type: "faqSection";
+            heading?: string;
+            intro?: string;
+            introLink?: Link;
+            items?: Array<{
+              question?: string;
+              answer?: string;
+              _type: "faqItem";
+              _key: string;
+            }>;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & FeatureTabsSection)
-        | ({
+            _type: "featureTabsSection";
+            groups?: Array<{
+              tag?: string;
+              heading?: string;
+              imageSide?: "left" | "right";
+              tabs?: Array<{
+                title?: string;
+                description?: string;
+                image?: AltImage;
+                iconSvg?: string;
+                _type: "featureTab";
+                _key: string;
+              }>;
+              _type: "featureTabGroup";
+              _key: string;
+            }>;
+            tabDuration?: number;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & HeroSection)
-        | ({
+            _type: "heroSection";
+            announcement?: Announcement;
+            heading?: string;
+            text?: string;
+            cta?: Link;
+            galleryStyle?: "drift" | "none" | "orbit" | "ring";
+            gallery?: Array<
+              {
+                _key: string;
+              } & MediaItem
+            >;
+            logosHeading?: string;
+            logoRows?: Array<{
+              logos?: Array<
+                {
+                  _key: string;
+                } & AltImage
+              >;
+              _type: "logoRow";
+              _key: string;
+            }>;
+            theme?: "cream" | "dark";
+            headingSize?: "display" | "large";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & InvestorsSection)
-        | ({
+            _type: "investorsSection";
+            heading?: string;
+            text?: string;
+            people?: Array<{
+              name?: string;
+              role?: string;
+              photo?: AltImage;
+              _type: "person";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & MissionSection)
-        | ({
+            _type: "missionSection";
+            blocks?: Array<{
+              heading?: string;
+              text?: string;
+              image?: AltImage;
+              quote?: string;
+              quoteMeta?: Array<{
+                label?: string;
+                iconSvg?: string;
+                _type: "quoteMetaItem";
+                _key: string;
+              }>;
+              cardSide?: "left" | "right";
+              _type: "missionBlock";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & ShowcaseSection)
-        | ({
+            _type: "showcaseSection";
+            image?: AltImage;
+            heading?: string;
+            gallery?: Array<
+              {
+                _key: string;
+              } & MediaItem
+            >;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & StackCardsSection)
-        | ({
+            _type: "stackCardsSection";
+            cards?: Array<{
+              heading?: string;
+              text?: string;
+              video?: VideoEmbed;
+              color?: "blue" | "orange" | "purple";
+              iconSvg?: string;
+              _type: "stackCard";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & StatementSection)
-        | ({
+            _type: "statementSection";
+            heading?: string;
+            effect?: "none" | "reveal" | "scrub";
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & TeamMarqueeSection)
-        | ({
+            _type: "teamMarqueeSection";
+            heading?: string;
+            text?: string;
+            rows?: Array<{
+              photos?: Array<
+                {
+                  _key: string;
+                } & AltImage
+              >;
+              _type: "photoRow";
+              _key: string;
+            }>;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & TestimonialCarouselSection)
-        | ({
+            _type: "testimonialCarouselSection";
+            quotes: Array<
+              | {
+                  _key: string;
+                  quote?: string;
+                  size?: "large" | "small";
+                  name?: string;
+                  company?: string;
+                  photo?: AltImage;
+                  _type: "carouselQuote";
+                }
+              | {
+                  _key: string;
+                  docId: string;
+                  quote: string;
+                  size: "large" | "small" | null;
+                  name: string;
+                  company: string | null;
+                  photo: AltImage | null;
+                }
+            > | null;
+            autoplaySeconds?: number;
+            hidden?: boolean;
+          }
+        | {
             _key: string;
-          } & VideoBannerSection)
+            _type: "videoBannerSection";
+            heading?: string;
+            text?: string;
+            video?: VideoEmbed;
+            buttonLabel?: string;
+            fullVideoId?: string;
+            colorScheme?: "dark" | "light" | "none";
+            hidden?: boolean;
+          }
       > | null;
       footerCta: {
         heading: string | null;
@@ -1488,6 +2307,14 @@ export type PAGE_QUERY_RESULT =
       sections: null;
       footerCta: null;
       seo: Seo | null;
+    }
+  | {
+      _id: string;
+      _type: "testimonial";
+      title: null;
+      sections: null;
+      footerCta: null;
+      seo: null;
     }
   | null;
 
@@ -1647,7 +2474,7 @@ declare global {
   interface SanityQueries {
     '\n  *[_type == "siteSettings" && _id == "siteSettings"][0].navigation{\n    links[]{label, href, openInNewTab},\n    loginLabel,\n    loginLinks[]{label, href, openInNewTab},\n    cta{label, href, openInNewTab}\n  }\n': NAVIGATION_QUERY_RESULT;
     '\n  *[_type == "siteSettings" && _id == "siteSettings"][0].footer{\n    cta{heading, button{label, href, openInNewTab}},\n    columns[]{_key, title, links[]{_key, ...{label, href, openInNewTab}}},\n    socialLinks[]{_key, platform, url},\n    badges[]{_key, size, ...{\n  alt,\n  "url": asset->url,\n  "width": asset->metadata.dimensions.width,\n  "height": asset->metadata.dimensions.height,\n  "lqip": asset->metadata.lqip\n}},\n    companyName,\n    locations\n  }\n': FOOTER_QUERY_RESULT;
-    "\n  *[_id == $id][0]{\n    _id,\n    _type,\n    title,\n    sections,\n    footerCta{heading, button{label, href, openInNewTab}},\n    seo\n  }\n": PAGE_QUERY_RESULT;
+    '\n  *[_id == $id][0]{\n    _id,\n    _type,\n    title,\n    sections[]{\n      ...,\n      _type == "testimonialCarouselSection" => {\n        "quotes": quotes[]{\n          _key,\n          ...select(_type == "reference" => @->{"docId": _id, quote, size, name, company, photo}, @)\n        }\n      }\n    },\n    footerCta{heading, button{label, href, openInNewTab}},\n    seo\n  }\n': PAGE_QUERY_RESULT;
     '*[_type == "event" && defined(slug.current) && defined(category)]{"category": category, "slug": slug.current}': EVENT_PATHS_QUERY_RESULT;
     '\n  *[_type == "event" && category == $category && slug.current == $slug][0]{\n    _id,\n    _type,\n    title,\n    category,\n    template,\n    theme,\n    startDateTime,\n    excerpt,\n    logo,\n    logoSize,\n    dateLabel,\n    timeLabel,\n    location,\n    locationUrl,\n    heroVideo,\n    heroImage,\n    cardImage,\n    intro,\n    bodyHeading,\n    body,\n    sections,\n    registration,\n    moreInfoHeading,\n    moreInfo,\n    seo\n  }\n': EVENT_QUERY_RESULT;
     '\n  *[_type == "event" && defined(slug.current) && defined(category)] | order(startDateTime desc){\n    _id,\n    title,\n    "slug": slug.current,\n    category,\n    startDateTime,\n    dateLabel,\n    location,\n    template,\n    excerpt,\n    intro,\n    cardImage,\n    heroImage,\n    "poster": heroVideo.poster\n  }\n': EVENT_CARDS_QUERY_RESULT;

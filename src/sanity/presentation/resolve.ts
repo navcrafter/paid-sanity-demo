@@ -21,6 +21,7 @@ export const resolve: PresentationPluginOptions['resolve'] = {
     creatorsPage: defineLocations({locations: [PAGE_ROUTES.creatorsPage]}),
     companyPage: defineLocations({locations: [PAGE_ROUTES.companyPage]}),
     eventsPage: defineLocations({locations: [PAGE_ROUTES.eventsPage]}),
+    testimonial: defineLocations({locations: [PAGE_ROUTES.homePage], message: 'Shown wherever a section picks this quote', tone: 'positive'}),
     event: defineLocations({
       select: {title: 'title', slug: 'slug.current', category: 'category'},
       resolve: (doc) =>

@@ -41,7 +41,15 @@ export const PAGE_QUERY = defineQuery(`
     _id,
     _type,
     title,
-    sections,
+    sections[]{
+      ...,
+      _type == "testimonialCarouselSection" => {
+        "quotes": quotes[]{
+          _key,
+          ...select(_type == "reference" => @->{"docId": _id, quote, size, name, company, photo}, @)
+        }
+      }
+    },
     footerCta{heading, button${LINK}},
     seo
   }

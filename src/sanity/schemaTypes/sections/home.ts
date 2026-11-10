@@ -149,9 +149,13 @@ export const testimonialCarouselSection = defineSection({
       name: 'quotes',
       type: 'array',
       group: 'content',
+      description: 'Pick quotes from the Testimonials collection (Content → Testimonials). Drag to reorder.',
       of: [
+        defineArrayMember({type: 'reference', to: [{type: 'testimonial'}]}),
+        // Legacy inline quote (before the Testimonials collection). Kept so older content still loads.
         defineArrayMember({
           name: 'carouselQuote',
+          title: 'Inline quote (legacy)',
           type: 'object',
           fields: [
             defineField({name: 'quote', type: 'text', rows: 3}),

@@ -2,6 +2,7 @@ import {stegaClean} from 'next-sanity'
 import type {CSSProperties} from 'react'
 
 import type {SanityImageValue} from '@/sanity/lib/assets'
+import {editAttrFor} from '@/sanity/lib/edit'
 
 import {splitStega} from '../effects/WordReveal'
 import {SanityImage} from '../media/SanityImage'
@@ -9,7 +10,7 @@ import {TestimonialCarousel} from './TestimonialCarousel'
 import type {SectionProps} from './types'
 
 export interface TestimonialCarouselData {
-  quotes?: {_key: string; quote?: string | null; size?: string | null; name?: string | null; company?: string | null; photo?: SanityImageValue | null}[] | null
+  quotes?: {_key: string; docId?: string | null; quote?: string | null; size?: string | null; name?: string | null; company?: string | null; photo?: SanityImageValue | null}[] | null
   autoplaySeconds?: number | null
 }
 
@@ -36,6 +37,12 @@ function QuoteWords({text}: {text?: string | null}) {
 
 export function TestimonialCarouselSection({data, edit}: SectionProps<TestimonialCarouselData>) {
   const quotes = data.quotes ?? []
+  // A quote picked from the Testimonials collection is edited on its own document; a legacy inline one on the page.
+  const photoEdit = (quote: {_key: string; docId?: string | null}) => {
+    const onPage = edit(`quotes[_key=="${quote._key}"].photo`)
+    if (!quote.docId) return onPage
+    return editAttrFor({_id: quote.docId, _type: 'testimonial'}, Boolean(onPage))('photo')
+  }
   return (
     <section className="section_testimonial-carousel background-color-white">
       <div className="padding-global padding-section-large testimonial-carousel_padding">
@@ -53,7 +60,7 @@ export function TestimonialCarouselSection({data, edit}: SectionProps<Testimonia
                   <div className="testimonial-carousel_author">
                     {quote.photo && (
                       <div className="testimonial-carousel_author-image">
-                        <SanityImage image={quote.photo} sizes="48px" editAttr={edit(`quotes[_key=="${quote._key}"].photo`)} />
+                        <SanityImage image={quote.photo} sizes="48px" editAttr={photoEdit(quote)} />
                       </div>
                     )}
                     <div className="testimonial-carousel_author-info">

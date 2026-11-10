@@ -7,6 +7,8 @@ Next.js 16 with Sanity Studio embedded at `/studio`.
 
 - **Next.js 16** (App Router, Cache Components, Turbopack)
 - **Sanity** (Studio v6 embedded at `/studio`, Presentation tool for click-to-edit, Sanity Live)
+- **Draft → Preview → Publish**: every edit saves as a draft (the staging copy). The "Preview this page" button at the top of each page/event opens the draft on the real page; only Publish changes the live site.
+- **Testimonials** are a collection (Studio → Testimonials); the Home carousel picks quotes from it.
 - **Client-First** class naming for all site CSS (from phase 2)
 - Hosted on **Netlify**
 

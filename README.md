@@ -10,7 +10,7 @@ Next.js 16 with Sanity Studio embedded at `/studio`.
 - **Draft → Preview → Publish**: every edit saves as a draft (the staging copy). The "Preview this page" button at the top of each page/event opens the draft on the real page; only Publish changes the live site.
 - **Testimonials** are a collection (Studio → Testimonials); the Home carousel picks quotes from it.
 - **Client-First** class naming for all site CSS (from phase 2)
-- Hosted on **Netlify**
+- Hosted on **Vercel**
 
 ## Getting started
 
@@ -77,25 +77,17 @@ src/sanity/lib/               Client, Sanity Live, queries, image URLs
 scripts/                      One-off content scripts (`npx sanity exec <file> --with-user-token`)
 ```
 
-## Deployment (Netlify)
+## Deployment (Vercel)
 
-- Site: https://paid-sanity-demo.netlify.app (Studio at `/studio`). Netlify adds its Next.js
-  adapter automatically; `netlify.toml` only pins Node 24 and the build command.
-- Environment variables are set in Netlify (Project configuration → Environment variables), the same
-  keys as `.env.example`. `SANITY_API_READ_TOKEN` and `SANITY_REVALIDATE_SECRET` are stored as secrets.
-- Sanity: the Netlify URL is an allowed CORS origin (with credentials), and the webhook
-  "Netlify: refresh cached pages" posts to `/api/revalidate` on publish, unpublish and delete.
-- Every push to `main` deploys through GitHub Actions (`.github/workflows/deploy.yml`), which
-  needs the repository secrets `NETLIFY_AUTH_TOKEN` and `SANITY_API_READ_TOKEN`.
-- **Staging = pull request previews.** Every PR is built and deployed by
-  `.github/workflows/preview.yml` to `https://pr-<number>--paid-sanity-demo.netlify.app`
-  (Studio at `/studio` on that URL); the link is posted as a comment on the PR and updated on
-  every push. For the Studio to log in on a preview URL, Sanity needs the CORS origin
-  `https://*--paid-sanity-demo.netlify.app` (with credentials). The published pages work without it. Netlify's own Git
-  integration needs a paid plan for private organization repos. Re-run a deploy from the
-  Actions tab → "Deploy to Netlify" → Run workflow.
-- Manual deploy from this machine: `npx netlify-cli deploy --build --prod`. On Windows, stop
-  `npm run dev` first, or the Next.js plugin can't move the `.next` folder.
+- Site: https://paid-sanity-demo.vercel.app (Studio at `/studio`), Vercel project `paid-sanity-demo` on the
+  `navcraft` team. The project is connected to this GitHub repo: every push to `main` deploys to production.
+- **Staging = pull request previews.** Vercel builds every PR and comments its preview URL. Preview builds need
+  `SANITY_API_READ_TOKEN` in the project's Preview environment as well as Production.
+- Environment variables live in Vercel (Project → Settings → Environment Variables), the same keys as
+  `.env.example`. `SANITY_API_READ_TOKEN` and `SANITY_REVALIDATE_SECRET` are stored as sensitive.
+- Sanity: the Vercel URL is an allowed CORS origin (with credentials), and the webhook
+  "Vercel: refresh cached pages" posts to `/api/revalidate` on create, update and delete.
+- Manual deploy: `npx vercel deploy --prod --scope navcraft`. Clear stale content: `npx vercel cache purge --yes --scope navcraft`.
 
 ## Content updates and caching
 

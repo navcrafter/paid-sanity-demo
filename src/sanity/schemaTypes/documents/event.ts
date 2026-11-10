@@ -335,3 +335,56 @@ export const event = defineType({
     },
   },
 })
+
+// ---------------------------------------------------------------- Starting content
+
+/** Event fields a new event starts with. Everything else (title, date, location, form ID…) is per event. */
+const STARTER_FIELDS = [
+  'template',
+  'theme',
+  'logo',
+  'logoSize',
+  'heroVideo',
+  'intro',
+  'bodyHeading',
+  'body',
+  'sections',
+  'registration',
+  'moreInfoHeading',
+  'moreInfo',
+]
+
+/**
+ * "Starting content" for each template: one document per template (id `eventStarter-<template>`),
+ * edited in Studio → Events → Starting content. A new event is created as a copy of the published
+ * version (see eventStarters.ts), so the team changes the defaults here, without a developer.
+ * Reuses the event's own field definitions so the two can never drift apart.
+ */
+export const eventStarter = defineType({
+  name: 'eventStarter',
+  title: 'Event starting content',
+  type: 'document',
+  icon: CalendarIcon,
+  groups: [
+    {name: 'setup', title: 'Look', default: true},
+    {name: 'hero', title: 'Hero'},
+    {name: 'content', title: 'Content'},
+    {name: 'sections', title: 'Sections'},
+    {name: 'registration', title: 'Registration'},
+    {name: 'info', title: 'More info'},
+  ],
+  fields: event.fields
+    .filter((field) => STARTER_FIELDS.includes(field.name))
+    .map((field) =>
+      field.name === 'template'
+        ? {...field, readOnly: true, description: 'Which template this starting content belongs to.'}
+        : field,
+    ),
+  preview: {
+    select: {template: 'template', sections: 'sections'},
+    prepare: ({template, sections}) => ({
+      title: `${EVENT_TEMPLATES.find((t) => t.value === template)?.title ?? 'Event'}: starting content`,
+      subtitle: `New events start as a copy of this · ${sections?.length ?? 0} sections`,
+    }),
+  },
+})

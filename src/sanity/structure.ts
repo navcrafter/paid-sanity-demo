@@ -7,7 +7,7 @@ import {DocumentsIcon} from '@sanity/icons/Documents'
 import {FolderIcon} from '@sanity/icons/Folder'
 import type {StructureBuilder, StructureResolver} from 'sanity/structure'
 
-import {EVENT_CATEGORIES} from './constants'
+import {EVENT_CATEGORIES, EVENT_TEMPLATES} from './constants'
 import {companyPage, creatorsPage, eventsPage, homePage} from './schemaTypes/singletons/pages'
 
 // Sidebar layout. Mirrors the Webflow page tree the team already knows:
@@ -97,6 +97,30 @@ export const structure: StructureResolver = (S) =>
                       ]),
                   ),
               ),
+              S.divider(),
+              // What a new event starts with, per template. Editors change the defaults here.
+              S.listItem()
+                .title('Starting content')
+                .id('event-starters')
+                .icon(CogIcon)
+                .child(
+                  S.list()
+                    .title('Starting content for new events')
+                    .items(
+                      EVENT_TEMPLATES.map((template) =>
+                        S.listItem()
+                          .title(template.title)
+                          .id(`eventStarter-${template.value}`)
+                          .icon(CalendarIcon)
+                          .child(
+                            S.document()
+                              .schemaType('eventStarter')
+                              .documentId(`eventStarter-${template.value}`)
+                              .title(`${template.title}: starting content`),
+                          ),
+                      ),
+                    ),
+                ),
             ]),
         ),
       S.listItem()

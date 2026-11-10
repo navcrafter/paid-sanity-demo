@@ -5,7 +5,7 @@
  * (see src/app/studio/[[...tool]]/page.tsx).
  */
 import {assist} from '@sanity/assist'
-import {defineConfig} from 'sanity'
+import {defineConfig, type InitialValueResolverContext} from 'sanity'
 import {presentationTool} from 'sanity/presentation'
 import {structureTool} from 'sanity/structure'
 
@@ -17,9 +17,11 @@ import {schemaTypes} from './src/sanity/schemaTypes'
 import {structure} from './src/sanity/structure'
 import {StudioLogo} from './src/sanity/StudioLogo'
 
-const singletonTypes = new Set<string>(SINGLETON_TYPES)
+type StarterContext = InitialValueResolverContext
 const singletonActions = new Set(['publish', 'discardChanges', 'restore'])
 const hiddenFromCreateMenu = new Set(['event', 'event-in-category'])
+// Fixed documents (one per page / per event template): no create, duplicate or delete.
+const fixedTypes = new Set<string>([...SINGLETON_TYPES, 'eventStarter'])
 
 // Which layout a new event starts with when created inside a category folder.
 const DEFAULT_TEMPLATE_BY_CATEGORY: Record<string, EventTemplate> = {
@@ -42,25 +44,25 @@ export default defineConfig({
     types: schemaTypes,
     templates: (templates) => [
       // Singletons can't be created from the "+" menu.
-      ...templates.filter(({schemaType}) => !singletonTypes.has(schemaType)),
+      ...templates.filter(({schemaType}) => !fixedTypes.has(schemaType)),
       // Event starters: replace the Webflow "[Draft] ... Template" pages.
       {
         id: 'event-supper-club',
         title: 'Supper Club event',
         schemaType: 'event',
-        value: () => eventStarter('supperClub'),
+        value: (_params: unknown, context: StarterContext) => eventStarter('supperClub', undefined, context.getClient),
       },
       {
         id: 'event-mid-tier',
         title: 'Mid Tier event',
         schemaType: 'event',
-        value: () => eventStarter('midTier'),
+        value: (_params: unknown, context: StarterContext) => eventStarter('midTier', undefined, context.getClient),
       },
       {
         id: 'event-webinar',
         title: 'Webinar',
         schemaType: 'event',
-        value: () => eventStarter('webinar'),
+        value: (_params: unknown, context: StarterContext) => eventStarter('webinar', undefined, context.getClient),
       },
       // Used by the category folders in the sidebar to pre-fill the category.
       {
@@ -68,8 +70,8 @@ export default defineConfig({
         title: 'Event in category',
         schemaType: 'event',
         parameters: [{name: 'category', type: 'string'}],
-        value: ({category}: {category: string}) =>
-          eventStarter(DEFAULT_TEMPLATE_BY_CATEGORY[category] ?? 'supperClub', category),
+        value: ({category}: {category: string}, context: StarterContext) =>
+          eventStarter(DEFAULT_TEMPLATE_BY_CATEGORY[category] ?? 'supperClub', category, context.getClient),
       },
     ],
   },
@@ -77,7 +79,7 @@ export default defineConfig({
   document: {
     // Singletons: no duplicate/delete, and hidden from the global "Create" menu.
     actions: (input, context) =>
-      singletonTypes.has(context.schemaType)
+      fixedTypes.has(context.schemaType)
         ? input.filter(({action}) => action && singletonActions.has(action))
         : input,
     // The global "Create" menu offers the three event starters instead of a blank event.

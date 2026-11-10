@@ -1,6 +1,6 @@
 import type {SchemaTypeDefinition} from 'sanity'
 
-import {event} from './documents/event'
+import {event, eventStarter} from './documents/event'
 import {testimonial} from './documents/testimonial'
 import {footerCta} from './objects/footerCta'
 import {link} from './objects/link'
@@ -19,6 +19,7 @@ export const schemaTypes: SchemaTypeDefinition[] = [
   eventsPage,
   // Collections
   event,
+  eventStarter,
   testimonial,
   // Objects
   link,

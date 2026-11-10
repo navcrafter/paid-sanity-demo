@@ -12,7 +12,8 @@
     "seed:settings": "node --env-file=.env.local node_modules/sanity/bin/sanity exec scripts/seed-site-settings.ts --with-user-token",
     "seed:pages": "node --env-file=.env.local node_modules/sanity/bin/sanity exec scripts/seed-pages.ts --with-user-token --",
     "seed:q4": "node --env-file=.env.local node_modules/sanity/bin/sanity exec scripts/seed-q4-events.ts --with-user-token",
-    "migrate:testimonials": "node --env-file=.env.local node_modules/sanity/bin/sanity exec scripts/migrate-testimonials.ts --with-user-token"
+    "migrate:testimonials": "node --env-file=.env.local node_modules/sanity/bin/sanity exec scripts/migrate-testimonials.ts --with-user-token",
+    "seed:starters": "node --env-file=.env.local node_modules/sanity/bin/sanity exec scripts/seed-event-starters.ts --with-user-token"
   },
   "dependencies": {
     "@sanity/assist": "^6.2.6",

@@ -1180,6 +1180,36 @@
     }
   },
   {
+    "type": "type",
+    "name": "testimonial.reference",
+    "value": {
+      "type": "object",
+      "attributes": {
+        "_ref": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string"
+          }
+        },
+        "_type": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "string",
+            "value": "reference"
+          }
+        },
+        "_weak": {
+          "type": "objectAttribute",
+          "value": {
+            "type": "boolean"
+          },
+          "optional": true
+        }
+      },
+      "dereferencesTo": "testimonial"
+    }
+  },
+  {
     "name": "testimonialCarouselSection",
     "type": "type",
     "value": {
@@ -1197,73 +1227,93 @@
           "value": {
             "type": "array",
             "of": {
-              "type": "object",
-              "attributes": {
-                "quote": {
-                  "type": "objectAttribute",
-                  "value": {
-                    "type": "string"
-                  },
-                  "optional": true
-                },
-                "size": {
-                  "type": "objectAttribute",
-                  "value": {
-                    "type": "union",
-                    "of": [
-                      {
-                        "type": "string",
-                        "value": "large"
-                      },
-                      {
-                        "type": "string",
-                        "value": "small"
+              "type": "union",
+              "of": [
+                {
+                  "type": "object",
+                  "attributes": {
+                    "_key": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string"
                       }
-                    ]
+                    }
                   },
-                  "optional": true
-                },
-                "name": {
-                  "type": "objectAttribute",
-                  "value": {
-                    "type": "string"
-                  },
-                  "optional": true
-                },
-                "company": {
-                  "type": "objectAttribute",
-                  "value": {
-                    "type": "string"
-                  },
-                  "optional": true
-                },
-                "photo": {
-                  "type": "objectAttribute",
-                  "value": {
+                  "rest": {
                     "type": "inline",
-                    "name": "altImage"
-                  },
-                  "optional": true
-                },
-                "_type": {
-                  "type": "objectAttribute",
-                  "value": {
-                    "type": "string",
-                    "value": "carouselQuote"
+                    "name": "testimonial.reference"
                   }
-                }
-              },
-              "rest": {
-                "type": "object",
-                "attributes": {
-                  "_key": {
-                    "type": "objectAttribute",
-                    "value": {
-                      "type": "string"
+                },
+                {
+                  "type": "object",
+                  "attributes": {
+                    "quote": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string"
+                      },
+                      "optional": true
+                    },
+                    "size": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "union",
+                        "of": [
+                          {
+                            "type": "string",
+                            "value": "large"
+                          },
+                          {
+                            "type": "string",
+                            "value": "small"
+                          }
+                        ]
+                      },
+                      "optional": true
+                    },
+                    "name": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string"
+                      },
+                      "optional": true
+                    },
+                    "company": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string"
+                      },
+                      "optional": true
+                    },
+                    "photo": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "inline",
+                        "name": "altImage"
+                      },
+                      "optional": true
+                    },
+                    "_type": {
+                      "type": "objectAttribute",
+                      "value": {
+                        "type": "string",
+                        "value": "carouselQuote"
+                      }
+                    }
+                  },
+                  "rest": {
+                    "type": "object",
+                    "attributes": {
+                      "_key": {
+                        "type": "objectAttribute",
+                        "value": {
+                          "type": "string"
+                        }
+                      }
                     }
                   }
                 }
-              }
+              ]
             }
           },
           "optional": true
@@ -2204,6 +2254,89 @@
           },
           "optional": true
         }
+      }
+    }
+  },
+  {
+    "name": "testimonial",
+    "type": "document",
+    "attributes": {
+      "_id": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "_type": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string",
+          "value": "testimonial"
+        }
+      },
+      "_createdAt": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "_updatedAt": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "_rev": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        }
+      },
+      "quote": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": false
+      },
+      "name": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": false
+      },
+      "company": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "string"
+        },
+        "optional": true
+      },
+      "photo": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "inline",
+          "name": "altImage"
+        },
+        "optional": true
+      },
+      "size": {
+        "type": "objectAttribute",
+        "value": {
+          "type": "union",
+          "of": [
+            {
+              "type": "string",
+              "value": "large"
+            },
+            {
+              "type": "string",
+              "value": "small"
+            }
+          ]
+        },
+        "optional": true
       }
     }
   },

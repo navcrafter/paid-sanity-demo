@@ -2,6 +2,7 @@ import {CalendarIcon} from '@sanity/icons/Calendar'
 import {defineArrayMember, defineField, defineType, type ConditionalPropertyCallbackContext} from 'sanity'
 
 import {HeroColorInput} from '../../components/HeroColorInput'
+import {PreviewBanner} from '../../components/PreviewBanner'
 import {EVENT_BACKGROUNDS, EVENT_CATEGORIES, EVENT_TEMPLATES, HERO_COLORS} from '../../constants'
 
 // One collection for every event. Category sets the URL, Template sets the layout
@@ -15,6 +16,7 @@ export const event = defineType({
   title: 'Events',
   type: 'document',
   icon: CalendarIcon,
+  components: {input: PreviewBanner},
   groups: [
     {name: 'setup', title: 'Setup', default: true},
     {name: 'hero', title: 'Hero'},

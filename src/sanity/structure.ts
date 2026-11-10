@@ -1,4 +1,5 @@
 import {ArchiveIcon} from '@sanity/icons/Archive'
+import {BlockquoteIcon} from '@sanity/icons/Blockquote'
 import {CalendarIcon} from '@sanity/icons/Calendar'
 import {ClockIcon} from '@sanity/icons/Clock'
 import {CogIcon} from '@sanity/icons/Cog'
@@ -98,6 +99,10 @@ export const structure: StructureResolver = (S) =>
               ),
             ]),
         ),
+      S.listItem()
+        .title('Testimonials')
+        .icon(BlockquoteIcon)
+        .child(S.documentTypeList('testimonial').title('Testimonials')),
       S.divider(),
       singleton(S, 'siteSettings', 'Site settings', CogIcon),
     ])

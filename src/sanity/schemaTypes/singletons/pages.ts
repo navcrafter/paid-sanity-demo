@@ -4,6 +4,7 @@ import {HomeIcon} from '@sanity/icons/Home'
 import {UsersIcon} from '@sanity/icons/Users'
 import {defineArrayMember, defineField, defineType} from 'sanity'
 
+import {PreviewBanner} from '../../components/PreviewBanner'
 import {sectionTypes} from '../sections'
 
 // Home, Creators and Company: an ordered list of design sections. Any section type
@@ -32,6 +33,7 @@ function definePage(name: string, title: string, icon: typeof DocumentIcon) {
     title,
     type: 'document',
     icon,
+    components: {input: PreviewBanner},
     fields: [
       defineField({
         name: 'title',

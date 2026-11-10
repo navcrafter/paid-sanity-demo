@@ -34,6 +34,9 @@ Next.js 16 with Sanity Studio embedded at `/studio`.
 - One **Events** collection (Studio → Events, with folders per category). URL: `/events/{category}/{slug}`.
 - **Template** (Supper Club / Mid Tier / Webinar) sets the hero layout; **Theme** sets the page background
   (black / dark / light) and hero colour. New events start from a template with its usual sections.
+- **Starting content** (Studio → Events → Starting content): one document per template. A new event is created as a
+  copy of the published version, so sections, quotes, past creators, venues, FAQ and starter text are pre-filled.
+  Editors change the defaults there. `npm run seed:starters` rebuilds the three documents from existing events.
 - Optional sections per event: logo strip, testimonials, people (creators/speakers), venues.
 - Registration: a HubSpot form ID per event (the portal ID lives in Site settings).
 - `/events` is a page-builder page with an **Events list** section: category filters, upcoming and past

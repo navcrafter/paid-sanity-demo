@@ -44,6 +44,27 @@ export type JobBoard = {
   }>;
 };
 
+export type Theme = {
+  background?: "black" | "dark" | "light";
+  accent?:
+    | "default"
+    | "pink"
+    | "red"
+    | "blue"
+    | "lightBlue"
+    | "purple"
+    | "darkGreen"
+    | "lightGreen"
+    | "burgundy"
+    | "black"
+    | "cream";
+};
+
+export type Registration = {
+  heading?: string;
+  hubspotFormId?: string;
+};
+
 export type EventsListSection = {
   _type: "eventsListSection";
   upcomingHeading?: string;
@@ -378,6 +399,91 @@ export type Testimonial = {
   size?: "large" | "small";
 };
 
+export type EventStarter = {
+  _id: string;
+  _type: "eventStarter";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  template: "supperClub" | "midTier" | "webinar";
+  theme?: Theme;
+  logo?: AltImage;
+  logoSize?: "regular" | "large";
+  heroVideo?: VideoEmbed;
+  intro?: string;
+  bodyHeading?: string;
+  body?: Array<{
+    children?: Array<{
+      marks?: Array<string>;
+      text?: string;
+      _type: "span";
+      _key: string;
+    }>;
+    style?: "normal" | "h2" | "h3";
+    listItem?: "bullet";
+    markDefs?: Array<{
+      href?: string;
+      _type: "link";
+      _key: string;
+    }>;
+    level?: number;
+    _type: "block";
+    _key: string;
+  }>;
+  sections?: Array<
+    | {
+        heading?: string;
+        image?: AltImage;
+        _type: "eventLogoStrip";
+        _key: string;
+      }
+    | {
+        heading?: string;
+        quotes?: Array<{
+          quote?: string;
+          name?: string;
+          logo?: AltImage;
+          _type: "eventQuote";
+          _key: string;
+        }>;
+        _type: "eventTestimonials";
+        _key: string;
+      }
+    | {
+        heading?: string;
+        people?: Array<{
+          name?: string;
+          subtitle?: string;
+          photo?: AltImage;
+          url?: string;
+          _type: "eventPerson";
+          _key: string;
+        }>;
+        _type: "eventPeople";
+        _key: string;
+      }
+    | {
+        heading?: string;
+        venues?: Array<{
+          name?: string;
+          logo?: AltImage;
+          _type: "eventVenue";
+          _key: string;
+        }>;
+        _type: "eventVenues";
+        _key: string;
+      }
+  >;
+  registration?: Registration;
+  moreInfoHeading?: string;
+  moreInfo?: Array<{
+    question?: string;
+    answer?: string;
+    _type: "eventFaq";
+    _key: string;
+  }>;
+};
+
 export type Event = {
   _id: string;
   _type: "event";
@@ -388,21 +494,7 @@ export type Event = {
   slug: Slug;
   category: "supperclub" | "webinar" | "med" | "shopping" | "industry";
   template: "supperClub" | "midTier" | "webinar";
-  theme?: {
-    background?: "black" | "dark" | "light";
-    accent?:
-      | "default"
-      | "pink"
-      | "red"
-      | "blue"
-      | "lightBlue"
-      | "purple"
-      | "darkGreen"
-      | "lightGreen"
-      | "burgundy"
-      | "black"
-      | "cream";
-  };
+  theme?: Theme;
   startDateTime: string;
   owner?: string;
   cardImage?: AltImage;
@@ -479,10 +571,7 @@ export type Event = {
         _key: string;
       }
   >;
-  registration?: {
-    heading?: string;
-    hubspotFormId?: string;
-  };
+  registration?: Registration;
   moreInfoHeading?: string;
   moreInfo?: Array<{
     question?: string;
@@ -1054,6 +1143,8 @@ export type AllSanitySchemaTypes =
   | Without
   | With
   | JobBoard
+  | Theme
+  | Registration
   | EventsListSection
   | InvestorsSection
   | TeamMarqueeSection
@@ -1080,6 +1171,7 @@ export type AllSanitySchemaTypes =
   | FooterCta
   | Link
   | Testimonial
+  | EventStarter
   | Event
   | Slug
   | EventsPage
@@ -2024,6 +2116,57 @@ export type PAGE_QUERY_RESULT =
     }
   | {
       _id: string;
+      _type: "eventStarter";
+      title: null;
+      sections: Array<
+        | {
+            heading?: string;
+            image?: AltImage;
+            _type: "eventLogoStrip";
+            _key: string;
+          }
+        | {
+            heading?: string;
+            people?: Array<{
+              name?: string;
+              subtitle?: string;
+              photo?: AltImage;
+              url?: string;
+              _type: "eventPerson";
+              _key: string;
+            }>;
+            _type: "eventPeople";
+            _key: string;
+          }
+        | {
+            heading?: string;
+            quotes?: Array<{
+              quote?: string;
+              name?: string;
+              logo?: AltImage;
+              _type: "eventQuote";
+              _key: string;
+            }>;
+            _type: "eventTestimonials";
+            _key: string;
+          }
+        | {
+            heading?: string;
+            venues?: Array<{
+              name?: string;
+              logo?: AltImage;
+              _type: "eventVenue";
+              _key: string;
+            }>;
+            _type: "eventVenues";
+            _key: string;
+          }
+      > | null;
+      footerCta: null;
+      seo: null;
+    }
+  | {
+      _id: string;
       _type: "homePage";
       title: string | null;
       sections: Array<
@@ -2335,21 +2478,7 @@ export type EVENT_QUERY_RESULT = {
   title: string;
   category: "industry" | "med" | "shopping" | "supperclub" | "webinar";
   template: "midTier" | "supperClub" | "webinar";
-  theme: {
-    background?: "black" | "dark" | "light";
-    accent?:
-      | "black"
-      | "blue"
-      | "burgundy"
-      | "cream"
-      | "darkGreen"
-      | "default"
-      | "lightBlue"
-      | "lightGreen"
-      | "pink"
-      | "purple"
-      | "red";
-  } | null;
+  theme: Theme | null;
   startDateTime: string;
   excerpt: string | null;
   logo: AltImage | null;
@@ -2425,10 +2554,7 @@ export type EVENT_QUERY_RESULT = {
         _key: string;
       }
   > | null;
-  registration: {
-    heading?: string;
-    hubspotFormId?: string;
-  } | null;
+  registration: Registration | null;
   moreInfoHeading: string | null;
   moreInfo: Array<{
     question?: string;
